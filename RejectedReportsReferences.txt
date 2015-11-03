@@ -1,0 +1,102 @@
+Rejected Reports buzz words
+
+1 : ('CVE-2014-7186', 4)
+
+The redirection implementation in parse.y in GNU Bash through 4.3
+bash43-026 allows remote attackers to cause a denial of service
+(out-of-bounds array access and application crash) or possibly have
+unspecified other impact via crafted use of here documents, aka the
+"redir_stack" issue.
+
+======================================================
+
+2 : ('CVE-2014-6271', 3)
+
+GNU Bash through 4.3 processes trailing strings after function
+definitions in the values of environment variables, which allows
+remote attackers to execute arbitrary code via a crafted environment,
+as demonstrated by vectors involving the ForceCommand feature in
+OpenSSH sshd, the mod_cgi and mod_cgid modules in the Apache HTTP
+Server, scripts executed by unspecified DHCP clients, and other
+situations in which setting the environment occurs across a privilege
+boundary from Bash execution, aka "ShellShock."  NOTE: the original
+fix for this issue was incorrect; CVE-2014-7169 has been assigned to
+cover the vulnerability that is still present after the incorrect fix.
+
+======================================================
+
+3 : ('CVE-2013-1664', 3)
+
+The XML libraries for Python 3.4, 3.3, 3.2, 3.1, 2.7, and 2.6, as used
+in OpenStack Keystone Essex, Folsom, and Grizzly; Compute (Nova) Essex
+and Folsom; Cinder Folsom; Django; and possibly other products allow
+remote attackers to cause a denial of service (resource consumption
+and crash) via an XML Entity Expansion (XEE) attack.
+
+======================================================
+
+4 : ('CVE-2013-1665', 3)
+
+The XML libraries for Python 3.4, 3.3, 3.2, 3.1, 2.7, and 2.6, as used
+in OpenStack Keystone Essex and Folsom, Django, and possibly other
+products allow remote attackers to read arbitrary files via an XML
+external entity declaration in conjunction with an entity reference,
+aka an XML External Entity (XXE) attack.
+
+======================================================
+
+5 : ('CVE-2014-5755', 2)
+
+The verizon (aka com.wverizonwirelessbill) application 0.1 for Android
+does not verify X.509 certificates from SSL servers, which allows
+man-in-the-middle attackers to spoof servers and obtain sensitive
+information via a crafted certificate.
+
+======================================================
+
+6 : ('CVE-2013-7264', 2)
+
+The l2tp_ip_recvmsg function in net/l2tp/l2tp_ip.c in the Linux kernel
+before 3.12.4 updates a certain length value before ensuring that an
+associated data structure has been initialized, which allows local
+users to obtain sensitive information from kernel stack memory via a
+(1) recvfrom, (2) recvmmsg, or (3) recvmsg system call.
+
+======================================================
+
+7 : ('CVE-2014-3538', 2)
+
+file before 5.19 does not properly restrict the amount of data read
+during a regex search, which allows remote attackers to cause a denial
+of service (CPU consumption) via a crafted file that triggers
+backtracking during processing of an awk rule.  NOTE: this
+vulnerability exists because of an incomplete fix for CVE-2013-7345.
+
+======================================================
+
+8 : ('CVE-2006-0158', 2)
+
+SQL injection vulnerability in index.php in CyberDoc SiteSuite CMS
+allows remote attackers to execute arbitrary SQL commands via the page
+parameter.
+
+======================================================
+
+9 : ('CVE-2014-7187', 2)
+
+Off-by-one error in the read_token_word function in parse.y in GNU
+Bash through 4.3 bash43-026 allows remote attackers to cause a denial
+of service (out-of-bounds array access and application crash) or
+possibly have unspecified other impact via deeply nested for loops,
+aka the "word_lineno" issue.
+
+======================================================
+
+10 : ('CVE-2008-2361', 2)
+
+Integer overflow in the ProcRenderCreateCursor function in the Render
+extension in the X server 1.4 in X.Org X11R7.3 allows
+context-dependent attackers to cause a denial of service (daemon
+crash) via unspecified request fields that are used to calculate a
+glyph buffer size, which triggers a dereference of unmapped memory.
+

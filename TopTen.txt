@@ -1,0 +1,115 @@
+1 : ('CVE-2009-3555', 539) 
+
+The TLS protocol, and the SSL protocol 3.0 and possibly earlier, as
+used in Microsoft Internet Information Services (IIS) 7.0, mod_ssl in
+the Apache HTTP Server 2.2.14 and earlier, OpenSSL before 0.9.8l,
+GnuTLS 2.8.5 and earlier, Mozilla Network Security Services (NSS)
+3.12.4 and earlier, multiple Cisco products, and other products, does
+not properly associate renegotiation handshakes with an existing
+connection, which allows man-in-the-middle attackers to insert data
+into HTTPS sessions, and possibly other types of sessions protected by
+TLS or SSL, by sending an unauthenticated request that is processed
+retroactively by a server in a post-renegotiation context, related to
+a "plaintext injection" attack, aka the "Project Mogul" issue.
+
+=========================================================================
+
+2 : ('CVE-2006-4339', 385)
+
+OpenSSL before 0.9.7, 0.9.7 before 0.9.7k, and 0.9.8 before 0.9.8c,
+when using an RSA key with exponent 3, removes PKCS-1 padding before
+generating a hash, which allows remote attackers to forge a PKCS #1
+v1.5 signature that is signed by that RSA key and prevents OpenSSL
+from correctly verifying X.509 and other certificates that use PKCS #1.
+
+
+=========================================================================
+
+3 : ('CVE-2008-1447', 375)
+
+The DNS protocol, as implemented in (1) BIND 8 and 9 before 9.5.0-P1,
+9.4.2-P1, and 9.3.5-P1; (2) Microsoft DNS in Windows 2000 SP4, XP SP2
+and SP3, and Server 2003 SP1 and SP2; and other implementations allow
+remote attackers to spoof DNS traffic via a birthday attack that uses
+in-bailiwick referrals to conduct cache poisoning against recursive
+resolvers, related to insufficient randomness of DNS transaction IDs
+and source ports, aka "DNS Insufficient Socket Entropy Vulnerability"
+or "the Kaminsky bug."
+
+=========================================================================
+
+4 : ('CVE-2014-3566', 366)
+
+The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other
+products, uses nondeterministic CBC padding, which makes it easier for
+man-in-the-middle attackers to obtain cleartext data via a
+padding-oracle attack, aka the "POODLE" issue.
+
+=========================================================================
+
+5 : ('CVE-2014-7169', 268)
+
+GNU Bash through 4.3 bash43-025 processes trailing strings after
+certain malformed function definitions in the values of environment
+variables, which allows remote attackers to write to files or possibly
+have unknown other impact via a crafted environment, as demonstrated
+by vectors involving the ForceCommand feature in OpenSSH sshd, the
+mod_cgi and mod_cgid modules in the Apache HTTP Server, scripts
+executed by unspecified DHCP clients, and other situations in which
+setting the environment occurs across a privilege boundary from Bash
+execution.  NOTE: this vulnerability exists because of an incomplete
+fix for CVE-2014-6271.
+
+
+
+=========================================================================
+
+6 : ('CVE-2006-2940', 267)
+
+OpenSSL 0.9.7 before 0.9.7l, 0.9.8 before 0.9.8d, and earlier versions
+allows attackers to cause a denial of service (CPU consumption) via
+parasitic public keys with large (1) "public exponent" or (2) "public
+modulus" values in X.509 certificates that require extra time to
+process when using RSA signature verification.
+
+=========================================================================
+
+7 : ('CVE-2014-6271', 263)
+
+GNU Bash through 4.3 processes trailing strings after function
+definitions in the values of environment variables, which allows
+remote attackers to execute arbitrary code via a crafted environment,
+as demonstrated by vectors involving the ForceCommand feature in
+OpenSSH sshd, the mod_cgi and mod_cgid modules in the Apache HTTP
+Server, scripts executed by unspecified DHCP clients, and other
+situations in which setting the environment occurs across a privilege
+boundary from Bash execution, aka "ShellShock."  NOTE: the original
+fix for this issue was incorrect; CVE-2014-7169 has been assigned to
+cover the vulnerability that is still present after the incorrect fix.
+
+=========================================================================
+
+8 : ('CVE-2006-2937', 257)
+
+OpenSSL 0.9.7 before 0.9.7l and 0.9.8 before 0.9.8d allows remote
+attackers to cause a denial of service (infinite loop and memory
+consumption) via malformed ASN.1 structures that trigger an improperly
+handled error condition.
+
+=========================================================================
+
+9 : ('CVE-2006-4343', 249)
+
+The get_server_hello function in the SSLv2 client code in OpenSSL
+0.9.7 before 0.9.7l, 0.9.8 before 0.9.8d, and earlier versions allows
+remote servers to cause a denial of service (client crash) via unknown
+vectors that trigger a null pointer dereference.
+
+=========================================================================
+
+10 : ('CVE-2006-3738', 244)
+
+Buffer overflow in the SSL_get_shared_ciphers function in OpenSSL
+0.9.7 before 0.9.7l, 0.9.8 before 0.9.8d, and earlier versions has
+unspecified impact and remote attack vectors involving a long list of
+ciphers.

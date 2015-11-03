@@ -1,0 +1,157 @@
+MostReferenced
+
+===============================================
+
+1 : ('CVE-2015-2583', 21)
+
+Unspecified vulnerability in the Data Store component in Oracle
+Berkeley DB 11.2.5.1.29, 11.2.5.2.42, 11.2.5.3.28, and 12.1.6.0.35
+allows local users to affect confidentiality, integrity, and
+availability via unknown vectors, a different vulnerability than
+CVE-2015-2624, CVE-2015-2626, CVE-2015-2640, CVE-2015-2654,
+CVE-2015-2656, CVE-2015-4754, CVE-2015-4764, CVE-2015-4775,
+CVE-2015-4776, CVE-2015-4777, CVE-2015-4778, CVE-2015-4780,
+CVE-2015-4781, CVE-2015-4782, CVE-2015-4783, CVE-2015-4784,
+CVE-2015-4785, CVE-2015-4786, CVE-2015-4787, CVE-2015-4789, and
+CVE-2015-4790.
+
+===============================================
+
+2 : ('CVE-2015-4790', 21)
+
+Unspecified vulnerability in the Data Store component in Oracle
+Berkeley DB 11.2.5.1.29, 11.2.5.2.42, 11.2.5.3.28, and 12.1.6.0.35
+allows local users to affect confidentiality, integrity, and
+availability via unknown vectors, a different vulnerability than
+CVE-2015-2583, CVE-2015-2624, CVE-2015-2626, CVE-2015-2640,
+CVE-2015-2654, CVE-2015-2656, CVE-2015-4754, CVE-2015-4764,
+CVE-2015-4775, CVE-2015-4776, CVE-2015-4777, CVE-2015-4778,
+CVE-2015-4780, CVE-2015-4781, CVE-2015-4782, CVE-2015-4783,
+CVE-2015-4784, CVE-2015-4785, CVE-2015-4786, CVE-2015-4787, and
+CVE-2015-4789.
+
+===============================================
+
+3 : ('CVE-2014-2799', 20)
+
+Microsoft Internet Explorer 6 through 11 allows remote attackers to
+execute arbitrary code or cause a denial of service (memory
+corruption) via a crafted web site, aka "Internet Explorer Memory
+Corruption Vulnerability," a different vulnerability than
+CVE-2014-4059, CVE-2014-4065, CVE-2014-4079, CVE-2014-4081,
+CVE-2014-4083, CVE-2014-4085, CVE-2014-4088, CVE-2014-4090,
+CVE-2014-4094, CVE-2014-4097, CVE-2014-4100, CVE-2014-4103,
+CVE-2014-4104, CVE-2014-4105, CVE-2014-4106, CVE-2014-4107,
+CVE-2014-4108, CVE-2014-4109, CVE-2014-4110, and CVE-2014-4111.
+
+===============================================
+
+4 : ('CVE-2015-7620', 19)
+
+The ANSendForBrowserReview method in Adobe Reader and Acrobat 10.x
+before 10.1.16 and 11.x before 11.0.13, Acrobat and Acrobat Reader DC
+Classic before 2015.006.30094, and Acrobat and Acrobat Reader DC
+Continuous before 2015.009.20069 on Windows and OS X allows attackers
+to bypass JavaScript API execution restrictions via unspecified
+vectors, a different vulnerability than CVE-2015-6707, CVE-2015-6708,
+CVE-2015-6709, CVE-2015-6710, CVE-2015-6711, CVE-2015-6712,
+CVE-2015-6713, CVE-2015-6714, CVE-2015-6715, CVE-2015-6716,
+CVE-2015-6717, CVE-2015-6718, CVE-2015-6719, CVE-2015-6720,
+CVE-2015-6721, CVE-2015-6722, CVE-2015-6723, CVE-2015-6724,
+CVE-2015-6725, CVE-2015-7614, CVE-2015-7616, CVE-2015-7618,
+CVE-2015-7619, and CVE-2015-7623.
+
+===============================================
+
+5 : ('CVE-2015-6709', 18)
+
+The CBBBRInvite method in Adobe Reader and Acrobat 10.x before 10.1.16
+and 11.x before 11.0.13, Acrobat and Acrobat Reader DC Classic before
+2015.006.30094, and Acrobat and Acrobat Reader DC Continuous before
+2015.009.20069 on Windows and OS X allows attackers to bypass
+JavaScript API execution restrictions via unspecified vectors, a
+different vulnerability than CVE-2015-6707, CVE-2015-6708,
+CVE-2015-6710, CVE-2015-6711, CVE-2015-6712, CVE-2015-6713,
+CVE-2015-6714, CVE-2015-6715, CVE-2015-6716, CVE-2015-6717,
+CVE-2015-6718, CVE-2015-6719, CVE-2015-6720, CVE-2015-6721,
+CVE-2015-6722, CVE-2015-6723, CVE-2015-6724, CVE-2015-6725,
+CVE-2015-7614, CVE-2015-7616, CVE-2015-7618, CVE-2015-7619,
+CVE-2015-7620, and CVE-2015-7623.
+
+===============================================
+
+6 : ('CVE-2014-4108', 17)
+
+Microsoft Internet Explorer 6 through 11 allows remote attackers to
+execute arbitrary code or cause a denial of service (memory
+corruption) via a crafted web site, aka "Internet Explorer Memory
+Corruption Vulnerability," a different vulnerability than
+CVE-2014-2799, CVE-2014-4059, CVE-2014-4065, CVE-2014-4079,
+CVE-2014-4081, CVE-2014-4083, CVE-2014-4085, CVE-2014-4088,
+CVE-2014-4090, CVE-2014-4094, CVE-2014-4097, CVE-2014-4100,
+CVE-2014-4103, CVE-2014-4104, CVE-2014-4105, CVE-2014-4106,
+CVE-2014-4107, CVE-2014-4109, CVE-2014-4110, and CVE-2014-4111.
+
+===============================================
+
+7 : ('CVE-2015-2654', 17)
+
+Unspecified vulnerability in the Data Store component in Oracle
+Berkeley DB 11.2.5.1.29, 11.2.5.2.42, 11.2.5.3.28, and 12.1.6.0.35
+allows local users to affect confidentiality, integrity, and
+availability via unknown vectors, a different vulnerability than
+CVE-2015-2583, CVE-2015-2624, CVE-2015-2626, CVE-2015-2640,
+CVE-2015-2656, CVE-2015-4754, CVE-2015-4764, CVE-2015-4775,
+CVE-2015-4776, CVE-2015-4777, CVE-2015-4778, CVE-2015-4780,
+CVE-2015-4781, CVE-2015-4782, CVE-2015-4783, CVE-2015-4784,
+CVE-2015-4785, CVE-2015-4786, CVE-2015-4787, CVE-2015-4789, and
+CVE-2015-4790.
+
+
+===============================================
+
+8 : ('CVE-2015-4785', 17)
+
+Unspecified vulnerability in the Data Store component in Oracle
+Berkeley DB 11.2.5.1.29, 11.2.5.2.42, 11.2.5.3.28, and 12.1.6.0.35
+allows local users to affect confidentiality, integrity, and
+availability via unknown vectors, a different vulnerability than
+CVE-2015-2583, CVE-2015-2624, CVE-2015-2626, CVE-2015-2640,
+CVE-2015-2654, CVE-2015-2656, CVE-2015-4754, CVE-2015-4764,
+CVE-2015-4775, CVE-2015-4776, CVE-2015-4777, CVE-2015-4778,
+CVE-2015-4780, CVE-2015-4781, CVE-2015-4782, CVE-2015-4783,
+CVE-2015-4784, CVE-2015-4786, CVE-2015-4787, CVE-2015-4789, and
+CVE-2015-4790.
+
+===============================================
+
+9 : ('CVE-2013-2720', 16)
+
+Adobe Reader and Acrobat 9.x before 9.5.5, 10.x before 10.1.7, and
+11.x before 11.0.03 allow attackers to execute arbitrary code or cause
+a denial of service (memory corruption) via unspecified vectors, a
+different vulnerability than CVE-2013-2718, CVE-2013-2719,
+CVE-2013-2721, CVE-2013-2722, CVE-2013-2723, CVE-2013-2725,
+CVE-2013-2726, CVE-2013-2731, CVE-2013-2732, CVE-2013-2734,
+CVE-2013-2735, CVE-2013-2736, CVE-2013-3337, CVE-2013-3338,
+CVE-2013-3339, CVE-2013-3340, and CVE-2013-3341.
+
+
+===============================================
+
+10 : ('CVE-2015-6713', 16)
+
+The Function call implementation in Adobe Reader and Acrobat 10.x
+before 10.1.16 and 11.x before 11.0.13, Acrobat and Acrobat Reader DC
+Classic before 2015.006.30094, and Acrobat and Acrobat Reader DC
+Continuous before 2015.009.20069 on Windows and OS X allows attackers
+to bypass JavaScript API execution restrictions via unspecified
+vectors, a different vulnerability than CVE-2015-6707, CVE-2015-6708,
+CVE-2015-6709, CVE-2015-6710, CVE-2015-6711, CVE-2015-6712,
+CVE-2015-6714, CVE-2015-6715, CVE-2015-6716, CVE-2015-6717,
+CVE-2015-6718, CVE-2015-6719, CVE-2015-6720, CVE-2015-6721,
+CVE-2015-6722, CVE-2015-6723, CVE-2015-6724, CVE-2015-6725,
+CVE-2015-7614, CVE-2015-7616, CVE-2015-7618, CVE-2015-7619,
+CVE-2015-7620, and CVE-2015-7623.
+
+
