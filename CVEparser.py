@@ -2,13 +2,13 @@
 import re
 from pylab import *
 
-input = open("allitems.txt", "r")
+inputf = open("allitems.txt", "r")
 
 dictionary = {}
 years = []
 vulns = []
 
-for line in input :
+for line in inputf :
 	match = re.match('Name:', line)
 	if match:
 		# Name: CVE-1999-0001

@@ -1,0 +1,1186 @@
+
+Name: CVE-2001-0005
+Status: Entry
+Reference: ATSTAKE:A012301-1
+Reference: URL:http://www.atstake.com/research/advisories/2001/a012301-1.txt
+Reference: MS:MS01-002
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/MS01-002.asp
+Reference: XF:powerpoint-execute-code(5996)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/5996
+
+Buffer overflow in the parsing mechanism of the file loader in
+Microsoft PowerPoint 2000 allows attackers to execute arbitrary
+commands.
+
+======================================================
+Name: CVE-2001-0718
+Status: Entry
+Reference: BUGTRAQ:20011005 Symantec Security Response SecBul-10042001, Revision1, Malformed Microsoft Excel or PowerPoint documents bypass Microsoft macro security features
+Reference: URL:http://online.securityfocus.com/archive/1/218802
+Reference: MS:MS01-050
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms01-050.asp
+Reference: CERT:CA-2001-28
+Reference: URL:http://www.cert.org/advisories/CA-2001-28.html
+Reference: CERT-VN:VU#287067
+Reference: URL:http://www.kb.cert.org/vuls/id/287067
+Reference: BID:3402
+Reference: URL:http://www.securityfocus.com/bid/3402
+Reference: XF:ms-malformed-document-macro(7223)
+Reference: URL:http://xforce.iss.net/static/7223.php
+
+Vulnerability in (1) Microsoft Excel 2002 and earlier and (2)
+Microsoft PowerPoint 2002 and earlier allows attackers to bypass macro
+restrictions and execute arbitrary commands by modifying the data
+stream in the document.
+
+======================================================
+Name: CVE-2006-0004
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0004
+Phase: Assigned (20051109)
+Category: SF
+Reference: MS:MS06-010
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-010.mspx
+Reference: CERT-VN:VU#963628
+Reference: URL:http://www.kb.cert.org/vuls/id/963628
+Reference: BID:16634
+Reference: URL:http://www.securityfocus.com/bid/16634
+Reference: VUPEN:ADV-2006-0579
+Reference: URL:http://www.vupen.com/english/advisories/2006/0579
+Reference: OVAL:oval:org.mitre.oval:def:1555
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1555
+Reference: SECTRACK:1015632
+Reference: URL:http://securitytracker.com/id?1015632
+Reference: SECUNIA:18865
+Reference: URL:http://secunia.com/advisories/18865
+Reference: XF:powerpoint-tiff-information-disclosure(24490)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/24490
+
+Microsoft PowerPoint 2000 in Office 2000 SP3 has an interaction with
+Internet Explorer that allows remote attackers to obtain sensitive
+information via a PowerPoint presentation that attempts to access
+objects in the Temporary Internet Files Folder (TIFF).
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-0009
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0009
+Phase: Assigned (20051109)
+Category: SF
+Reference: BUGTRAQ:20060314 SYMSA-2006-001: Buffer overflow in Microsoft Office 2000, Office XP (2002), and Office 2003 Routing Slip Metadata
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/427671/100/0/threaded
+Reference: BUGTRAQ:20060822 Major updates in PowerPoint FAQ document - not a 0-day issue
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/444051/100/200/threaded
+Reference: BUGTRAQ:20060919 Microsoft PowerPoint 0-day Vulnerability FAQ - September written
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/446425/100/0/threaded
+Reference: BUGTRAQ:20060919 New PowerPoint 0-day Trojan in the wild
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/446370/100/0/threaded
+Reference: BUGTRAQ:20060422 PowerPoint Phishing Trojan
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/432004/30/5340/threaded
+Reference: MISC:http://www.symantec.com/enterprise/research/SYMSA-2006-001.txt
+Reference: BUGTRAQ:20060819 New PowerPoint 0-day and Trojan - FAQ document ready
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/443890/100/0/threaded
+Reference: FULLDISC:20060822 Major updates in PowerPoint FAQ document - not a 0-day issue
+Reference: URL:http://archives.neohapsis.com/archives/fulldisclosure/2006-08/0597.html
+Reference: FULLDISC:20060919 New PowerPoint 0-day Trojan in the wild
+Reference: URL:http://lists.grok.org.uk/pipermail/full-disclosure/2006-September/049540.html
+Reference: MISC:http://isc.sans.org/diary.php?storyid=1618
+Reference: MISC:http://blogs.securiteam.com/?p=557
+Reference: MISC:http://blogs.securiteam.com/?p=559
+Reference: MISC:http://blogs.securiteam.com/?author=28
+Reference: MISC:http://www.trendmicro.com/vinfo/virusencyclo/default5.asp?VName=TROJ%5FMDROPPER%2EBH
+Reference: MISC:http://www.symantec.com/security_response/writeup.jsp?docid=2006-091810-5028-99
+Reference: MISC:http://www.darkreading.com/document.asp?doc_id=101970
+Reference: CONFIRM:http://support.avaya.com/elmodocs2/security/ASA-2006-069.htm
+Reference: MS:MS06-012
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-012.mspx
+Reference: CERT:TA06-073A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA06-073A.html
+Reference: CERT-VN:VU#682820
+Reference: URL:http://www.kb.cert.org/vuls/id/682820
+Reference: BID:17000
+Reference: URL:http://www.securityfocus.com/bid/17000
+Reference: BID:20059
+Reference: URL:http://www.securityfocus.com/bid/20059
+Reference: VUPEN:ADV-2006-0950
+Reference: URL:http://www.vupen.com/english/advisories/2006/0950
+Reference: VUPEN:ADV-2006-3678
+Reference: URL:http://www.vupen.com/english/advisories/2006/3678
+Reference: OSVDB:23903
+Reference: URL:http://www.osvdb.org/23903
+Reference: OVAL:oval:org.mitre.oval:def:1504
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1504
+Reference: OVAL:oval:org.mitre.oval:def:1553
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1553
+Reference: OVAL:oval:org.mitre.oval:def:1653
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1653
+Reference: OVAL:oval:org.mitre.oval:def:798
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:798
+Reference: SECTRACK:1015766
+Reference: URL:http://securitytracker.com/id?1015766
+Reference: SECTRACK:1016720
+Reference: URL:http://securitytracker.com/id?1016720
+Reference: SECTRACK:1016886
+Reference: URL:http://securitytracker.com/id?1016886
+Reference: SECUNIA:19138
+Reference: URL:http://secunia.com/advisories/19138
+Reference: SECUNIA:19238
+Reference: URL:http://secunia.com/advisories/19238
+Reference: XF:office-routing-slip-bo(25009)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/25009
+Reference: XF:powerpoint-presentation-code-execution(29009)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/29009
+
+Buffer overflow in Microsoft Office 2000 SP3, XP SP3, and other
+versions and packages, allows user-assisted attackers to execute
+arbitrary code via a routing slip that is longer than specified by the
+provided length field, as exploited by malware such as
+TROJ_MDROPPER.BH and Trojan.PPDropper.E in attacks against PowerPoint.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-0022
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0022
+Phase: Assigned (20051130)
+Category: SF/CF/MP/SA/AN/unknown
+Reference: MS:MS06-028
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-028.mspx
+Reference: CERT:TA06-164A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA06-164A.html
+Reference: CERT-VN:VU#190089
+Reference: URL:http://www.kb.cert.org/vuls/id/190089
+Reference: BID:18382
+Reference: URL:http://www.securityfocus.com/bid/18382
+Reference: VUPEN:ADV-2006-2325
+Reference: URL:http://www.vupen.com/english/advisories/2006/2325
+Reference: OSVDB:26435
+Reference: URL:http://www.osvdb.org/26435
+Reference: OVAL:oval:org.mitre.oval:def:1069
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1069
+Reference: OVAL:oval:org.mitre.oval:def:1836
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1836
+Reference: OVAL:oval:org.mitre.oval:def:1984
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1984
+Reference: SECTRACK:1016287
+Reference: URL:http://securitytracker.com/id?1016287
+Reference: SECUNIA:20633
+Reference: URL:http://secunia.com/advisories/20633
+Reference: XF:powerpoint-record-bo(26784)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/26784
+
+Unspecified vulnerability in Microsoft PowerPoint in Microsoft Office
+2000 SP3, Office XP SP3, Office 2003 SP1 and SP2, Office 2004 for Mac,
+and v. X for Mac allows user-assisted attackers to execute arbitrary
+code via a PowerPoint document with a malformed record, which triggers
+memory corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3449
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3449
+Phase: Assigned (20060707)
+Category: 
+Reference: BUGTRAQ:20060808 Microsoft PowerPoint Malformed Record Memory Corruption
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/442592/100/0/threaded
+Reference: MISC:http://secway.org/advisory/AD20060808.txt
+Reference: MS:MS06-048
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS06-048.mspx
+Reference: CERT:TA06-220A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA06-220A.html
+Reference: CERT-VN:VU#884252
+Reference: URL:http://www.kb.cert.org/vuls/id/884252
+Reference: BID:19341
+Reference: URL:http://www.securityfocus.com/bid/19341
+Reference: OVAL:oval:org.mitre.oval:def:348
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:348
+Reference: SECTRACK:1016657
+Reference: URL:http://securitytracker.com/id?1016657
+Reference: SREASON:1342
+Reference: URL:http://securityreason.com/securityalert/1342
+
+Unspecified vulnerability in Microsoft PowerPoint 2000 through 2003,
+possibly a buffer overflow, allows user-assisted remote attackers to
+execute arbitrary commands via a malformed record in the BIFF file
+format used in a PPT file, a different issue than CVE-2006-1540, aka
+"Microsoft PowerPoint Malformed Record Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3590
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3590
+Phase: Assigned (20060714)
+Category: 
+Reference: BUGTRAQ:20060714 Microsoft PowerPoint 0-day Vulnerability FAQ document written
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/440137/100/0/threaded
+Reference: BUGTRAQ:20060716 Several updates in MS PowerPoint 0-day Vulnerability FAQ at SecuriTeam Blogs
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/440255/100/0/threaded
+Reference: BUGTRAQ:20060718 New PowerPoint Trojan installs itself as LSP
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/440532/100/0/threaded
+Reference: MISC:http://securityresponse.symantec.com/avcenter/venc/data/trojan.ppdropper.b.html
+Reference: MISC:http://isc.sans.org/diary.php?storyid=1484
+Reference: MISC:http://blogs.securiteam.com/?p=508
+Reference: MS:MS06-048
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS06-048.mspx
+Reference: CERT:TA06-220A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA06-220A.html
+Reference: CERT-VN:VU#936945
+Reference: URL:http://www.kb.cert.org/vuls/id/936945
+Reference: BID:18957
+Reference: URL:http://www.securityfocus.com/bid/18957
+Reference: VUPEN:ADV-2006-2795
+Reference: URL:http://www.vupen.com/english/advisories/2006/2795
+Reference: OSVDB:27324
+Reference: URL:http://www.osvdb.org/27324
+Reference: OVAL:oval:org.mitre.oval:def:399
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:399
+Reference: SECTRACK:1016496
+Reference: URL:http://securitytracker.com/id?1016496
+Reference: SECUNIA:21040
+Reference: URL:http://secunia.com/advisories/21040
+Reference: XF:powerpoint-mso-code-execution(27740)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/27740
+Reference: XF:powerpoint-mso-code-execution2(27781)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/27781
+
+mso.dll, as used by Microsoft PowerPoint 2000 through 2003, allows
+user-assisted attackers to execute arbitrary commands via a malformed
+shape container in a PPT file that leads to memory corruption, as
+exploited by Trojan.PPDropper.B, a different issue than CVE-2006-1540
+and CVE-2006-3493.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3655
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3655
+Phase: Assigned (20060717)
+Category: 
+Reference: BUGTRAQ:20060715 MS Power Point Multiple Vulnerabilities - (mso.dll) POC
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/440107/100/0/threaded
+Reference: BUGTRAQ:20060717 New CVE identifiers for separate PowerPoint 0-day issues assigned
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/440867/100/0/threaded
+Reference: BUGTRAQ:20060718 About the latest three Powerpoint vulnerabilities: exploitable?
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/440370/100/0/threaded
+Reference: BID:18993
+Reference: URL:http://www.securityfocus.com/bid/18993
+Reference: VUPEN:ADV-2006-2815
+Reference: URL:http://www.vupen.com/english/advisories/2006/2815
+Reference: OSVDB:27325
+Reference: URL:http://www.osvdb.org/27325
+Reference: SECUNIA:21061
+Reference: URL:http://secunia.com/advisories/21061
+Reference: XF:powerpoint-mso-code-execution2(27781)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/27781
+
+Unspecified vulnerability in mso.dll in Microsoft PowerPoint 2003
+allows user-assisted attackers to execute arbitrary code via a
+crafted PowerPoint file.  NOTE: due to the lack of available details
+as of 20060717, it is unclear how this is related to CVE-2006-3656,
+CVE-2006-3660, and CVE-2006-3590, although it is possible that they
+are all different.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3656
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3656
+Phase: Assigned (20060717)
+Category: 
+Reference: BUGTRAQ:20060715 MS Power Point Multiple Vulnerabilities - (memory corruption) POC
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/440108/100/0/threaded
+Reference: BUGTRAQ:20060717 New CVE identifiers for separate PowerPoint 0-day issues assigned
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/440867/100/0/threaded
+Reference: BUGTRAQ:20060718 About the latest three Powerpoint vulnerabilities: exploitable?
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/440370/100/0/threaded
+Reference: MISC:http://downloads.securityfocus.com/vulnerabilities/exploits/PP2003sp2patched_fr_exploit-method.txt
+Reference: MISC:http://packetstormsecurity.org/0607-exploits/mspp-poc3.txt
+Reference: BID:18993
+Reference: URL:http://www.securityfocus.com/bid/18993
+Reference: BID:19229
+Reference: URL:http://www.securityfocus.com/bid/19229
+Reference: VUPEN:ADV-2006-2815
+Reference: URL:http://www.vupen.com/english/advisories/2006/2815
+Reference: SECUNIA:21061
+Reference: URL:http://secunia.com/advisories/21061
+Reference: XF:powerpoint-mso-code-execution2(27781)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/27781
+Reference: XF:powerpoint-unspecified-memory-corruption(27782)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/27782
+
+Unspecified vulnerability in Microsoft PowerPoint 2003 allows
+user-assisted attackers to cause memory corruption via a crafted
+PowerPoint file, which triggers the corruption when the file is
+closed.  NOTE: due to the lack of available details as of 20060717, it
+is unclear how this is related to CVE-2006-3655, CVE-2006-3660, and
+CVE-2006-3590, although it is possible that they are all different.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3660
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3660
+Phase: Assigned (20060717)
+Category: 
+Reference: BUGTRAQ:20060715 MS Power Point Multiple Vulnerabilities (powerpnt.exe)- POC
+Reference: URL:http://www.securityfocus.com/archive/1/440106/30/30/threaded
+Reference: BUGTRAQ:20060717 New CVE identifiers for separate PowerPoint 0-day issues assigned
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/440867/100/0/threaded
+Reference: BUGTRAQ:20060718 About the latest three Powerpoint vulnerabilities: exploitable?
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/440370/100/0/threaded
+Reference: BID:18993
+Reference: URL:http://www.securityfocus.com/bid/18993
+Reference: VUPEN:ADV-2006-2815
+Reference: URL:http://www.vupen.com/english/advisories/2006/2815
+Reference: SECUNIA:21061
+Reference: URL:http://secunia.com/advisories/21061
+Reference: XF:powerpoint-powerpnt-unspecified(27783)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/27783
+
+Unspecified vulnerability in Microsoft PowerPoint 2003 has unknown
+impact and user-assisted attack vectors related to powerpnt.exe.
+NOTE: due to the lack of available details as of 20060717, it is
+unclear how this is related to CVE-2006-3655, CVE-2006-3656, and
+CVE-2006-3590, although it is possible that they are all different.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3864
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3864
+Phase: Assigned (20060726)
+Category: 
+Reference: BUGTRAQ:20061011 Microsoft Office Malformed Record Memory Corruption Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/448268/100/0/threaded
+Reference: MISC:http://secway.org/advisory/AD20061010.txt
+Reference: HP:HPSBST02161
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: HP:SSRT061264
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: MS:MS06-062
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS06-062.mspx
+Reference: MSKB:922581
+Reference: URL:http://support.microsoft.com/kb/922581
+Reference: CERT-VN:VU#176556
+Reference: URL:http://www.kb.cert.org/vuls/id/176556
+Reference: BID:20384
+Reference: URL:http://www.securityfocus.com/bid/20384
+Reference: VUPEN:ADV-2006-3981
+Reference: URL:http://www.vupen.com/english/advisories/2006/3981
+Reference: OSVDB:29429
+Reference: URL:http://www.osvdb.org/29429
+Reference: OVAL:oval:org.mitre.oval:def:632
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:632
+Reference: SECTRACK:1017034
+Reference: URL:http://securitytracker.com/id?1017034
+Reference: SECUNIA:22339
+Reference: URL:http://secunia.com/advisories/22339
+
+Unspecified vulnerability in mso.dll in Microsoft Office 2000, XP, and
+2003, and Microsoft PowerPoint 2000, XP, and 2003, allows remote
+user-assisted attackers to execute arbitrary code via a malformed
+record in a (1) .DOC, (2) .PPT, or (3) .XLS file that triggers memory
+corruption, related to an "array boundary condition" (possibly an
+array index overflow), a different vulnerability than CVE-2006-3434,
+CVE-2006-3650, and CVE-2006-3868.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-4274
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4274
+Phase: Assigned (20060821)
+Category: 
+Reference: BUGTRAQ:20060820 New PowerPoint 0-day and Trojan - FAQ document ready
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/443890/100/0/threaded
+Reference: BUGTRAQ:20060822 Major updates in PowerPoint FAQ document - not a 0-day issue
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/444051/100/200/threaded
+Reference: BUGTRAQ:20060823 New malware names and updates to PowerPoint FAQ document
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/444137/100/100/threaded
+Reference: FULLDISC:20060822 Major updates in PowerPoint FAQ document - not a 0-day issue
+Reference: URL:http://archives.neohapsis.com/archives/fulldisclosure/2006-08/0597.html
+Reference: MISC:http://isc.sans.org/diary.php?storyid=1618
+Reference: MISC:http://blogs.securiteam.com/?p=557
+Reference: MISC:http://blogs.securiteam.com/?p=559
+Reference: MISC:http://www.darkreading.com/document.asp?doc_id=101970
+Reference: SECTRACK:1016720
+Reference: URL:http://securitytracker.com/id?1016720
+
+** REJECT **
+
+Unknown vulnerability in Microsoft PowerPoint allows user-assisted
+attackers to execute arbitrary code via a crafted PPT document, as
+exploited by malware such as TROJ_MDROPPER.BH.  NOTE: on 20060822, it
+was determined that TROJ_MDROPPER.BH was exploiting CVE-2006-0009, so
+this is not a new vulnerability.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-4854
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4854
+Phase: Assigned (20060919)
+Category: 
+Reference: MISC:http://www.symantec.com/security_response/writeup.jsp?docid=2006-091810-5028-99
+Reference: MISC:http://www.symantec.com/enterprise/security_response/weblog/2006/09/exploit_for_unpatched_vulnerab.html
+Reference: FULLDISC:20060919 New PowerPoint 0-day Trojan in the wild
+Reference: URL:http://lists.grok.org.uk/pipermail/full-disclosure/2006-September/049540.html
+Reference: MISC:http://blogs.securiteam.com/?author=28
+Reference: BID:20059
+Reference: URL:http://www.securityfocus.com/bid/20059
+Reference: VUPEN:ADV-2006-3678
+Reference: URL:http://www.vupen.com/english/advisories/2006/3678
+Reference: SECUNIA:21978
+Reference: URL:http://secunia.com/advisories/21978
+Reference: XF:powerpoint-presentation-code-execution(29009)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/29009
+
+** REJECT **
+
+Unspecified vulnerability in Microsoft Office 2000 (Chinese Edition)
+and Microsoft PowerPoint 2000 (Chinese Edition) allows user-assisted
+attackers to execute arbitrary code via a crafted PPT document, as
+exploited by malware such as Trojan.PPDropper.E.  NOTE: on 20060919,
+Microsoft notified CVE that this is a duplicate of CVE-2006-0009.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-0120
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0120
+Phase: Assigned (20080107)
+Category: 
+Reference: IDEFENSE:20080812 Microsoft PowerPoint Viewer 2003 Cstring Integer Overflow Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=739
+Reference: HP:HPSBST02360
+Reference: URL:http://marc.info/?l=bugtraq&m=121915960406986&w=2
+Reference: HP:SSRT080117
+Reference: URL:http://marc.info/?l=bugtraq&m=121915960406986&w=2
+Reference: MS:MS08-051
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms08-051.mspx
+Reference: CERT:TA08-225A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-225A.html
+Reference: BID:30552
+Reference: URL:http://www.securityfocus.com/bid/30552
+Reference: OVAL:oval:org.mitre.oval:def:5768
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5768
+Reference: VUPEN:ADV-2008-2355
+Reference: URL:http://www.vupen.com/english/advisories/2008/2355
+Reference: SECTRACK:1020676
+Reference: URL:http://www.securitytracker.com/id?1020676
+Reference: SECUNIA:31453
+Reference: URL:http://secunia.com/advisories/31453
+
+Integer overflow in Microsoft PowerPoint Viewer 2003 allows remote
+attackers to execute arbitrary code via a PowerPoint file with a
+malformed picture index that triggers memory corruption, related to
+handling of CString objects, aka "Memory Allocation Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-0121
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0121
+Phase: Assigned (20080107)
+Category: 
+Reference: IDEFENSE:20080812 Microsoft PowerPoint Viewer 2003 Out of Bounds Array Index Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=738
+Reference: HP:HPSBST02360
+Reference: URL:http://marc.info/?l=bugtraq&m=121915960406986&w=2
+Reference: HP:SSRT080117
+Reference: URL:http://marc.info/?l=bugtraq&m=121915960406986&w=2
+Reference: MS:MS08-051
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms08-051.mspx
+Reference: CERT:TA08-225A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-225A.html
+Reference: BID:30554
+Reference: URL:http://www.securityfocus.com/bid/30554
+Reference: OVAL:oval:org.mitre.oval:def:5724
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5724
+Reference: VUPEN:ADV-2008-2355
+Reference: URL:http://www.vupen.com/english/advisories/2008/2355
+Reference: SECTRACK:1020676
+Reference: URL:http://www.securitytracker.com/id?1020676
+Reference: SECUNIA:31453
+Reference: URL:http://secunia.com/advisories/31453
+
+A "memory calculation error" in Microsoft PowerPoint Viewer 2003
+allows remote attackers to execute arbitrary code via a PowerPoint
+file with an invalid picture index that triggers memory corruption,
+aka "Memory Calculation Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-0202
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0202
+Phase: Assigned (20090120)
+Category: 
+Reference: BUGTRAQ:20090610 Secunia Research: Microsoft PowerPoint Freelance Layout Parsing Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/504215/100/0/threaded
+Reference: MISC:http://secunia.com/secunia_research/2009-29/
+Reference: BID:35275
+Reference: URL:http://www.securityfocus.com/bid/35275
+Reference: OSVDB:54961
+Reference: URL:http://www.osvdb.org/54961
+Reference: SECTRACK:1022369
+Reference: URL:http://securitytracker.com/id?1022369
+Reference: SECUNIA:35184
+Reference: URL:http://secunia.com/advisories/35184
+Reference: XF:ms-powerpoint-freelance-bo(51034)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/51034
+
+Array index error in FL21WIN.DLL in the PowerPoint Freelance Windows
+2.1 Translator in Microsoft PowerPoint 2000 and 2002 allows remote
+attackers to execute arbitrary code via a Freelance file with
+unspecified "layout information" that triggers a heap-based buffer
+overflow.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-0220
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0220
+Phase: Assigned (20090120)
+Category: 
+Reference: IDEFENSE:20090512 Microsoft PowerPoint PPT 4.0 Importer Multiple Stack Buffer Overflow Vulnerabilities
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=790
+Reference: MS:MS09-017
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-017.mspx
+Reference: CERT:TA09-132A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-132A.html
+Reference: BID:34833
+Reference: URL:http://www.securityfocus.com/bid/34833
+Reference: OSVDB:54386
+Reference: URL:http://osvdb.org/54386
+Reference: OVAL:oval:org.mitre.oval:def:5610
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5610
+Reference: SECTRACK:1022205
+Reference: URL:http://www.securitytracker.com/id?1022205
+Reference: SECUNIA:32428
+Reference: URL:http://secunia.com/advisories/32428
+Reference: VUPEN:ADV-2009-1290
+Reference: URL:http://www.vupen.com/english/advisories/2009/1290
+
+Multiple stack-based buffer overflows in the PowerPoint 4.0 importer
+(PP4X32.DLL) in Microsoft Office PowerPoint 2000 SP3, 2002 SP3, and
+2003 SP3 allow remote attackers to execute arbitrary code via crafted
+formatting data for paragraphs in a file that uses a PowerPoint 4.0
+native file format, related to (1) an incorrect calculation from a
+record header, or (2) an interget that is used to specify the number
+of bytes to copy, aka "Legacy File Format Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-0221
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0221
+Phase: Assigned (20090120)
+Category: 
+Reference: IDEFENSE:20090512 Microsoft PowerPoint Integer Overflow Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=796
+Reference: MS:MS09-017
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-017.mspx
+Reference: CERT:TA09-132A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-132A.html
+Reference: BID:34835
+Reference: URL:http://www.securityfocus.com/bid/34835
+Reference: OSVDB:54394
+Reference: URL:http://osvdb.org/54394
+Reference: OVAL:oval:org.mitre.oval:def:6127
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6127
+Reference: SECTRACK:1022205
+Reference: URL:http://www.securitytracker.com/id?1022205
+Reference: SECUNIA:32428
+Reference: URL:http://secunia.com/advisories/32428
+Reference: VUPEN:ADV-2009-1290
+Reference: URL:http://www.vupen.com/english/advisories/2009/1290
+
+Integer overflow in Microsoft Office PowerPoint 2002 SP3 and 2003 SP3
+allows remote attackers to execute arbitrary code via a PowerPoint
+file containing a crafted record type for "collaboration information
+for different slides" that contains a field that specifies a large
+number of records, which triggers an under-allocated buffer and a
+heap-based buffer overflow, aka "Integer Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-0224
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0224
+Phase: Assigned (20090120)
+Category: 
+Reference: IDEFENSE:20090512 Microsoft PowerPoint Build List Memory Corruption Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=793
+Reference: MS:MS09-017
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-017.mspx
+Reference: CERT:TA09-132A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-132A.html
+Reference: BID:34879
+Reference: URL:http://www.securityfocus.com/bid/34879
+Reference: OVAL:oval:org.mitre.oval:def:6023
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6023
+Reference: SECTRACK:1022205
+Reference: URL:http://www.securitytracker.com/id?1022205
+Reference: SECUNIA:32428
+Reference: URL:http://secunia.com/advisories/32428
+Reference: VUPEN:ADV-2009-1290
+Reference: URL:http://www.vupen.com/english/advisories/2009/1290
+
+Microsoft Office PowerPoint 2000 SP3, 2002 SP3, 2003 SP3, and 2007 SP1
+and SP2; PowerPoint Viewer 2003 and 2007 SP1 and SP2; PowerPoint in
+Microsoft Office 2004 for Mac and 2008 for Mac; Open XML File Format
+Converter for Mac; Microsoft Works 8.5 and 9.0; and Microsoft Office
+Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats
+SP1 and SP2 do not properly validate PowerPoint files, which allows
+remote attackers to execute arbitrary code via multiple crafted
+BuildList records that include ChartBuild containers, which triggers
+memory corruption, aka "Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-0226
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0226
+Phase: Assigned (20090120)
+Category: 
+Reference: IDEFENSE:20090512 Microsoft PowerPoint 4.2 Conversion Filter Stack Overflow
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=789
+Reference: MS:MS09-017
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-017.mspx
+Reference: CERT:TA09-132A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-132A.html
+Reference: BID:34881
+Reference: URL:http://www.securityfocus.com/bid/34881
+Reference: OVAL:oval:org.mitre.oval:def:6106
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6106
+Reference: SECTRACK:1022205
+Reference: URL:http://www.securitytracker.com/id?1022205
+Reference: SECUNIA:32428
+Reference: URL:http://secunia.com/advisories/32428
+Reference: VUPEN:ADV-2009-1290
+Reference: URL:http://www.vupen.com/english/advisories/2009/1290
+
+Stack-based buffer overflow in the PowerPoint 4.2 conversion filter in
+Microsoft Office PowerPoint 2000 SP3, 2002 SP3, and 2003 SP3 allows
+remote attackers to execute arbitrary code via a long string in sound
+data in a file that uses a PowerPoint 4.0 native file format, leading
+to memory corruption, aka "Legacy File Format Vulnerability," a
+different vulnerability than CVE-2009-0222, CVE-2009-0223,
+CVE-2009-0227, and CVE-2009-1137.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-0227
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0227
+Phase: Assigned (20090120)
+Category: 
+Reference: IDEFENSE:20090512 Microsoft PowerPoint 4.2 Conversion Filter Stack Buffer Overflow Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=787
+Reference: MS:MS09-017
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-017.mspx
+Reference: CERT:TA09-132A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-132A.html
+Reference: BID:34882
+Reference: URL:http://www.securityfocus.com/bid/34882
+Reference: OSVDB:54384
+Reference: URL:http://osvdb.org/54384
+Reference: OVAL:oval:org.mitre.oval:def:6239
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6239
+Reference: SECTRACK:1022205
+Reference: URL:http://www.securitytracker.com/id?1022205
+Reference: SECUNIA:32428
+Reference: URL:http://secunia.com/advisories/32428
+Reference: VUPEN:ADV-2009-1290
+Reference: URL:http://www.vupen.com/english/advisories/2009/1290
+
+Stack-based buffer overflow in the PowerPoint 4.2 conversion filter
+(PP4X32.DLL) in Microsoft Office PowerPoint 2000 SP3, 2002 SP3, and
+2003 SP3 allows remote attackers to execute arbitrary code via a large
+number of structures in sound data in a file that uses a PowerPoint
+4.0 native file format, leading to memory corruption, aka "Legacy File
+Format Vulnerability," a different vulnerability than CVE-2009-0222,
+CVE-2009-0223, CVE-2009-0226, and CVE-2009-1137.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-1129
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1129
+Phase: Assigned (20090325)
+Category: 
+Reference: IDEFENSE:20090512 Microsoft PowerPoint PPT95 Import Multiple Stack Buffer Overflow Vulnerabilities
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=791
+Reference: MS:MS09-017
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-017.mspx
+Reference: CERT:TA09-132A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-132A.html
+Reference: BID:34839
+Reference: URL:http://www.securityfocus.com/bid/34839
+Reference: OSVDB:54387
+Reference: URL:http://osvdb.org/54387
+Reference: OVAL:oval:org.mitre.oval:def:6176
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6176
+Reference: SECTRACK:1022205
+Reference: URL:http://www.securitytracker.com/id?1022205
+Reference: SECUNIA:32428
+Reference: URL:http://secunia.com/advisories/32428
+Reference: VUPEN:ADV-2009-1290
+Reference: URL:http://www.vupen.com/english/advisories/2009/1290
+
+Multiple stack-based buffer overflows in the PowerPoint 95 importer
+(PP7X32.DLL) in Microsoft Office PowerPoint 2000 SP3, 2002 SP3, and
+2003 SP3 allow remote attackers to execute arbitrary code via an
+inconsistent record length in sound data in a file that uses a
+PowerPoint 95 (PPT95) native file format, aka "PP7 Memory Corruption
+Vulnerability," a different vulnerability than CVE-2009-1128.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-1130
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1130
+Phase: Assigned (20090325)
+Category: 
+Reference: IDEFENSE:20090512 Microsoft PowerPoint Notes Container Heap Corruption Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=794
+Reference: BUGTRAQ:20090512 ZDI-09-020: Microsoft Office PowerPoint Notes Container Heap Overflow Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/503454
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-09-020/
+Reference: MS:MS09-017
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-017.mspx
+Reference: CERT:TA09-132A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-132A.html
+Reference: BID:34840
+Reference: URL:http://www.securityfocus.com/bid/34840
+Reference: OVAL:oval:org.mitre.oval:def:5961
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5961
+Reference: SECTRACK:1022205
+Reference: URL:http://www.securitytracker.com/id?1022205
+Reference: SECUNIA:32428
+Reference: URL:http://secunia.com/advisories/32428
+Reference: VUPEN:ADV-2009-1290
+Reference: URL:http://www.vupen.com/english/advisories/2009/1290
+
+Heap-based buffer overflow in Microsoft Office PowerPoint 2002 SP3 and
+2003 SP3, and PowerPoint in Microsoft Office 2004 for Mac, allows
+remote attackers to execute arbitrary code via a crafted structure in
+a Notes container in a PowerPoint file that causes PowerPoint to read
+more data than was allocated when creating a C++ object, leading to an
+overwrite of a function pointer, aka "Heap Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-1131
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1131
+Phase: Assigned (20090325)
+Category: 
+Reference: BUGTRAQ:20090512 Secunia Research: Microsoft PowerPoint Atom Parsing Buffer Overflows
+Reference: URL:http://www.securityfocus.com/archive/1/503451
+Reference: MISC:http://secunia.com/secunia_research/2008-46/
+Reference: MS:MS09-017
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-017.mspx
+Reference: CERT:TA09-132A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-132A.html
+Reference: BID:34841
+Reference: URL:http://www.securityfocus.com/bid/34841
+Reference: OSVDB:54393
+Reference: URL:http://osvdb.org/54393
+Reference: OVAL:oval:org.mitre.oval:def:5351
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5351
+Reference: SECTRACK:1022205
+Reference: URL:http://www.securitytracker.com/id?1022205
+Reference: SECUNIA:32428
+Reference: URL:http://secunia.com/advisories/32428
+Reference: VUPEN:ADV-2009-1290
+Reference: URL:http://www.vupen.com/english/advisories/2009/1290
+
+Multiple stack-based buffer overflows in Microsoft Office PowerPoint
+2000 SP3 allow remote attackers to execute arbitrary code via a large
+amount of data associated with unspecified atoms in a PowerPoint file
+that triggers memory corruption, aka "Data Out of Bounds
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-2572
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2572
+Phase: Assigned (20100630)
+Category: 
+Reference: MS:MS10-088
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-088.mspx
+Reference: CERT:TA10-313A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-313A.html
+Reference: OVAL:oval:org.mitre.oval:def:12195
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12195
+
+Buffer overflow in Microsoft PowerPoint 2002 SP3 and 2003 SP3 allows
+remote attackers to execute arbitrary code via a crafted PowerPoint 95
+document, aka "PowerPoint Parsing Buffer Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-2573
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2573
+Phase: Assigned (20100630)
+Category: 
+Reference: MS:MS10-088
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-088.mspx
+Reference: CERT:TA10-313A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-313A.html
+Reference: OVAL:oval:org.mitre.oval:def:12122
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12122
+
+Integer underflow in Microsoft PowerPoint 2002 SP3 and 2003 SP3,
+PowerPoint Viewer SP2, and Office 2004 for Mac allows remote attackers
+to execute arbitrary code via a crafted PowerPoint document, aka
+"PowerPoint Integer Underflow Causes Heap Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3141
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3141
+Phase: Assigned (20100827)
+Category: 
+Reference: EXPLOIT-DB:14723
+Reference: URL:http://www.exploit-db.com/exploits/14723/
+
+Untrusted search path vulnerability in Microsoft PowerPoint 2010
+allows local users, and possibly remote attackers, to execute
+arbitrary code and conduct DLL hijacking attacks via a Trojan horse
+pptimpconv.dll that is located in the same folder as a .odp, .pot,
+.potm, .potx, .ppa, .pps, .ppsm, .ppsx, .ppt, .pptm, .pptx, .pwz,
+.sldm, or .sldx file.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-0655
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0655
+Phase: Assigned (20110128)
+Category: 
+Reference: MS:MS11-022
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-022.mspx
+Reference: CERT:TA11-102A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-102A.html
+Reference: OVAL:oval:org.mitre.oval:def:12624
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12624
+Reference: SECTRACK:1025340
+Reference: URL:http://www.securitytracker.com/id?1025340
+Reference: VUPEN:ADV-2011-0941
+Reference: URL:http://www.vupen.com/english/advisories/2011/0941
+
+Microsoft PowerPoint 2007 SP2 and 2010; Office 2004, 2008, and 2011
+for Mac; Open XML File Format Converter for Mac; Office Compatibility
+Pack for Word, Excel, and PowerPoint 2007 File Formats SP2; PowerPoint
+Viewer; PowerPoint Viewer 2007 SP2; and PowerPoint Web App do not
+properly validate TimeColorBehaviorContainer Floating Point records in
+PowerPoint documents, which allows remote attackers to execute
+arbitrary code or cause a denial of service (memory corruption) via a
+crafted document containing an invalid record, aka "Floating Point
+Techno-color Time Bandit RCE Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-0656
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0656
+Phase: Assigned (20110128)
+Category: 
+Reference: BUGTRAQ:20110412 ZDI-11-125: Microsoft Office PowerPoint PersistDirectoryEntry Remote Code Execution Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/517482/100/0/threaded
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-11-125
+Reference: MS:MS11-022
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-022.mspx
+Reference: CERT:TA11-102A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-102A.html
+Reference: BID:47251
+Reference: URL:http://www.securityfocus.com/bid/47251
+Reference: OSVDB:71770
+Reference: URL:http://osvdb.org/71770
+Reference: OVAL:oval:org.mitre.oval:def:11761
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:11761
+Reference: SECTRACK:1025340
+Reference: URL:http://www.securitytracker.com/id?1025340
+Reference: VUPEN:ADV-2011-0941
+Reference: URL:http://www.vupen.com/english/advisories/2011/0941
+
+Microsoft PowerPoint 2002 SP3, 2003 SP3, 2007 SP2, and 2010; Office
+2004, 2008, and 2011 for Mac; Open XML File Format Converter for Mac;
+Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File
+Formats SP2; PowerPoint Viewer; PowerPoint Viewer 2007 SP2; and
+PowerPoint Web App do not properly validate PersistDirectoryEntry
+records in PowerPoint documents, which allows remote attackers to
+execute arbitrary code or cause a denial of service (memory
+corruption) via a Slide with a malformed record, which triggers an
+exception and later use of an unspecified method, aka "Persist
+Directory RCE Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-0976
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0976
+Phase: Assigned (20110210)
+Category: 
+Reference: BUGTRAQ:20110207 ZDI-11-044: Microsoft PowerPoint 2007 OfficeArt Atom Remote Code Execution Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/516233/100/0/threaded
+Reference: MISC:http://dvlabs.tippingpoint.com/blog/2011/02/07/zdi-disclosure-microsoft
+Reference: MISC:http://zerodayinitiative.com/advisories/ZDI-11-044/
+Reference: MS:MS11-022
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-022.mspx
+Reference: CERT:TA11-102A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-102A.html
+Reference: OVAL:oval:org.mitre.oval:def:11978
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:11978
+Reference: SECTRACK:1025340
+Reference: URL:http://www.securitytracker.com/id?1025340
+Reference: SECUNIA:43213
+Reference: URL:http://secunia.com/advisories/43213
+Reference: VUPEN:ADV-2011-0941
+Reference: URL:http://www.vupen.com/english/advisories/2011/0941
+
+Microsoft PowerPoint 2002 SP3, 2003 SP3, and 2007 SP2; Office 2004 and
+2008 for Mac; Open XML File Format Converter for Mac; Office
+Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats
+SP2; and PowerPoint Viewer 2007 SP2 do not properly handle Office Art
+containers that have invalid records, which allows remote attackers to
+execute arbitrary code or cause a denial of service (memory
+corruption) via a PowerPoint document with a container that triggers
+certain access to an uninitialized object, aka "OfficeArt Atom RCE
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1269
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1269
+Phase: Assigned (20110304)
+Category: 
+Reference: MS:MS11-036
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-036.mspx
+Reference: OVAL:oval:org.mitre.oval:def:12438
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12438
+
+Microsoft PowerPoint 2002 SP3, 2003 SP3, and 2007 SP2; Office 2004 and
+2008 for Mac; Open XML File Format Converter for Mac; and Office
+Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats
+SP2 make unspecified function calls during file parsing without proper
+handling of memory, which allows remote attackers to execute arbitrary
+code via a crafted PowerPoint document, aka "Presentation Memory
+Corruption RCE Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1270
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1270
+Phase: Assigned (20110304)
+Category: 
+Reference: MS:MS11-036
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-036.mspx
+Reference: OVAL:oval:org.mitre.oval:def:12256
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12256
+
+Buffer overflow in Microsoft PowerPoint 2002 SP3 and 2003 SP3 allows
+remote attackers to execute arbitrary code via a crafted PowerPoint
+document, aka "Presentation Buffer Overrun RCE Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-3396
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3396
+Phase: Assigned (20110909)
+Category: 
+Reference: MS:MS11-094
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS11-094
+Reference: CERT:TA11-347A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-347A.html
+Reference: OVAL:oval:org.mitre.oval:def:14665
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:14665
+
+Untrusted search path vulnerability in Microsoft PowerPoint 2007 SP2
+and 2010 allows local users to gain privileges via a Trojan horse DLL
+in the current working directory, aka "PowerPoint Insecure Library
+Loading Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-3413
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3413
+Phase: Assigned (20110909)
+Category: 
+Reference: MS:MS11-094
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS11-094
+Reference: CERT:TA11-347A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-347A.html
+Reference: OVAL:oval:org.mitre.oval:def:14581
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:14581
+
+Microsoft PowerPoint 2007 SP2; Office 2008 for Mac; Office
+Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats
+SP2; and PowerPoint Viewer 2007 SP2 allow remote attackers to execute
+arbitrary code or cause a denial of service (memory corruption) via an
+invalid OfficeArt record in a PowerPoint document, aka "OfficeArt
+Shape RCE Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2424
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2424
+Phase: Assigned (20150319)
+Category: 
+Reference: MS:MS15-070
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-070
+
+Microsoft PowerPoint 2007 SP3, Word 2007 SP3, PowerPoint 2010 SP2,
+Word 2010 SP2, PowerPoint 2013 SP1, Word 2013 SP1, and PowerPoint 2013
+RT SP1 allow remote attackers to execute arbitrary code or cause a
+denial of service (memory corruption) via a crafted Office document,
+aka "Microsoft Office Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================

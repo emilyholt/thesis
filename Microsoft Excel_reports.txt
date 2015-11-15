@@ -1,0 +1,4089 @@
+
+Name: CVE-1999-0794
+Status: Entry
+Reference: MS:MS99-044
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms99-044.mspx
+Reference: XF:excel-sylk
+Reference: MSKB:Q241900
+Reference: URL:http://support.microsoft.com/default.aspx?scid=kb;[LN];Q241900
+Reference: MSKB:Q241901
+Reference: URL:http://support.microsoft.com/default.aspx?scid=kb;[LN];Q241901
+Reference: MSKB:Q241902
+Reference: URL:http://support.microsoft.com/default.aspx?scid=kb;[LN];Q241902
+
+Microsoft Excel does not warn a user when a macro is present in a
+Symbolic Link (SYLK) format file.
+
+======================================================
+Name: CVE-1999-1055
+Status: Entry
+Reference: MS:MS98-018
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms98-018.asp
+Reference: BID:179
+Reference: URL:http://www.securityfocus.com/bid/179
+Reference: XF:excel-call(1737)
+Reference: URL:http://xforce.iss.net/static/1737.php
+
+Microsoft Excel 97 does not warn the user before executing worksheet
+functions, which could allow attackers to execute arbitrary commands
+by using the CALL function to execute a malicious DLL, aka the Excel
+"CALL Vulnerability."
+
+======================================================
+Name: CVE-2000-0277
+Status: Entry
+Reference: MS:MS00-022
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/MS00-022.asp
+Reference: BID:1087
+Reference: URL:http://www.securityfocus.com/bid/1087
+Reference: OSVDB:1272
+Reference: URL:http://www.osvdb.org/1272
+
+Microsoft Excel 97 and 2000 does not warn the user when executing
+Excel Macro Language (XLM) macros in external text files, which could
+allow an attacker to execute a macro virus, aka the "XLM Text Macro"
+vulnerability.
+
+======================================================
+Name: CVE-2000-0637
+Status: Entry
+Reference: BUGTRAQ:20000711 Excel 2000 vulnerability - executing programs
+Reference: URL:http://www.securityfocus.com/templates/archive.pike?list=1&msg=396B3F8F.9244D290@nat.bg
+Reference: MS:MS00-051
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms00-051.asp
+Reference: BID:1451
+Reference: URL:http://www.securityfocus.com/bid/1451
+Reference: XF:excel-register-function
+Reference: URL:http://xforce.iss.net/static/5016.php
+
+Microsoft Excel 97 and 2000 allows an attacker to execute arbitrary
+commands by specifying a malicious .dll using the Register.ID
+function, aka the "Excel REGISTER.ID Function" vulnerability.
+
+======================================================
+Name: CVE-2001-0718
+Status: Entry
+Reference: BUGTRAQ:20011005 Symantec Security Response SecBul-10042001, Revision1, Malformed Microsoft Excel or PowerPoint documents bypass Microsoft macro security features
+Reference: URL:http://online.securityfocus.com/archive/1/218802
+Reference: MS:MS01-050
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms01-050.asp
+Reference: CERT:CA-2001-28
+Reference: URL:http://www.cert.org/advisories/CA-2001-28.html
+Reference: CERT-VN:VU#287067
+Reference: URL:http://www.kb.cert.org/vuls/id/287067
+Reference: BID:3402
+Reference: URL:http://www.securityfocus.com/bid/3402
+Reference: XF:ms-malformed-document-macro(7223)
+Reference: URL:http://xforce.iss.net/static/7223.php
+
+Vulnerability in (1) Microsoft Excel 2002 and earlier and (2)
+Microsoft PowerPoint 2002 and earlier allows attackers to bypass macro
+restrictions and execute arbitrary commands by modifying the data
+stream in the document.
+
+======================================================
+Name: CVE-2002-0616
+Status: Entry
+Reference: MS:MS02-031
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms02-031.asp
+Reference: XF:excel-inline-macro-execution(9397)
+Reference: URL:http://www.iss.net/security_center/static/9397.php
+Reference: BID:5063
+Reference: URL:http://www.securityfocus.com/bid/5063
+
+The Macro Security Model in Microsoft Excel 2000 and 2002 for Windows
+allows remote attackers to execute code by attaching an inline macro
+to an object within an Excel workbook, aka the "Excel Inline Macros
+Vulnerability."
+
+======================================================
+Name: CVE-2002-0617
+Status: Entry
+Reference: MS:MS02-031
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms02-031.asp
+Reference: BID:5064
+Reference: URL:http://www.securityfocus.com/bid/5064
+Reference: OSVDB:5175
+Reference: URL:http://www.osvdb.org/5175
+Reference: XF:excel-hyperlink-macro-execution(9398)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/9398
+
+The Macro Security Model in Microsoft Excel 2000 and 2002 for Windows
+allows remote attackers to execute code by creating a hyperlink on a
+drawing shape in a source workbook that points to a destination
+workbook containing an autoexecute macro, aka "Hyperlinked Excel
+Workbook Macro Bypass."
+
+======================================================
+Name: CVE-2002-0618
+Status: Entry
+Reference: NTBUGTRAQ:20020524 Excel XP xml stylesheet problems
+Reference: URL:http://marc.theaimsgroup.com/?l=ntbugtraq&m=102256054320377&w=2
+Reference: MISC:http://www.guninski.com/ex$el2.html
+Reference: MS:MS02-031
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms02-031.asp
+Reference: BID:4821
+Reference: URL:http://www.securityfocus.com/bid/4821
+Reference: XF:excel-xsl-script-execution(9399)
+Reference: URL:http://www.iss.net/security_center/static/9399.php
+
+The Macro Security Model in Microsoft Excel 2000 and 2002 for Windows
+allows remote attackers to execute code in the Local Computer zone by
+embedding HTML scripts within an Excel workbook that contains an XSL
+stylesheet, aka "Excel XSL Stylesheet Script Execution".
+
+======================================================
+Name: CVE-2003-0821
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0821
+Phase: Assigned (20030918)
+Category: SF
+Reference: MS:MS03-050
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms03-050.asp
+Reference: XF:excel-macro-execute-code(13681)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/13681
+Reference: BID:9010
+Reference: URL:http://www.securityfocus.com/bid/9010
+Reference: OVAL:oval:org.mitre.oval:def:636
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:636
+Reference: OVAL:oval:org.mitre.oval:def:675
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:675
+Reference: OVAL:oval:org.mitre.oval:def:695
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:695
+
+Microsoft Excel 97, 2000, and 2002 allows remote attackers to execute
+arbitrary code via a spreadsheet with a malicious XLM (Excel 4) macro
+that bypasses the macro security model.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2004-0846
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0846
+Phase: Assigned (20040908)
+Category: SF
+Reference: BUGTRAQ:20041013 Buffer Overflow In Microsoft Excel
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=109779810827096&w=2
+Reference: MS:MS04-033
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms04-033.asp
+Reference: CIAC:P-009
+Reference: URL:http://www.ciac.org/ciac/bulletins/p-009.shtml
+Reference: CERT-VN:VU#274496
+Reference: URL:http://www.kb.cert.org/vuls/id/274496
+Reference: OVAL:oval:org.mitre.oval:def:2673
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:2673
+Reference: OVAL:oval:org.mitre.oval:def:4226
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:4226
+Reference: SECUNIA:12800
+Reference: URL:http://secunia.com/advisories/12800/
+Reference: XF:excel-execute-code(17653)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/17653
+Reference: XF:excel-ms04033-patch(17683)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/17683
+
+Unknown vulnerability in Microsoft Excel 2000, 2002, 2001 for Mac, and
+v.X for Mac allows remote attackers to execute arbitrary code via a
+malicious file containing certain parameters that are not properly
+validated.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2005-3568
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3568
+Phase: Assigned (20051116)
+Category: SF
+Reference: CONFIRM:http://www-1.ibm.com/support/docview.wss?uid=swg1IO00737
+Reference: BID:15376
+Reference: URL:http://www.securityfocus.com/bid/15376
+Reference: OSVDB:20707
+Reference: URL:http://www.osvdb.org/20707
+Reference: SECUNIA:17388
+Reference: URL:http://secunia.com/advisories/17388
+Reference: XF:db2-db2fmp-dos(23088)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/23088
+
+db2fmp process in IBM DB2 Content Manager before 8.2 Fix Pack 10
+allows local users to cause a denial of service (CPU consumption) by
+importing a corrupted Microsoft Excel file, aka "CORRUPTED EXEL FILE
+WILL CAUSE TEXT SEARCH PROCESS LOOPING."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2005-4131
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4131
+Phase: Assigned (20051209)
+Category: 
+Reference: MISC:http://www.eweek.com/article2/0,1759,1899697,00.asp?kc=EWRSS03129TX1K0000614
+Reference: MISC:http://news.zdnet.com/2100-1009_22-5989078.html
+Reference: MISC:http://informationweek.com/story/showArticle.jhtml?articleID=174910198
+Reference: MISC:http://www.theage.com.au/news/breaking/excel-flaw-up-for-sale-on-ebay/2005/12/09/1134086783318.html
+Reference: MISC:http://www.securityfocus.com/news/11363
+Reference: MISC:http://news.com.com/2061-10789_3-5988086.html
+Reference: MISC:http://www.theregister.co.uk/2005/12/10/ebay_pulls_excel_vulnerability_auction/
+Reference: MISC:http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&item=7203336538
+Reference: MISC:http://www.dicks-blog.com/archives/2005/12/08/excel-vulnerability-for-sale/
+Reference: MISC:http://www.osvdb.org/blog/?p=71
+Reference: BUGTRAQ:20060314 High Risk Vulnerability in Microsoft Excel
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/427635/100/0/threaded
+Reference: BUGTRAQ:20060315 [HV-HIGH] Microsoft Excel Named Range Arbitrary Code Execution
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/427698/100/0/threaded
+Reference: CONFIRM:http://support.avaya.com/elmodocs2/security/ASA-2006-069.htm
+Reference: MS:MS06-012
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-012.mspx
+Reference: CERT:TA06-073A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA06-073A.html
+Reference: CERT-VN:VU#642428
+Reference: URL:http://www.kb.cert.org/vuls/id/642428
+Reference: BID:15780
+Reference: URL:http://www.securityfocus.com/bid/15780
+Reference: VUPEN:ADV-2006-0950
+Reference: URL:http://www.vupen.com/english/advisories/2006/0950
+Reference: SECTRACK:1015333
+Reference: URL:http://securitytracker.com/id?1015333
+Reference: SECTRACK:1015766
+Reference: URL:http://securitytracker.com/id?1015766
+Reference: SECUNIA:19138
+Reference: URL:http://secunia.com/advisories/19138
+Reference: SECUNIA:19238
+Reference: URL:http://secunia.com/advisories/19238
+Reference: SREASON:584
+Reference: URL:http://securityreason.com/securityalert/584
+Reference: SREASON:591
+Reference: URL:http://securityreason.com/securityalert/591
+Reference: XF:excel-msvcrt-memmove-bo(23537)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/23537
+
+Unspecified vulnerability in Microsoft Excel 2000, 2002, and 2003, in
+Microsoft Office 2000 SP3 and other packages, allows user-assisted
+attackers to execute arbitrary code via an Excel file with a malformed
+range, which could lead to memory corruption involving an argument to
+the msvcrt.memmove function, aka "Brand new Microsoft Excel
+Vulnerability," as originally placed for sale on eBay as item number
+7203336538.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-0028
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0028
+Phase: Assigned (20051130)
+Category: SF
+Reference: BUGTRAQ:20060314 ZDI-06-004: Microsoft Excel File Format Parsing Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/427632/100/0/threaded
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-06-004.html
+Reference: CONFIRM:http://support.avaya.com/elmodocs2/security/ASA-2006-069.htm
+Reference: MS:MS06-012
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-012.mspx
+Reference: CERT:TA06-073A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA06-073A.html
+Reference: CERT-VN:VU#339878
+Reference: URL:http://www.kb.cert.org/vuls/id/339878
+Reference: VUPEN:ADV-2006-0950
+Reference: URL:http://www.vupen.com/english/advisories/2006/0950
+Reference: OSVDB:23899
+Reference: URL:http://www.osvdb.org/23899
+Reference: OVAL:oval:org.mitre.oval:def:1158
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1158
+Reference: OVAL:oval:org.mitre.oval:def:1411
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1411
+Reference: OVAL:oval:org.mitre.oval:def:1509
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1509
+Reference: OVAL:oval:org.mitre.oval:def:1635
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1635
+Reference: SECTRACK:1015766
+Reference: URL:http://securitytracker.com/id?1015766
+Reference: SECUNIA:19138
+Reference: URL:http://secunia.com/advisories/19138
+Reference: SECUNIA:19238
+Reference: URL:http://secunia.com/advisories/19238
+Reference: SREASON:583
+Reference: URL:http://securityreason.com/securityalert/583
+Reference: XF:excel-parsing-format-file-bo(25225)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/25225
+
+Unspecified vulnerability in Microsoft Excel 2000, 2002, and 2003, in
+Microsoft Office 2000 SP3 and other packages, allows user-assisted
+attackers to execute arbitrary code via a BIFF parsing format file
+containing malformed BOOLERR records that lead to memory corruption,
+probably involving invalid pointers.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-0029
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0029
+Phase: Assigned (20051130)
+Category: SF/CF/MP/SA/AN/unknown
+Reference: CONFIRM:http://support.avaya.com/elmodocs2/security/ASA-2006-069.htm
+Reference: MS:MS06-012
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-012.mspx
+Reference: CERT:TA06-073A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA06-073A.html
+Reference: CERT-VN:VU#235774
+Reference: URL:http://www.kb.cert.org/vuls/id/235774
+Reference: VUPEN:ADV-2006-0950
+Reference: URL:http://www.vupen.com/english/advisories/2006/0950
+Reference: OSVDB:23900
+Reference: URL:http://www.osvdb.org/23900
+Reference: OVAL:oval:org.mitre.oval:def:1522
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1522
+Reference: OVAL:oval:org.mitre.oval:def:1570
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1570
+Reference: OVAL:oval:org.mitre.oval:def:1579
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1579
+Reference: OVAL:oval:org.mitre.oval:def:1633
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1633
+Reference: SECTRACK:1015766
+Reference: URL:http://securitytracker.com/id?1015766
+Reference: SECUNIA:19138
+Reference: URL:http://secunia.com/advisories/19138
+Reference: SECUNIA:19238
+Reference: URL:http://secunia.com/advisories/19238
+Reference: SREASON:585
+Reference: URL:http://securityreason.com/securityalert/585
+Reference: SREASON:586
+Reference: URL:http://securityreason.com/securityalert/586
+Reference: XF:excel-description-bo(25227)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/25227
+
+Unspecified vulnerability in Microsoft Excel 2000, 2002, and 2003, in
+Microsoft Office 2000 SP3 and other packages, allows user-assisted
+attackers to execute arbitrary code via an Excel file with a malformed
+description, which leads to memory corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-0030
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0030
+Phase: Assigned (20051130)
+Category: SF/CF/MP/SA/AN/unknown
+Reference: CONFIRM:http://support.avaya.com/elmodocs2/security/ASA-2006-069.htm
+Reference: MS:MS06-012
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-012.mspx
+Reference: CERT:TA06-073A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA06-073A.html
+Reference: CERT-VN:VU#123222
+Reference: URL:http://www.kb.cert.org/vuls/id/123222
+Reference: BID:16181
+Reference: URL:http://www.securityfocus.com/bid/16181
+Reference: VUPEN:ADV-2006-0950
+Reference: URL:http://www.vupen.com/english/advisories/2006/0950
+Reference: OSVDB:23901
+Reference: URL:http://www.osvdb.org/23901
+Reference: OVAL:oval:org.mitre.oval:def:1401
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1401
+Reference: OVAL:oval:org.mitre.oval:def:1510
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1510
+Reference: OVAL:oval:org.mitre.oval:def:1630
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1630
+Reference: OVAL:oval:org.mitre.oval:def:1666
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1666
+Reference: SECTRACK:1015766
+Reference: URL:http://securitytracker.com/id?1015766
+Reference: SECUNIA:19138
+Reference: URL:http://secunia.com/advisories/19138
+Reference: SECUNIA:19238
+Reference: URL:http://secunia.com/advisories/19238
+Reference: XF:excel-graphic-bo(25229)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/25229
+
+Unspecified vulnerability in Microsoft Excel 2000, 2002, and 2003, in
+Microsoft Office 2000 SP3 and other packages, allows user-assisted
+attackers to execute arbitrary code via an Excel file with a malformed
+graphic, which leads to memory corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-0031
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0031
+Phase: Assigned (20051130)
+Category: SF/CF/MP/SA/AN/unknown
+Reference: BUGTRAQ:20060315 [xfocus-SD-060314]Microsoft Office Excel Buffer Overflow Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/427699/100/0/threaded
+Reference: FULLDISC:20060314 [xfocus-SD-060314]Microsoft Office Excel Buffer Overflow Vulnerability
+Reference: URL:http://archives.neohapsis.com/archives/fulldisclosure/2006-02/1521.html
+Reference: VULNWATCH:20060315 [xfocus-SD-060314]Microsoft Office Excel Buffer Overflow Vulnerability
+Reference: CONFIRM:http://support.avaya.com/elmodocs2/security/ASA-2006-069.htm
+Reference: MS:MS06-012
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-012.mspx
+Reference: CERT:TA06-073A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA06-073A.html
+Reference: CERT-VN:VU#104302
+Reference: URL:http://www.kb.cert.org/vuls/id/104302
+Reference: BID:17101
+Reference: URL:http://www.securityfocus.com/bid/17101
+Reference: VUPEN:ADV-2006-0950
+Reference: URL:http://www.vupen.com/english/advisories/2006/0950
+Reference: OSVDB:23902
+Reference: URL:http://www.osvdb.org/23902
+Reference: OVAL:oval:org.mitre.oval:def:1327
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1327
+Reference: OVAL:oval:org.mitre.oval:def:1525
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1525
+Reference: OVAL:oval:org.mitre.oval:def:1750
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1750
+Reference: OVAL:oval:org.mitre.oval:def:763
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:763
+Reference: SECTRACK:1015766
+Reference: URL:http://securitytracker.com/id?1015766
+Reference: SECUNIA:19138
+Reference: URL:http://secunia.com/advisories/19138
+Reference: SECUNIA:19238
+Reference: URL:http://secunia.com/advisories/19238
+Reference: SREASON:589
+Reference: URL:http://securityreason.com/securityalert/589
+Reference: XF:excel-record-bo(25228)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/25228
+
+Stack-based buffer overflow in Microsoft Excel 2000, 2002, and 2003,
+in Microsoft Office 2000 SP3 and other packages, allows user-assisted
+attackers to execute arbitrary code via an Excel file with a malformed
+record with a modified length value, which leads to memory corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-1301
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1301
+Phase: Assigned (20060320)
+Category: 
+Reference: MS:MS06-037
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-037.mspx
+Reference: BID:18853
+Reference: URL:http://www.securityfocus.com/bid/18853
+Reference: VUPEN:ADV-2006-2755
+Reference: URL:http://www.vupen.com/english/advisories/2006/2755
+Reference: OVAL:oval:org.mitre.oval:def:557
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:557
+Reference: SECTRACK:1016472
+Reference: URL:http://securitytracker.com/id?1016472
+
+Microsoft Excel 2000 through 2004 allows user-assisted attackers to
+execute arbitrary code via a .xls file with a crafted SELECTION record
+that triggers memory corruption, a different vulnerability than
+CVE-2006-1302.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-1302
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1302
+Phase: Assigned (20060320)
+Category: 
+Reference: BUGTRAQ:20060712 NSFOCUS SA2006-05 : Microsoft Excel SELECTION Record Memory Corruption Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/439914/100/0/threaded
+Reference: MISC:http://www.nsfocus.com/english/homepage/research/0605.htm
+Reference: MS:MS06-037
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-037.mspx
+Reference: BID:18885
+Reference: URL:http://www.securityfocus.com/bid/18885
+Reference: VUPEN:ADV-2006-2755
+Reference: URL:http://www.vupen.com/english/advisories/2006/2755
+Reference: OVAL:oval:org.mitre.oval:def:379
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:379
+Reference: SECTRACK:1016472
+Reference: URL:http://securitytracker.com/id?1016472
+Reference: SREASON:1238
+Reference: URL:http://securityreason.com/securityalert/1238
+
+Buffer overflow in Microsoft Excel 2000 through 2003 allows
+user-assisted attackers to execute arbitrary code via a .xls file
+with certain crafted fields in a SELECTION record, which triggers
+memory corruption, aka "Malformed SELECTION record Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-1304
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1304
+Phase: Assigned (20060320)
+Category: 
+Reference: BUGTRAQ:20060712 NSFOCUS SA2006-06 : Microsoft Excel COLINFO Record Buffer Overflow Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/439909/100/0/threaded
+Reference: MISC:http://www.nsfocus.com/english/homepage/research/0606.htm
+Reference: MS:MS06-037
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-037.mspx
+Reference: BID:18888
+Reference: URL:http://www.securityfocus.com/bid/18888
+Reference: VUPEN:ADV-2006-2755
+Reference: URL:http://www.vupen.com/english/advisories/2006/2755
+Reference: OVAL:oval:org.mitre.oval:def:545
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:545
+Reference: SECTRACK:1016472
+Reference: URL:http://securitytracker.com/id?1016472
+
+Buffer overflow in Microsoft Excel 2000 through 2003 allows
+user-assisted attackers to execute arbitrary code via a .xls file
+with a crafted COLINFO record, which triggers the overflow during a
+"data filling operation."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-1306
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1306
+Phase: Assigned (20060320)
+Category: 
+Reference: BUGTRAQ:20060712 Microsoft Excel Array Index Error Remote Code Execution
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/439884/100/0/threaded
+Reference: MISC:http://secway.org/advisory/AD20060711.txt
+Reference: MS:MS06-037
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-037.mspx
+Reference: BID:18886
+Reference: URL:http://www.securityfocus.com/bid/18886
+Reference: VUPEN:ADV-2006-2755
+Reference: URL:http://www.vupen.com/english/advisories/2006/2755
+Reference: OVAL:oval:org.mitre.oval:def:950
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:950
+Reference: SECTRACK:1016472
+Reference: URL:http://securitytracker.com/id?1016472
+
+Microsoft Excel 2000 through 2004 allows user-assisted attackers to
+execute arbitrary code via a .xls file with a crafted BIFF record with
+an attacker-controlled array index that is used for a function
+pointer, aka "Malformed OBJECT record Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-1308
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1308
+Phase: Assigned (20060320)
+Category: 
+Reference: FULLDISC:20060712 Microsoft Excel Could Allow Remote Code Execution by Malformed FNGROUPCOUNT value Vulnerability
+Reference: URL:http://lists.grok.org.uk/pipermail/full-disclosure/2006-July/047837.html
+Reference: MS:MS06-037
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-037.mspx
+Reference: BID:18890
+Reference: URL:http://www.securityfocus.com/bid/18890
+Reference: VUPEN:ADV-2006-2755
+Reference: URL:http://www.vupen.com/english/advisories/2006/2755
+Reference: OVAL:oval:org.mitre.oval:def:243
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:243
+Reference: SECTRACK:1016472
+Reference: URL:http://securitytracker.com/id?1016472
+Reference: XF:excel-fngroupcount-bo(27464)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/27464
+
+Unspecified vulnerability in Microsoft Excel 2000 through 2004 allows
+user-assisted attackers to execute arbitrary code via a .xls file
+with a crafted FNGROUPCOUNT value.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-1309
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1309
+Phase: Assigned (20060320)
+Category: 
+Reference: MS:MS06-037
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-037.mspx
+Reference: BID:18910
+Reference: URL:http://www.securityfocus.com/bid/18910
+Reference: VUPEN:ADV-2006-2755
+Reference: URL:http://www.vupen.com/english/advisories/2006/2755
+Reference: OVAL:oval:org.mitre.oval:def:752
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:752
+Reference: SECTRACK:1016472
+Reference: URL:http://securitytracker.com/id?1016472
+
+Microsoft Excel 2000 through 2004 allows user-assisted attackers to
+execute arbitrary code via a .xls file with a crafted LABEL record
+that triggers memory corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-2387
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2387
+Phase: Assigned (20060515)
+Category: 
+Reference: BUGTRAQ:20061010 ZDI-06-033: Microsoft Office Excel File Format DATETIME Record Parsing Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/448147/100/0/threaded
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-06-033.html
+Reference: HP:HPSBST02161
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: HP:SSRT061264
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: MS:MS06-059
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS06-059.mspx
+Reference: CERT-VN:VU#706668
+Reference: URL:http://www.kb.cert.org/vuls/id/706668
+Reference: BID:20344
+Reference: URL:http://www.securityfocus.com/bid/20344
+Reference: VUPEN:ADV-2006-3978
+Reference: URL:http://www.vupen.com/english/advisories/2006/3978
+Reference: OVAL:oval:org.mitre.oval:def:570
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:570
+Reference: SECTRACK:1017031
+Reference: URL:http://securitytracker.com/id?1017031
+
+Unspecified vulnerability in Microsoft Excel 2000, 2002, 2003, 2004
+for Mac, v.X for Mac, Excel Viewer 2003, and Microsoft Works Suite
+2004 through 2006 allows user-assisted attackers to execute arbitrary
+code via a crafted DATETIME record in an XLS file, a different
+vulnerability than CVE-2006-3867 and CVE-2006-3875.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3014
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3014
+Phase: Assigned (20060613)
+Category: 
+Reference: FULLDISC:20060620 Microsoft Excel File Embedded Shockwave Flash Object Exploit
+Reference: URL:http://archives.neohapsis.com/archives/fulldisclosure/2006-06/0414.html
+Reference: CONFIRM:http://www.adobe.com/support/security/bulletins/apsb06-11.html
+Reference: MISC:http://hackingspirits.com/vuln-rnd/vuln-rnd.html
+Reference: MISC:http://www.securiteam.com/windowsntfocus/5TP0M0KIUA.html
+Reference: MS:MS06-069
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-069.mspx
+Reference: CERT:TA06-318A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA06-318A.html
+Reference: BID:18583
+Reference: URL:http://www.securityfocus.com/bid/18583
+Reference: BID:19980
+Reference: URL:http://www.securityfocus.com/bid/19980
+Reference: VUPEN:ADV-2006-3577
+Reference: URL:http://www.vupen.com/english/advisories/2006/3577
+Reference: VUPEN:ADV-2006-3573
+Reference: URL:http://www.vupen.com/english/advisories/2006/3573
+Reference: VUPEN:ADV-2006-4507
+Reference: URL:http://www.vupen.com/english/advisories/2006/4507
+Reference: OVAL:oval:org.mitre.oval:def:538
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:538
+Reference: SECTRACK:1016344
+Reference: URL:http://securitytracker.com/id?1016344
+Reference: SECUNIA:21865
+Reference: URL:http://secunia.com/advisories/21865
+Reference: SECUNIA:22882
+Reference: URL:http://secunia.com/advisories/22882
+Reference: XF:excel-shockwave-code-execution(27312)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/27312
+
+Microsoft Excel allows user-assisted attackers to execute arbitrary
+javascript and redirect users to arbitrary sites via an Excel
+spreadsheet with an embedded Shockwave Flash Player ActiveX Object,
+which is automatically executed when the user opens the spreadsheet.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3059
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3059
+Phase: Assigned (20060616)
+Category: 
+Reference: BUGTRAQ:20060618 Microsoft Excel 0-day Vulnerability FAQ document written
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/437636/100/0/threaded
+Reference: BUGTRAQ:20060621 Excel 0-day FAQ updated with Microsoft advisory information
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/437936/100/0/threaded
+Reference: MISC:http://blogs.securiteam.com/?p=451
+Reference: CONFIRM:http://blogs.technet.com/msrc/archive/2006/06/16/436174.aspx
+Reference: MS:MS06-037
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-037.mspx
+Reference: CERT:TA06-167A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA06-167A.html
+Reference: MISC:http://isc.sans.org/diary.php?storyid=1420
+Reference: CERT:TA06-192A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA06-192A.html
+Reference: CERT-VN:VU#802324
+Reference: URL:http://www.kb.cert.org/vuls/id/802324
+Reference: BID:18422
+Reference: URL:http://www.securityfocus.com/bid/18422
+Reference: VUPEN:ADV-2006-2361
+Reference: URL:http://www.vupen.com/english/advisories/2006/2361
+Reference: VUPEN:ADV-2006-2755
+Reference: URL:http://www.vupen.com/english/advisories/2006/2755
+Reference: OSVDB:26527
+Reference: URL:http://www.osvdb.org/26527
+Reference: OVAL:oval:org.mitre.oval:def:537
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:537
+Reference: SECTRACK:1016316
+Reference: URL:http://securitytracker.com/id?1016316
+Reference: SECUNIA:20686
+Reference: URL:http://secunia.com/advisories/20686
+Reference: XF:excel-unspecified-code-execution(27179)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/27179
+
+Unspecified vulnerability in Microsoft Excel 2000 through 2004 allows
+remote user-assisted attackers to execute arbitrary code via
+unspecified vectors.  NOTE: this is a different vulnerability than
+CVE-2006-3086.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3086
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3086
+Phase: Assigned (20060619)
+Category: 
+Reference: BUGTRAQ:20060622 MS Excel Remote Code Execution POC Exploit
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/438057/100/0/threaded
+Reference: BUGTRAQ:20060622 RE: MS Excel Remote Code Execution POC Exploit
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/438093/100/0/threaded
+Reference: BUGTRAQ:20060622 Re: MS Excel Remote Code Execution POC Exploit
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/438096/100/0/threaded
+Reference: BUGTRAQ:20060623 Re: Re: MS Excel Remote Code Execution POC Exploit
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/438156/100/0/threaded
+Reference: BUGTRAQ:20060623 Re: MS Excel Remote Code Execution POC Exploit
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/438373/100/0/threaded
+Reference: BUGTRAQ:20060808 TSRT-06-10: Microsoft HLINK.DLL Hyperlink Object Library Buffer Overflow Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/442724/100/0/threaded
+Reference: FULLDISC:20060618 ***ULTRALAME*** Microsoft Excel Unicode Overflow
+Reference: URL:http://marc.theaimsgroup.com/?l=full-disclosure&m=115067840426070&w=2
+Reference: MISC:http://www.tippingpoint.com/security/advisories/TSRT-06-10.html
+Reference: MILW0RM:1927
+Reference: URL:http://milw0rm.com/exploits/1927
+Reference: MISC:http://blogs.technet.com/msrc/archive/2006/06/20/437826.aspx
+Reference: MS:MS06-050
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-050.mspx
+Reference: CERT-VN:VU#394444
+Reference: URL:http://www.kb.cert.org/vuls/id/394444
+Reference: BID:18500
+Reference: URL:http://www.securityfocus.com/bid/18500
+Reference: VUPEN:ADV-2006-2431
+Reference: URL:http://www.vupen.com/english/advisories/2006/2431
+Reference: OSVDB:26666
+Reference: URL:http://www.osvdb.org/26666
+Reference: OVAL:oval:org.mitre.oval:def:999
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:999
+Reference: SECTRACK:1016339
+Reference: URL:http://securitytracker.com/id?1016339
+Reference: SECUNIA:20748
+Reference: URL:http://secunia.com/advisories/20748
+Reference: XF:excel-hlink-bo(27224)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/27224
+
+Stack-based buffer overflow in the HrShellOpenWithMonikerDisplayName
+function in Microsoft Hyperlink Object Library (hlink.dll) allows
+remote attackers to cause a denial of service (crash) and possibly
+execute arbitrary code via a long hyperlink, as demonstrated using an
+Excel worksheet with a long link in Unicode, aka "Hyperlink COM Object
+Buffer Overflow Vulnerability." NOTE: this is a different issue than
+CVE-2006-3059.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3431
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3431
+Phase: Assigned (20060707)
+Category: 
+Reference: BUGTRAQ:20060703 Excel 2000/XP/2003 Style 0day POC
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/438963/100/0/threaded
+Reference: BUGTRAQ:20060707 Major updates to Excel 0-day Vulnerability FAQ at SecuriTeam Blogs
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/439427/100/0/threaded
+Reference: BUGTRAQ:20060711 New CVE number states Excel Style handling as a separate issue
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=115274676314243&w=2
+Reference: HP:HPSBST02161
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: HP:SSRT061264
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: MS:MS06-059
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS06-059.mspx
+Reference: BID:18872
+Reference: URL:http://www.securityfocus.com/bid/18872
+Reference: VUPEN:ADV-2006-2689
+Reference: URL:http://www.vupen.com/english/advisories/2006/2689
+Reference: OVAL:oval:org.mitre.oval:def:431
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:431
+Reference: SECTRACK:1016430
+Reference: URL:http://securitytracker.com/id?1016430
+Reference: SECUNIA:20268
+Reference: URL:http://secunia.com/advisories/20268
+
+Buffer overflow in certain Asian language versions of Microsoft Excel
+might allow user-assisted attackers to execute arbitrary code via a
+crafted STYLE record in a spreadsheet that triggers the overflow when
+the user attempts to repair the document or selects the "Style"
+option, as demonstrated by nanika.xls.  NOTE: Microsoft has confirmed
+to CVE via e-mail that this is different than the other Excel
+vulnerabilities announced before 20060707, including CVE-2006-3059 and
+CVE-2006-3086.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3867
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3867
+Phase: Assigned (20060726)
+Category: 
+Reference: HP:HPSBST02161
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: HP:SSRT061264
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: MS:MS06-059
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS06-059.mspx
+Reference: CERT-VN:VU#821772
+Reference: URL:http://www.kb.cert.org/vuls/id/821772
+Reference: BID:20345
+Reference: URL:http://www.securityfocus.com/bid/20345
+Reference: VUPEN:ADV-2006-3978
+Reference: URL:http://www.vupen.com/english/advisories/2006/3978
+Reference: OVAL:oval:org.mitre.oval:def:481
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:481
+Reference: SECTRACK:1017031
+Reference: URL:http://securitytracker.com/id?1017031
+
+Unspecified vulnerability in Microsoft Excel 2000, 2002, 2003, 2004
+for Mac, v.X for Mac, and Excel Viewer 2003 allows user-assisted
+attackers to execute arbitrary code via a crafted Lotus 1-2-3 file, a
+different vulnerability than CVE-2006-2387 and CVE-2006-3875.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3875
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3875
+Phase: Assigned (20060726)
+Category: 
+Reference: HP:HPSBST02161
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: HP:SSRT061264
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: MS:MS06-059
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS06-059.mspx
+Reference: CERT-VN:VU#252500
+Reference: URL:http://www.kb.cert.org/vuls/id/252500
+Reference: BID:20391
+Reference: URL:http://www.securityfocus.com/bid/20391
+Reference: VUPEN:ADV-2006-3978
+Reference: URL:http://www.vupen.com/english/advisories/2006/3978
+Reference: OVAL:oval:org.mitre.oval:def:486
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:486
+Reference: SECTRACK:1017031
+Reference: URL:http://securitytracker.com/id?1017031
+
+Unspecified vulnerability in Microsoft Excel 2000, 2002, 2003, 2004
+for Mac, v.X for Mac, and Excel Viewer 2003 allows user-assisted
+attackers to execute arbitrary code via a crafted COLINFO record in an
+XLS file, a different vulnerability than CVE-2006-2387 and
+CVE-2006-3867.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-0027
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0027
+Phase: Assigned (20070103)
+Category: 
+Reference: HP:HPSBST02184
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/457274/100/0/threaded
+Reference: HP:SSRT071296
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/457274/100/0/threaded
+Reference: MS:MS07-002
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS07-002.mspx
+Reference: CERT:TA07-009A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-009A.html
+Reference: CERT-VN:VU#749964
+Reference: URL:http://www.kb.cert.org/vuls/id/749964
+Reference: BID:21856
+Reference: URL:http://www.securityfocus.com/bid/21856
+Reference: VUPEN:ADV-2007-0103
+Reference: URL:http://www.vupen.com/english/advisories/2007/0103
+Reference: OSVDB:31255
+Reference: URL:http://www.osvdb.org/31255
+Reference: OVAL:oval:org.mitre.oval:def:119
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:119
+Reference: SECTRACK:1017487
+Reference: URL:http://securitytracker.com/id?1017487
+
+Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2, 2004 for Mac, and v.X for Mac
+allows remote attackers to execute arbitrary code via malformed IMDATA
+records that trigger memory corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-0028
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0028
+Phase: Assigned (20070103)
+Category: 
+Reference: MISC:http://www.fortinet.com/FortiGuardCenter/advisory/FG-2006-30.html
+Reference: MISC:http://www.fortinet.com/FortiGuardCenter/advisory/FGA-2007-01.html
+Reference: HP:HPSBST02184
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/457274/100/0/threaded
+Reference: HP:SSRT071296
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/457274/100/0/threaded
+Reference: MS:MS07-002
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS07-002.mspx
+Reference: CERT:TA07-009A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-009A.html
+Reference: CERT-VN:VU#493185
+Reference: URL:http://www.kb.cert.org/vuls/id/493185
+Reference: BID:21952
+Reference: URL:http://www.securityfocus.com/bid/21952
+Reference: VUPEN:ADV-2007-0103
+Reference: URL:http://www.vupen.com/english/advisories/2007/0103
+Reference: OSVDB:31249
+Reference: URL:http://www.osvdb.org/31249
+Reference: OVAL:oval:org.mitre.oval:def:768
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:768
+Reference: SECTRACK:1017485
+Reference: URL:http://securitytracker.com/id?1017485
+Reference: SECUNIA:23676
+Reference: URL:http://secunia.com/advisories/23676
+
+Microsoft Excel 2000, 2002, 2003, Viewer 2003, Office 2004 for Mac,
+and Office v.X for Mac does not properly handle certain opcodes, which
+allows user-assisted remote attackers to execute arbitrary code via a
+crafted XLS file, which results in an "Improper Memory Access
+Vulnerability."  NOTE: an early disclosure of this issue used
+CVE-2006-3432, but only CVE-2007-0028 should be used.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-0029
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0029
+Phase: Assigned (20070103)
+Category: 
+Reference: HP:HPSBST02184
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/457274/100/0/threaded
+Reference: HP:SSRT071296
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/457274/100/0/threaded
+Reference: MS:MS07-002
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS07-002.mspx
+Reference: CERT:TA07-009A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-009A.html
+Reference: BID:21877
+Reference: URL:http://www.securityfocus.com/bid/21877
+Reference: VUPEN:ADV-2007-0103
+Reference: URL:http://www.vupen.com/english/advisories/2007/0103
+Reference: OSVDB:31256
+Reference: URL:http://www.osvdb.org/31256
+Reference: OVAL:oval:org.mitre.oval:def:1102
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1102
+Reference: SECTRACK:1017487
+Reference: URL:http://securitytracker.com/id?1017487
+
+Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2, 2004 for Mac, and v.X for Mac
+allows user-assisted remote attackers to execute arbitrary code via a
+malformed string, aka "Excel Malformed String Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-0030
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0030
+Phase: Assigned (20070103)
+Category: 
+Reference: IDEFENSE:20070109 Microsoft Excel Invalid Column Heap Corruption Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=460
+Reference: HP:HPSBST02184
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/457274/100/0/threaded
+Reference: HP:SSRT071296
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/457274/100/0/threaded
+Reference: MS:MS07-002
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS07-002.mspx
+Reference: CERT:TA07-009A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-009A.html
+Reference: CERT-VN:VU#302836
+Reference: URL:http://www.kb.cert.org/vuls/id/302836
+Reference: BID:21925
+Reference: URL:http://www.securityfocus.com/bid/21925
+Reference: VUPEN:ADV-2007-0103
+Reference: URL:http://www.vupen.com/english/advisories/2007/0103
+Reference: OSVDB:31257
+Reference: URL:http://www.osvdb.org/31257
+Reference: OVAL:oval:org.mitre.oval:def:323
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:323
+Reference: SECTRACK:1017487
+Reference: URL:http://securitytracker.com/id?1017487
+
+Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2, 2004 for Mac, and v.X
+for Mac allows user-assisted remote attackers to execute arbitrary
+code via an Excel file with an out-of-range Column field in certain
+BIFF8 record types, which references arbitrary memory.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-0031
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0031
+Phase: Assigned (20070103)
+Category: 
+Reference: IDEFENSE:20070109 Microsoft Excel Long Palette Heap Overflow Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=461
+Reference: HP:HPSBST02184
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/457274/100/0/threaded
+Reference: HP:SSRT071296
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/457274/100/0/threaded
+Reference: MS:MS07-002
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS07-002.mspx
+Reference: CERT:TA07-009A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-009A.html
+Reference: CERT-VN:VU#625532
+Reference: URL:http://www.kb.cert.org/vuls/id/625532
+Reference: BID:21922
+Reference: URL:http://www.securityfocus.com/bid/21922
+Reference: VUPEN:ADV-2007-0103
+Reference: URL:http://www.vupen.com/english/advisories/2007/0103
+Reference: OSVDB:31258
+Reference: URL:http://www.osvdb.org/31258
+Reference: OVAL:oval:org.mitre.oval:def:753
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:753
+Reference: SECTRACK:1017487
+Reference: URL:http://securitytracker.com/id?1017487
+
+Heap-based buffer overflow in Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2,
+2004 for Mac, and v.X for Mac allows user-assisted remote attackers to
+execute arbitrary code via a BIFF8 spreadsheet with a PALETTE record that
+contains a large number of entries.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-0215
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0215
+Phase: Assigned (20070112)
+Category: 
+Reference: BUGTRAQ:20070508 ZDI-07-026: Microsoft Excel BIFF File Format Named Graph Record Parsing Stack Overflow Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/467988/100/0/threaded
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-07-026.html
+Reference: HP:HPSBST02214
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/468871/100/200/threaded
+Reference: HP:SSRT071422
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/468871/100/200/threaded
+Reference: MS:MS07-023
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms07-023.mspx
+Reference: CERT:TA07-128A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-128A.html
+Reference: BID:23760
+Reference: URL:http://www.securityfocus.com/bid/23760
+Reference: VUPEN:ADV-2007-1708
+Reference: URL:http://www.vupen.com/english/advisories/2007/1708
+Reference: OSVDB:34393
+Reference: URL:http://www.osvdb.org/34393
+Reference: OVAL:oval:org.mitre.oval:def:1971
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1971
+Reference: SECTRACK:1018012
+Reference: URL:http://www.securitytracker.com/id?1018012
+Reference: SECUNIA:25150
+Reference: URL:http://secunia.com/advisories/25150
+Reference: XF:excel-biff-file-bo(33913)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/33913
+
+Stack-based buffer overflow in Microsoft Excel 2000 SP3, 2002 SP3,
+2003 SP2, and 2003 Viewer allows user-assisted remote attackers to
+execute arbitrary code via a .XLS BIFF file with a malformed Named
+Graph record, which results in memory corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-0671
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0671
+Phase: Assigned (20070202)
+Category: 
+Reference: MISC:http://vil.nai.com/vil/content/v_141393.htm
+Reference: MISC:http://www.avertlabs.com/research/blog/?p=191
+Reference: CONFIRM:http://www.microsoft.com/technet/security/advisory/932553.mspx
+Reference: MS:MS07-015
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS07-015.mspx
+Reference: CERT:TA07-044A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-044A.html
+Reference: CERT-VN:VU#613740
+Reference: URL:http://www.kb.cert.org/vuls/id/613740
+Reference: BID:22383
+Reference: URL:http://www.securityfocus.com/bid/22383
+Reference: VUPEN:ADV-2007-0463
+Reference: URL:http://www.vupen.com/english/advisories/2007/0463
+Reference: OSVDB:31901
+Reference: URL:http://osvdb.org/31901
+Reference: OVAL:oval:org.mitre.oval:def:301
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:301
+Reference: SECTRACK:1017584
+Reference: URL:http://securitytracker.com/id?1017584
+Reference: SECUNIA:24008
+Reference: URL:http://secunia.com/advisories/24008
+Reference: XF:office-unspecified-code-execution(32178)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/32178
+
+Unspecified vulnerability in Microsoft Excel 2000, XP, 2003, and 2004
+for Mac, and possibly other Office products, allows remote
+user-assisted attackers to execute arbitrary code via unknown attack
+vectors, as demonstrated by Exploit-MSExcel.h in targeted zero-day
+attacks.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-1203
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1203
+Phase: Assigned (20070302)
+Category: 
+Reference: HP:HPSBST02214
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/468871/100/200/threaded
+Reference: HP:SSRT071422
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/468871/100/200/threaded
+Reference: MS:MS07-023
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms07-023.mspx
+Reference: CERT:TA07-128A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-128A.html
+Reference: BID:23779
+Reference: URL:http://www.securityfocus.com/bid/23779
+Reference: VUPEN:ADV-2007-1708
+Reference: URL:http://www.vupen.com/english/advisories/2007/1708
+Reference: OSVDB:34394
+Reference: URL:http://www.osvdb.org/34394
+Reference: OVAL:oval:org.mitre.oval:def:2014
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:2014
+Reference: SECTRACK:1018012
+Reference: URL:http://www.securitytracker.com/id?1018012
+Reference: SECUNIA:25150
+Reference: URL:http://secunia.com/advisories/25150
+Reference: XF:excel-placeholder-code-execution(33914)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/33914
+
+Unspecified vulnerability in Microsoft Excel 2000 SP3, 2002 SP3, 2003
+SP2, 2003 Viewer, 2004 for Mac, and 2007 allows user-assisted remote
+attackers to execute arbitrary code via a crafted set font value in an
+Excel file, which results in memory corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-1214
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1214
+Phase: Assigned (20070302)
+Category: 
+Reference: IDEFENSE:20070508 Microsoft Excel Filter Record Code Execution Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=527
+Reference: HP:HPSBST02214
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/468871/100/200/threaded
+Reference: HP:SSRT071422
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/468871/100/200/threaded
+Reference: MS:MS07-023
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms07-023.mspx
+Reference: CERT:TA07-128A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-128A.html
+Reference: CERT-VN:VU#253825
+Reference: URL:http://www.kb.cert.org/vuls/id/253825
+Reference: BID:23780
+Reference: URL:http://www.securityfocus.com/bid/23780
+Reference: VUPEN:ADV-2007-1708
+Reference: URL:http://www.vupen.com/english/advisories/2007/1708
+Reference: OSVDB:34395
+Reference: URL:http://www.osvdb.org/34395
+Reference: OVAL:oval:org.mitre.oval:def:2064
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:2064
+Reference: SECTRACK:1018012
+Reference: URL:http://www.securitytracker.com/id?1018012
+Reference: SECUNIA:25150
+Reference: URL:http://secunia.com/advisories/25150
+Reference: XF:excel-autofilter-code-execution(33915)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/33915
+
+Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2, 2003 Viewer, and 2004
+for Mac allows user-assisted remote attackers to execute arbitrary
+code via a crafted AutoFilter filter record in an Excel BIFF8 format
+XLS file, which triggers memory corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-1239
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1239
+Phase: Assigned (20070303)
+Category: 
+Reference: BUGTRAQ:20070225 Few unreported vulnerabilities by SehaTo
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/461373/100/0/threaded
+Reference: MISC:http://securityvulns.com/news/Microsoft/Excel/XML/DoS.html
+Reference: BID:22717
+Reference: URL:http://www.securityfocus.com/bid/22717
+
+Microsoft Excel 2003 does not properly parse .XLS files, which allows
+remote attackers to cause a denial of service (application crash) via
+a file with a (1) corrupted XML format or a (2) corrupted XLS format,
+which triggers a NULL pointer dereference.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-1756
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1756
+Phase: Assigned (20070329)
+Category: 
+Reference: HP:SSRT071446
+Reference: URL:http://archive.cert.uni-stuttgart.de/bugtraq/2007/07/msg00254.html
+Reference: MS:MS07-036
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/ms07-036.mspx
+Reference: CERT:TA07-191A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-191A.html
+Reference: BID:24801
+Reference: URL:http://www.securityfocus.com/bid/24801
+Reference: OSVDB:35957
+Reference: URL:http://osvdb.org/35957
+Reference: VUPEN:ADV-2007-2478
+Reference: URL:http://www.vupen.com/english/advisories/2007/2478
+Reference: OVAL:oval:org.mitre.oval:def:2123
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:2123
+Reference: SECTRACK:1018352
+Reference: URL:http://www.securitytracker.com/id?1018352
+Reference: SECUNIA:25995
+Reference: URL:http://secunia.com/advisories/25995
+Reference: XF:excel-version-code-execution(35210)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/35210
+
+Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2, 2003 Viewer, and Office
+Excel 2007 does not properly validate version information, which
+allows user-assisted remote attackers to execute arbitrary code via a
+crafted Excel file, aka "Calculation Error Vulnerability".
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-3029
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3029
+Phase: Assigned (20070605)
+Category: 
+Reference: HP:SSRT071446
+Reference: URL:http://archive.cert.uni-stuttgart.de/bugtraq/2007/07/msg00254.html
+Reference: MS:MS07-036
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/ms07-036.mspx
+Reference: CERT:TA07-191A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-191A.html
+Reference: BID:22555
+Reference: URL:http://www.securityfocus.com/bid/22555
+Reference: OSVDB:35958
+Reference: URL:http://osvdb.org/35958
+Reference: VUPEN:ADV-2007-2478
+Reference: URL:http://www.vupen.com/english/advisories/2007/2478
+Reference: OVAL:oval:org.mitre.oval:def:2029
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:2029
+Reference: SECTRACK:1018352
+Reference: URL:http://www.securitytracker.com/id?1018352
+Reference: SECUNIA:25995
+Reference: URL:http://secunia.com/advisories/25995
+Reference: XF:excel-active-worksheet-code-execution(35215)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/35215
+
+Unspecified vulnerability in Microsoft Excel 2002 SP3 and 2003 SP2
+allows user-assisted remote attackers to execute arbitrary code via a
+malformed Excel file containing multiple active worksheets, which
+results in memory corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-3030
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3030
+Phase: Assigned (20070605)
+Category: 
+Reference: HP:SSRT071446
+Reference: URL:http://archive.cert.uni-stuttgart.de/bugtraq/2007/07/msg00254.html
+Reference: MS:MS07-036
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/ms07-036.mspx
+Reference: CERT:TA07-191A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-191A.html
+Reference: BID:24803
+Reference: URL:http://www.securityfocus.com/bid/24803
+Reference: OSVDB:35959
+Reference: URL:http://osvdb.org/35959
+Reference: VUPEN:ADV-2007-2478
+Reference: URL:http://www.vupen.com/english/advisories/2007/2478
+Reference: OVAL:oval:org.mitre.oval:def:1709
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1709
+Reference: SECTRACK:1018352
+Reference: URL:http://www.securitytracker.com/id?1018352
+Reference: SECUNIA:25995
+Reference: URL:http://secunia.com/advisories/25995
+Reference: XF:excel-workspace-designation-code-execution(35217)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/35217
+
+Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2, and 2003 Viewer allows
+user-assisted remote attackers to execute arbitrary code via a
+malformed Excel file involving the "denoting [of] the start of a
+Workspace designation", which results in memory corruption, aka the
+"Workbook Memory Corruption Vulnerability".
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-3490
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3490
+Phase: Assigned (20070629)
+Category: 
+Reference: MILW0RM:4121
+Reference: URL:http://www.milw0rm.com/exploits/4121
+Reference: MISC:http://www.milw0rm.com/sploits/06272007-2670.zip
+Reference: MISC:http://pstgroup.blogspot.com/2007/06/exploitmicrosoft-excel-20002003-sheet.html
+Reference: BID:24691
+Reference: URL:http://www.securityfocus.com/bid/24691
+Reference: OSVDB:38954
+Reference: URL:http://osvdb.org/38954
+Reference: SECTRACK:1018321
+Reference: URL:http://www.securitytracker.com/id?1018321
+Reference: XF:excel-sheet-name-bo(35132)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/35132
+
+Unspecified vulnerability in Microsoft Excel 2003 SP2 allows remote
+attackers to have an unknown impact via unspecified vectors, possibly
+related to the sheet name, as demonstrated by 2670.xls.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-3890
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3890
+Phase: Assigned (20070719)
+Category: 
+Reference: MS:MS07-044
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms07-044.mspx
+Reference: CERT:TA07-226A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-226A.html
+Reference: BID:25280
+Reference: URL:http://www.securityfocus.com/bid/25280
+Reference: VUPEN:ADV-2007-2868
+Reference: URL:http://www.vupen.com/english/advisories/2007/2868
+Reference: OVAL:oval:org.mitre.oval:def:2149
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:2149
+Reference: SECTRACK:1018561
+Reference: URL:http://www.securitytracker.com/id?1018561
+Reference: SECUNIA:26145
+Reference: URL:http://secunia.com/advisories/26145
+
+Microsoft Excel in Office 2000 SP3, Office XP SP3, Office 2003 SP2,
+and Office 2004 for Mac allows remote attackers to execute arbitrary
+code via a Workspace with a certain index value that triggers memory
+corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-0081
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0081
+Phase: Assigned (20080103)
+Category: 
+Reference: CONFIRM:http://www.microsoft.com/technet/security/advisory/947563.mspx
+Reference: HP:HPSBST02320
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: HP:SSRT080028
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: MS:MS08-014
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms08-014.mspx
+Reference: MSKB:947563
+Reference: URL:http://www.microsoft.com/technet/security/advisory/947563.mspx
+Reference: CERT:TA08-071A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-071A.html
+Reference: BID:27305
+Reference: URL:http://www.securityfocus.com/bid/27305
+Reference: VUPEN:ADV-2008-0146
+Reference: URL:http://www.vupen.com/english/advisories/2008/0146
+Reference: VUPEN:ADV-2008-0846
+Reference: URL:http://www.vupen.com/english/advisories/2008/0846/references
+Reference: OVAL:oval:org.mitre.oval:def:5546
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5546
+Reference: SECTRACK:1019200
+Reference: URL:http://securitytracker.com/id?1019200
+Reference: SECUNIA:28506
+Reference: URL:http://secunia.com/advisories/28506
+Reference: XF:microsoft-excel-unspecified-code-execution(39699)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/39699
+
+Unspecified vulnerability in Microsoft Excel 2000 SP3 through 2003
+SP2, Viewer 2003, and Office 2004 for Mac allows user-assisted remote
+attackers to execute arbitrary code via crafted macros, aka "Macro
+Validation Vulnerability," a different vulnerability than
+CVE-2007-3490.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-0111
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0111
+Phase: Assigned (20080107)
+Category: 
+Reference: HP:HPSBST02320
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: HP:SSRT080028
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: MS:MS08-014
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms08-014.mspx
+Reference: CERT:TA08-071A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-071A.html
+Reference: BID:28094
+Reference: URL:http://www.securityfocus.com/bid/28094
+Reference: VUPEN:ADV-2008-0846
+Reference: URL:http://www.vupen.com/english/advisories/2008/0846/references
+Reference: OVAL:oval:org.mitre.oval:def:5114
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5114
+Reference: SECTRACK:1019582
+Reference: URL:http://www.securitytracker.com/id?1019582
+
+Unspecified vulnerability in Microsoft Excel 2000 SP3 through 2007,
+Viewer 2003, Compatibility Pack, and Office 2004 for Mac allows
+user-assisted remote attackers to execute arbitrary code via crafted
+data validation records, aka "Excel Data Validation Record
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-0112
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0112
+Phase: Assigned (20080107)
+Category: 
+Reference: HP:HPSBST02320
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: HP:SSRT080028
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: MS:MS08-014
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms08-014.mspx
+Reference: CERT:TA08-071A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-071A.html
+Reference: BID:28095
+Reference: URL:http://www.securityfocus.com/bid/28095
+Reference: VUPEN:ADV-2008-0846
+Reference: URL:http://www.vupen.com/english/advisories/2008/0846/references
+Reference: OVAL:oval:org.mitre.oval:def:5284
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5284
+Reference: SECTRACK:1019583
+Reference: URL:http://www.securitytracker.com/id?1019583
+
+Unspecified vulnerability in Microsoft Excel 2000 SP3, and Office for
+Mac 2004 and 2008 allows user-assisted remote attackers to execute
+arbitrary code via a crafted .SLK file that is not properly handled
+when importing the file, aka "Excel File Import Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-0113
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0113
+Phase: Assigned (20080107)
+Category: 
+Reference: BUGTRAQ:20080311 ZDI-08-008: Microsoft Excel BIFF File Format Cell Record Parsing Memory Corruption Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/489415/100/0/threaded
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-08-008
+Reference: HP:HPSBST02320
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: HP:SSRT080028
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: MS:MS08-016
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms08-016.mspx
+Reference: CERT:TA08-071A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-071A.html
+Reference: VUPEN:ADV-2008-0848
+Reference: URL:http://www.vupen.com/english/advisories/2008/0848/references
+Reference: OVAL:oval:org.mitre.oval:def:5421
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5421
+Reference: SECTRACK:1019578
+Reference: URL:http://www.securitytracker.com/id?1019578
+Reference: SECUNIA:29321
+Reference: URL:http://secunia.com/advisories/29321
+
+Unspecified vulnerability in Microsoft Office Excel Viewer 2003 up to
+SP3 allows user-assisted remote attackers to execute arbitrary code
+via an Excel document with malformed cell comments that trigger memory
+corruption from an "allocation error," aka "Microsoft Office Cell
+Parsing Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-0114
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0114
+Phase: Assigned (20080107)
+Category: 
+Reference: HP:HPSBST02320
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: HP:SSRT080028
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: MS:MS08-014
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms08-014.mspx
+Reference: CERT:TA08-071A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-071A.html
+Reference: BID:28166
+Reference: URL:http://www.securityfocus.com/bid/28166
+Reference: VUPEN:ADV-2008-0846
+Reference: URL:http://www.vupen.com/english/advisories/2008/0846/references
+Reference: OVAL:oval:org.mitre.oval:def:5456
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5456
+Reference: SECTRACK:1019584
+Reference: URL:http://www.securitytracker.com/id?1019584
+
+Unspecified vulnerability in Microsoft Excel 2000 SP3 through 2003
+SP2, Viewer 2003, and Office for Mac 2004 allows user-assisted remote
+attackers to execute arbitrary code via crafted Style records that
+trigger memory corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-0115
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0115
+Phase: Assigned (20080107)
+Category: 
+Reference: HP:HPSBST02320
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: HP:SSRT080028
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: MS:MS08-014
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms08-014.mspx
+Reference: CERT:TA08-071A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-071A.html
+Reference: BID:28167
+Reference: URL:http://www.securityfocus.com/bid/28167
+Reference: VUPEN:ADV-2008-0846
+Reference: URL:http://www.vupen.com/english/advisories/2008/0846/references
+Reference: OVAL:oval:org.mitre.oval:def:5512
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5512
+Reference: SECTRACK:1019585
+Reference: URL:http://www.securitytracker.com/id?1019585
+
+Unspecified vulnerability in Microsoft Excel 2000 SP3 through 2007,
+Viewer 2003, Compatibility Pack, and Office for Mac 2004 allows
+user-assisted remote attackers to execute arbitrary code via malformed
+formulas, aka "Excel Formula Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-0116
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0116
+Phase: Assigned (20080107)
+Category: 
+Reference: BUGTRAQ:20080311 TPTI-08-03: Microsoft Excel Rich Text Memory Corruption Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/489430/100/0/threaded
+Reference: MISC:http://dvlabs.tippingpoint.com/advisory/TPTI-08-03
+Reference: HP:HPSBST02320
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: HP:SSRT080028
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: MS:MS08-014
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms08-014.mspx
+Reference: CERT:TA08-071A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-071A.html
+Reference: BID:28168
+Reference: URL:http://www.securityfocus.com/bid/28168
+Reference: VUPEN:ADV-2008-0846
+Reference: URL:http://www.vupen.com/english/advisories/2008/0846/references
+Reference: OVAL:oval:org.mitre.oval:def:5212
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5212
+Reference: SECTRACK:1019586
+Reference: URL:http://www.securitytracker.com/id?1019586
+
+Microsoft Excel 2000 SP3 through 2003 SP2, Viewer 2003, Compatibility
+Pack, and Office 2004 and 2008 for Mac allows user-assisted remote
+attackers to execute arbitrary code via malformed tags in rich text,
+aka "Excel Rich Text Validation Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-0117
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0117
+Phase: Assigned (20080107)
+Category: 
+Reference: HP:HPSBST02320
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: HP:SSRT080028
+Reference: URL:http://marc.info/?l=bugtraq&m=120585858807305&w=2
+Reference: MS:MS08-014
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms08-014.mspx
+Reference: CERT:TA08-071A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-071A.html
+Reference: BID:28170
+Reference: URL:http://www.securityfocus.com/bid/28170
+Reference: VUPEN:ADV-2008-0846
+Reference: URL:http://www.vupen.com/english/advisories/2008/0846/references
+Reference: OVAL:oval:org.mitre.oval:def:5508
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5508
+Reference: SECTRACK:1019587
+Reference: URL:http://www.securitytracker.com/id?1019587
+
+Unspecified vulnerability in Microsoft Excel 2000 SP3 and 2002 SP2,
+and Office 2004 and 2008 for Mac, allows user-assisted remote
+attackers to execute arbitrary code via crafted conditional formatting
+values, aka "Excel Conditional Formatting Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-3004
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3004
+Phase: Assigned (20080707)
+Category: 
+Reference: IDEFENSE:20080812 Microsoft Excel Chart AxesSet Invalid Array Index Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=740
+Reference: HP:HPSBST02360
+Reference: URL:http://marc.info/?l=bugtraq&m=121915960406986&w=2
+Reference: HP:SSRT080117
+Reference: URL:http://marc.info/?l=bugtraq&m=121915960406986&w=2
+Reference: MS:MS08-043
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS08-043.mspx
+Reference: CERT:TA08-225A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-225A.html
+Reference: BID:30638
+Reference: URL:http://www.securityfocus.com/bid/30638
+Reference: OVAL:oval:org.mitre.oval:def:5885
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5885
+Reference: VUPEN:ADV-2008-2347
+Reference: URL:http://www.vupen.com/english/advisories/2008/2347
+Reference: SECTRACK:1020670
+Reference: URL:http://www.securitytracker.com/id?1020670
+Reference: SECUNIA:31454
+Reference: URL:http://secunia.com/advisories/31454
+
+Microsoft Office Excel 2000 SP3, 2002 SP3, and 2003 SP2 and SP3;
+Office Excel Viewer 2003; and Office 2004 and 2008 for Mac do not
+properly validate index values for AxesSet records when loading Excel
+files, which allows remote attackers to execute arbitrary code via a
+crafted Excel file, aka the "Excel Indexing Validation Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-3005
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3005
+Phase: Assigned (20080707)
+Category: 
+Reference: IDEFENSE:20080812 Microsoft Excel FORMAT Record Invalid Array Index Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=741
+Reference: HP:HPSBST02360
+Reference: URL:http://marc.info/?l=bugtraq&m=121915960406986&w=2
+Reference: HP:SSRT080117
+Reference: URL:http://marc.info/?l=bugtraq&m=121915960406986&w=2
+Reference: MS:MS08-043
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS08-043.mspx
+Reference: CERT:TA08-225A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-225A.html
+Reference: BID:30639
+Reference: URL:http://www.securityfocus.com/bid/30639
+Reference: OVAL:oval:org.mitre.oval:def:5837
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5837
+Reference: VUPEN:ADV-2008-2347
+Reference: URL:http://www.vupen.com/english/advisories/2008/2347
+Reference: SECTRACK:1020671
+Reference: URL:http://www.securitytracker.com/id?1020671
+Reference: SECUNIA:31454
+Reference: URL:http://secunia.com/advisories/31454
+
+Array index vulnerability in Microsoft Office Excel 2000 SP3 and 2002
+SP3, and Office 2004 and 2008 for Mac allows remote attackers to
+execute arbitrary code via an Excel file with a crafted array index
+for a FORMAT record, aka the "Excel Index Array Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-3006
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3006
+Phase: Assigned (20080707)
+Category: 
+Reference: BUGTRAQ:20080812 ZDI-08-048: Microsoft Excel COUNTRY Record Memory Corruption Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/495428/100/0/threaded
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-08-048/
+Reference: HP:HPSBST02360
+Reference: URL:http://marc.info/?l=bugtraq&m=121915960406986&w=2
+Reference: HP:SSRT080117
+Reference: URL:http://marc.info/?l=bugtraq&m=121915960406986&w=2
+Reference: MS:MS08-043
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS08-043.mspx
+Reference: CERT:TA08-225A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-225A.html
+Reference: BID:30640
+Reference: URL:http://www.securityfocus.com/bid/30640
+Reference: OVAL:oval:org.mitre.oval:def:5561
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5561
+Reference: VUPEN:ADV-2008-2347
+Reference: URL:http://www.vupen.com/english/advisories/2008/2347
+Reference: SECTRACK:1020672
+Reference: URL:http://www.securitytracker.com/id?1020672
+Reference: SECUNIA:31454
+Reference: URL:http://secunia.com/advisories/31454
+Reference: SECUNIA:31455
+Reference: URL:http://secunia.com/advisories/31455
+
+Microsoft Office Excel 2000 SP3, 2002 SP3, 2003 SP2 and SP3, and 2007
+Gold and SP1; Office Excel Viewer 2003 Gold and SP3; Office Excel
+Viewer; Office Compatibility Pack 2007 Gold and SP1; Office SharePoint
+Server 2007 Gold and SP1; and Office 2004 and 2008 for Mac do not
+properly parse Country record values when loading Excel files, which
+allows remote attackers to execute arbitrary code via a crafted Excel
+file, aka the "Excel Record Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-3471
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3471
+Phase: Assigned (20080804)
+Category: 
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-08-068/
+Reference: HP:HPSBST02379
+Reference: URL:http://marc.info/?l=bugtraq&m=122479227205998&w=2
+Reference: HP:SSRT080143
+Reference: URL:http://marc.info/?l=bugtraq&m=122479227205998&w=2
+Reference: MS:MS08-057
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS08-057.mspx
+Reference: CERT:TA08-288A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-288A.html
+Reference: BID:31705
+Reference: URL:http://www.securityfocus.com/bid/31705
+Reference: OVAL:oval:org.mitre.oval:def:5750
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5750
+Reference: VUPEN:ADV-2008-2808
+Reference: URL:http://www.vupen.com/english/advisories/2008/2808
+Reference: SECTRACK:1021044
+Reference: URL:http://www.securitytracker.com/id?1021044
+Reference: SECUNIA:32211
+Reference: URL:http://secunia.com/advisories/32211
+Reference: XF:excel-file-format-code-execution(45579)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/45579
+Reference: XF:win-ms08kb956416-update(45581)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/45581
+
+Stack-based buffer overflow in Microsoft Excel 2000 SP3, 2002 SP3,
+2003 SP2 and SP3, and 2007 Gold and SP1; Office Excel Viewer 2003 SP3;
+Office Excel Viewer; Office Compatibility Pack for Word, Excel, and
+PowerPoint 2007 File Formats Gold and SP1; Office 2004 and 2008 for
+Mac; and Open XML File Format Converter for Mac allows remote
+attackers to execute arbitrary code via a BIFF file with a malformed
+record that triggers a user-influenced size calculation, aka "File
+Format Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-3477
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3477
+Phase: Assigned (20080804)
+Category: 
+Reference: IDEFENSE:20081014 Microsoft Visual Basic for Applications - Multiple Vulnerabilities
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=746
+Reference: HP:HPSBST02379
+Reference: URL:http://marc.info/?l=bugtraq&m=122479227205998&w=2
+Reference: HP:SSRT080143
+Reference: URL:http://marc.info/?l=bugtraq&m=122479227205998&w=2
+Reference: MS:MS08-057
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS08-057.mspx
+Reference: CERT:TA08-288A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-288A.html
+Reference: BID:31702
+Reference: URL:http://www.securityfocus.com/bid/31702
+Reference: OVAL:oval:org.mitre.oval:def:5870
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5870
+Reference: VUPEN:ADV-2008-2808
+Reference: URL:http://www.vupen.com/english/advisories/2008/2808
+Reference: SECTRACK:1021044
+Reference: URL:http://www.securitytracker.com/id?1021044
+Reference: SECUNIA:32211
+Reference: URL:http://secunia.com/advisories/32211
+Reference: XF:excel-calendar-code-execution(45566)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/45566
+Reference: XF:win-ms08kb956416-update(45581)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/45581
+
+Microsoft Excel 2000 SP3, 2002 SP3, and 2003 SP2 and SP3 does not
+properly validate data in the VBA Performance Cache when processing an
+Office document with an embedded object, which allows remote attackers
+to execute arbitrary code via an Excel file containing a crafted
+value, leading to heap-based buffer overflows, integer overflows,
+array index errors, and memory corruption, aka "Calendar Object
+Validation Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-4019
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4019
+Phase: Assigned (20080910)
+Category: 
+Reference: HP:HPSBST02379
+Reference: URL:http://marc.info/?l=bugtraq&m=122479227205998&w=2
+Reference: HP:SSRT080143
+Reference: URL:http://marc.info/?l=bugtraq&m=122479227205998&w=2
+Reference: MS:MS08-057
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS08-057.mspx
+Reference: CERT:TA08-288A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-288A.html
+Reference: BID:31706
+Reference: URL:http://www.securityfocus.com/bid/31706
+Reference: OVAL:oval:org.mitre.oval:def:6102
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6102
+Reference: VUPEN:ADV-2008-2808
+Reference: URL:http://www.vupen.com/english/advisories/2008/2808
+Reference: SECTRACK:1021044
+Reference: URL:http://www.securitytracker.com/id?1021044
+Reference: SECUNIA:32211
+Reference: URL:http://secunia.com/advisories/32211
+Reference: XF:excel-rept-code-execution(45580)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/45580
+Reference: XF:win-ms08kb956416-update(45581)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/45581
+
+Integer overflow in the REPT function in Microsoft Excel 2000 SP3,
+2002 SP3, 2003 SP2 and SP3, and 2007 Gold and SP1; Office Excel Viewer
+2003 SP3; Office Excel Viewer; Office Compatibility Pack for Word,
+Excel, and PowerPoint 2007 File Formats Gold and SP1; Office
+SharePoint Server 2007 Gold and SP1; Office 2004 and 2008 for Mac; and
+Open XML File Format Converter for Mac allows remote attackers to
+execute arbitrary code via an Excel file containing a formula within a
+cell, aka "Formula Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-4211
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4211
+Phase: Assigned (20080924)
+Category: 
+Reference: CONFIRM:http://support.apple.com/kb/HT3216
+Reference: CONFIRM:http://support.apple.com/kb/HT3318
+Reference: APPLE:APPLE-SA-2008-10-09
+Reference: URL:http://lists.apple.com/archives/security-announce/2008/Oct/msg00001.html
+Reference: APPLE:APPLE-SA-2008-11-20
+Reference: URL:http://lists.apple.com/archives/security-announce/2008/Nov/msg00002.html
+Reference: BID:31681
+Reference: URL:http://www.securityfocus.com/bid/31681
+Reference: BID:31707
+Reference: URL:http://www.securityfocus.com/bid/31707
+Reference: VUPEN:ADV-2008-2780
+Reference: URL:http://www.vupen.com/english/advisories/2008/2780
+Reference: VUPEN:ADV-2008-3232
+Reference: URL:http://www.vupen.com/english/advisories/2008/3232
+Reference: SECTRACK:1021027
+Reference: URL:http://www.securitytracker.com/id?1021027
+Reference: SECUNIA:32222
+Reference: URL:http://secunia.com/advisories/32222
+Reference: SECUNIA:32756
+Reference: URL:http://secunia.com/advisories/32756
+Reference: XF:macosx-quicklook2-code-execution(45784)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/45784
+
+Integer signedness error in (1) QuickLook in Apple Mac OS X 10.5.5 and
+(2) Office Viewer in Apple iPhone OS 1.0 through 2.1 and iPhone OS for
+iPod touch 1.1 through 2.1 allows remote attackers to cause a denial
+of service (application termination) and execute arbitrary code via a
+crafted Microsoft Excel file that triggers an out-of-bounds memory
+access, related to "handling of columns."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-4265
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4265
+Phase: Assigned (20080925)
+Category: 
+Reference: IDEFENSE:20081209 Microsoft Excel Malformed Object Memory Corruption Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=763
+Reference: MS:MS08-074
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS08-074.mspx
+Reference: CERT:TA08-344A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-344A.html
+Reference: OVAL:oval:org.mitre.oval:def:5614
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5614
+Reference: VUPEN:ADV-2008-3386
+Reference: URL:http://www.vupen.com/english/advisories/2008/3386
+Reference: SECTRACK:1021368
+Reference: URL:http://www.securitytracker.com/id?1021368
+
+Microsoft Office Excel 2000 SP3 allows remote attackers to execute
+arbitrary code via a crafted Excel spreadsheet that contains a
+malformed object, which triggers memory corruption during the loading
+of records from this spreadsheet, aka "File Format Parsing
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-4266
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4266
+Phase: Assigned (20080925)
+Category: 
+Reference: BUGTRAQ:20081209 Secunia Research: Microsoft Excel NAME Record Array Indexing Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/499055/100/0/threaded
+Reference: MISC:http://secunia.com/secunia_research/2008-36/
+Reference: MS:MS08-074
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS08-074.mspx
+Reference: CERT:TA08-344A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-344A.html
+Reference: OVAL:oval:org.mitre.oval:def:5808
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5808
+Reference: VUPEN:ADV-2008-3386
+Reference: URL:http://www.vupen.com/english/advisories/2008/3386
+Reference: SECTRACK:1021368
+Reference: URL:http://www.securitytracker.com/id?1021368
+
+Array index vulnerability in Microsoft Office Excel 2000 SP3, 2002
+SP3, and 2003 SP3; Excel Viewer 2003 Gold and SP3; Office 2004 and
+2008 for Mac; and Open XML File Format Converter for Mac allow remote
+attackers to execute arbitrary code via an Excel spreadsheet with a
+NAME record that contains an invalid index value, which triggers stack
+corruption, aka "Excel Global Array Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-0558
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0558
+Phase: Assigned (20090212)
+Category: 
+Reference: BUGTRAQ:20090609 Secunia Research: Microsoft Excel Record Parsing Array Indexing Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/504188/100/0/threaded
+Reference: MISC:http://secunia.com/secunia_research/2009-1/
+Reference: MS:MS09-021
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-021.mspx
+Reference: CERT:TA09-160A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-160A.html
+Reference: BID:35242
+Reference: URL:http://www.securityfocus.com/bid/35242
+Reference: OSVDB:54954
+Reference: URL:http://osvdb.org/54954
+Reference: OVAL:oval:org.mitre.oval:def:11525
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:11525
+Reference: SECTRACK:1022351
+Reference: URL:http://www.securitytracker.com/id?1022351
+Reference: VUPEN:ADV-2009-1540
+Reference: URL:http://www.vupen.com/english/advisories/2009/1540
+
+Array index error in Excel in Microsoft Office 2000 SP3 and Office
+2004 and 2008 for Mac, and Open XML File Format Converter for Mac,
+allows remote attackers to execute arbitrary code via a crafted Excel
+file with a malformed record object, aka "Array Indexing Memory
+Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-0561
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0561
+Phase: Assigned (20090212)
+Category: 
+Reference: IDEFENSE:20090609 Microsoft Excel SST Record Integer Overflow Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=805
+Reference: BUGTRAQ:20090609 Secunia Research: Microsoft Excel String Parsing Integer Overflow Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/504190/100/0/threaded
+Reference: MISC:http://secunia.com/secunia_research/2009-12/
+Reference: MS:MS09-021
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-021.mspx
+Reference: CERT:TA09-160A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-160A.html
+Reference: BID:35245
+Reference: URL:http://www.securityfocus.com/bid/35245
+Reference: OSVDB:54957
+Reference: URL:http://osvdb.org/54957
+Reference: OVAL:oval:org.mitre.oval:def:5925
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5925
+Reference: SECTRACK:1022351
+Reference: URL:http://www.securitytracker.com/id?1022351
+Reference: VUPEN:ADV-2009-1540
+Reference: URL:http://www.vupen.com/english/advisories/2009/1540
+
+Integer overflow in Excel in Microsoft Office 2000 SP3, Office XP SP3,
+Office 2003 SP3, and Office 2004 and 2008 for Mac; Excel in 2007
+Microsoft Office System SP1 and SP2; Open XML File Format Converter
+for Mac; Microsoft Office Excel Viewer 2003 SP3; Microsoft Office
+Excel Viewer; Microsoft Office Compatibility Pack for Word, Excel, and
+PowerPoint 2007 File Formats SP1 and SP2; and Microsoft Office
+SharePoint Server 2007 SP1 and SP2 allows remote attackers to execute
+arbitrary code via an Excel file with a Shared String Table (SST)
+record with a numeric field that specifies an invalid number of unique
+strings, which triggers a heap-based buffer overflow, aka "Record
+Integer Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-3129
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3129
+Phase: Assigned (20090910)
+Category: 
+Reference: IDEFENSE:20091110 Microsoft Excel FEATHEADER Record Memory Corruption Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=832
+Reference: BUGTRAQ:20091110 ZDI-09-083: Microsoft Excel Shared Feature Header Pointer Offset Memory Corruption Vulnerability
+Reference: URL:http://archives.neohapsis.com/archives/bugtraq/2009-11/0080.html
+Reference: EXPLOIT-DB:14706
+Reference: URL:http://www.exploit-db.com/exploits/14706
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-09-083
+Reference: MS:MS09-067
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-067.mspx
+Reference: CERT:TA09-314A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-314A.html
+Reference: BID:36945
+Reference: URL:http://www.securityfocus.com/bid/36945
+Reference: OSVDB:59860
+Reference: URL:http://osvdb.org/59860
+Reference: OVAL:oval:org.mitre.oval:def:6521
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6521
+Reference: SECTRACK:1023157
+Reference: URL:http://www.securitytracker.com/id?1023157
+
+Microsoft Office Excel 2002 SP3, 2003 SP3, and 2007 SP1 and SP2;
+Office 2004 and 2008 for Mac; Open XML File Format Converter for Mac;
+Office Excel Viewer 2003 SP3; Office Excel Viewer SP1 and SP2; and
+Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File
+Formats SP1 and SP2 allows remote attackers to execute arbitrary code
+via a spreadsheet with a FEATHEADER record containing an invalid
+cbHdrData size element that affects a pointer offset, aka "Excel
+Featheader Record Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-0258
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0258
+Phase: Assigned (20100107)
+Category: 
+Reference: IDEFENSE:20100309 Microsoft Excel Sheet Object Type Confusion Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=859
+Reference: MS:MS10-017
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-017.mspx
+Reference: CERT:TA10-068A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-068A.html
+Reference: OVAL:oval:org.mitre.oval:def:8545
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:8545
+Reference: SECTRACK:1023698
+Reference: URL:http://www.securitytracker.com/id?1023698
+
+Microsoft Office Excel 2002 SP3, 2003 SP3, and 2007 SP1 and SP2;
+Office 2004 and 2008 for Mac; Open XML File Format Converter for Mac;
+Office Excel Viewer SP1 and SP2; and Office Compatibility Pack for
+Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2 do not
+properly parse the Excel file format, which allows remote attackers to
+execute arbitrary code via a crafted spreadsheet that causes memory to
+be interpreted as a different object type than intended, aka
+"Microsoft Office Excel Sheet Object Type Confusion Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-0260
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0260
+Phase: Assigned (20100107)
+Category: 
+Reference: IDEFENSE:20100309 Microsoft Excel MDXTUPLE Record Heap Overflow Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=862
+Reference: MS:MS10-017
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-017.mspx
+Reference: CERT:TA10-068A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-068A.html
+Reference: OVAL:oval:org.mitre.oval:def:7862
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7862
+Reference: SECTRACK:1023698
+Reference: URL:http://www.securitytracker.com/id?1023698
+
+Heap-based buffer overflow in Microsoft Office Excel 2007 SP1 and SP2;
+Office Excel Viewer SP1 and SP2; and Office Compatibility Pack for
+Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2 allows
+remote attackers to execute arbitrary code via a crafted spreadsheet
+in which "a MDXTUPLE record is broken up into several records," aka
+"Microsoft Office Excel MDXTUPLE Record Heap Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-0261
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0261
+Phase: Assigned (20100107)
+Category: 
+Reference: IDEFENSE:20100309 Microsoft Excel MDXSET Record Heap Overflow Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=861
+Reference: MS:MS10-017
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-017.mspx
+Reference: CERT:TA10-068A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-068A.html
+Reference: OVAL:oval:org.mitre.oval:def:8479
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:8479
+Reference: SECTRACK:1023698
+Reference: URL:http://www.securitytracker.com/id?1023698
+
+Heap-based buffer overflow in Microsoft Office Excel 2007 SP1 and SP2
+and Office Compatibility Pack for Word, Excel, and PowerPoint 2007
+File Formats SP1 and SP2 allows remote attackers to execute arbitrary
+code via a crafted spreadsheet in which "a MDXSET record is broken up
+into several records," aka "Microsoft Office Excel MDXSET Record Heap
+Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-0262
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0262
+Phase: Assigned (20100107)
+Category: 
+Reference: IDEFENSE:20100309 Microsoft Excel FNGROUPNAME Record Uninitialized Memory Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=860
+Reference: MS:MS10-017
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-017.mspx
+Reference: CERT:TA10-068A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-068A.html
+Reference: OVAL:oval:org.mitre.oval:def:8562
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:8562
+Reference: SECTRACK:1023698
+Reference: URL:http://www.securitytracker.com/id?1023698
+
+Microsoft Office Excel 2007 SP1 and SP2 and Office 2004 for Mac do not
+properly parse the Excel file format, which allows remote attackers to
+execute arbitrary code via a crafted spreadsheet that triggers access
+of an uninitialized stack variable, aka "Microsoft Office Excel
+FNGROUPNAME Record Uninitialized Memory Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3230
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3230
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-080
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-080.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7042
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7042
+
+Integer overflow in Microsoft Excel 2002 SP3 allows remote attackers
+to execute arbitrary code via an Excel document with crafted record
+information, aka "Excel Record Parsing Integer Overflow
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3231
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3231
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-080
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-080.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7475
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7475
+
+Microsoft Excel 2002 SP3, Office 2004 and 2008 for Mac, and Open XML
+File Format Converter for Mac do not properly validate record
+information, which allows remote attackers to execute arbitrary code
+via a crafted Excel document, aka "Excel Record Parsing Memory
+Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3232
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3232
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-080
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-080.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7575
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7575
+
+Microsoft Excel 2003 SP3 and 2007 SP2; Office 2004 and 2008 for Mac;
+Open XML File Format Converter for Mac; Excel Viewer SP2; and Office
+Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats
+SP2 do not properly validate record information, which allows remote
+attackers to execute arbitrary code via a crafted Excel document, aka
+"Excel File Format Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3233
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3233
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-080
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-080.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:6737
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6737
+
+Microsoft Excel 2002 SP3 and 2003 SP3 does not properly validate
+record information, which allows remote attackers to execute arbitrary
+code via a crafted .wk3 (aka Lotus 1-2-3 workbook) file, aka "Lotus
+1-2-3 Workbook Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3234
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3234
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-080
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-080.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7555
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7555
+
+Microsoft Excel 2002 SP3 does not properly validate formula
+information, which allows remote attackers to execute arbitrary code
+via a crafted Excel document, aka "Formula Substream Memory Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3235
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3235
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-080
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-080.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7028
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7028
+
+Microsoft Excel 2002 SP3 does not properly validate formula
+information, which allows remote attackers to execute arbitrary code
+via a crafted Excel document, aka "Formula Biff Record Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3236
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3236
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-080
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-080.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7209
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7209
+
+Microsoft Excel 2002 SP3 and 2003 SP3, Office 2004 and 2008 for Mac,
+and Open XML File Format Converter for Mac do not properly validate
+record information, which allows remote attackers to execute arbitrary
+code via a crafted Excel document, aka "Out Of Bounds Array
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3237
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3237
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-080
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-080.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:6727
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6727
+
+Microsoft Excel 2002 SP3 and Office 2004 for Mac do not properly
+validate record information, which allows remote attackers to execute
+arbitrary code via a crafted Excel document, aka "Merge Cell Record
+Pointer Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3238
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3238
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-080
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-080.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:6872
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6872
+
+Microsoft Excel 2002 SP3 and 2003 SP3, and Office 2004 for Mac, does
+not properly validate binary file-format information, which allows
+remote attackers to execute arbitrary code via a crafted Excel
+document, aka "Negative Future Function Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3239
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3239
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-080
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-080.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7616
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7616
+
+Microsoft Excel 2002 SP3 does not properly validate record
+information, which allows remote attackers to execute arbitrary code
+via a crafted Excel document, aka "Extra Out of Boundary Record
+Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3240
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3240
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-080
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-080.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7196
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7196
+
+Microsoft Excel 2002 SP3 and 2007 SP2; Excel Viewer SP2; and Office
+Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats
+SP2 do not properly validate record information, which allows remote
+attackers to execute arbitrary code via a crafted Excel document, aka
+"Real Time Data Array Record Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3241
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3241
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-080
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-080.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:6738
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6738
+
+Microsoft Excel 2002 SP3, Office 2004 and 2008 for Mac, and Open XML
+File Format Converter for Mac do not properly validate binary
+file-format information, which allows remote attackers to execute
+arbitrary code via a crafted Excel document, aka "Out-of-Bounds Memory
+Write in Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3242
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3242
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-080
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-080.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:6902
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6902
+
+Microsoft Excel 2002 SP3, Office 2004 and 2008 for Mac, and Open XML
+File Format Converter for Mac do not properly validate record
+information, which allows remote attackers to execute arbitrary code
+via a crafted Excel document, aka "Ghost Record Type Parsing
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-0097
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0097
+Phase: Assigned (20101221)
+Category: 
+Reference: MISC:http://secunia.com/secunia_research/2011-31
+Reference: MS:MS11-021
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-021.mspx
+Reference: CERT:TA11-102A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-102A.html
+Reference: BID:47201
+Reference: URL:http://www.securityfocus.com/bid/47201
+Reference: OSVDB:71758
+Reference: URL:http://osvdb.org/71758
+Reference: OVAL:oval:org.mitre.oval:def:12612
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12612
+Reference: SECTRACK:1025337
+Reference: URL:http://www.securitytracker.com/id?1025337
+Reference: SECUNIA:39122
+Reference: URL:http://secunia.com/advisories/39122
+Reference: VUPEN:ADV-2011-0940
+Reference: URL:http://www.vupen.com/english/advisories/2011/0940
+
+Integer underflow in Microsoft Excel 2002 SP3, 2003 SP3, 2007 SP2, and
+2010; Office 2004 and 2008 for Mac; Open XML File Format Converter for
+Mac; Excel Viewer SP2; and Office Compatibility Pack for Word, Excel,
+and PowerPoint 2007 File Formats SP2 allows remote attackers to
+execute arbitrary code via a crafted 400h substream in an Excel file,
+which triggers a stack-based buffer overflow, aka "Excel Integer
+Overrun Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-0098
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0098
+Phase: Assigned (20101221)
+Category: 
+Reference: MISC:http://secunia.com/secunia_research/2011-32/
+Reference: MS:MS11-021
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-021.mspx
+Reference: CERT:TA11-102A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-102A.html
+Reference: BID:47235
+Reference: URL:http://www.securityfocus.com/bid/47235
+Reference: OSVDB:71759
+Reference: URL:http://osvdb.org/71759
+Reference: OVAL:oval:org.mitre.oval:def:12034
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12034
+Reference: SECTRACK:1025337
+Reference: URL:http://www.securitytracker.com/id?1025337
+Reference: SECUNIA:39122
+Reference: URL:http://secunia.com/advisories/39122
+Reference: VUPEN:ADV-2011-0940
+Reference: URL:http://www.vupen.com/english/advisories/2011/0940
+
+Integer signedness error in Microsoft Excel 2002 SP3, 2003 SP3, 2007
+SP2, and 2010; Office 2004 and 2008 for Mac; Open XML File Format
+Converter for Mac; Excel Viewer SP2; and Office Compatibility Pack for
+Word, Excel, and PowerPoint 2007 File Formats SP2 allows remote
+attackers to execute arbitrary code via an XLS file with a large
+record size, aka "Excel Heap Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-0101
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0101
+Phase: Assigned (20101221)
+Category: 
+Reference: BUGTRAQ:20110412 ZDI-11-120: Microsoft Office Excel RealTimeData Record Parsing Remote Code Execution Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/517463/100/0/threaded
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-11-120
+Reference: MS:MS11-021
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-021.mspx
+Reference: CERT:TA11-102A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-102A.html
+Reference: BID:47243
+Reference: URL:http://www.securityfocus.com/bid/47243
+Reference: OSVDB:71766
+Reference: URL:http://osvdb.org/71766
+Reference: OVAL:oval:org.mitre.oval:def:11676
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:11676
+Reference: SECTRACK:1025337
+Reference: URL:http://www.securitytracker.com/id?1025337
+Reference: SECUNIA:39122
+Reference: URL:http://secunia.com/advisories/39122
+Reference: VUPEN:ADV-2011-0940
+Reference: URL:http://www.vupen.com/english/advisories/2011/0940
+
+Microsoft Excel 2002 SP3 allows remote attackers to execute arbitrary
+code or cause a denial of service (memory corruption) via a crafted
+RealTimeData record, related to a stTopic field, doubly-byte
+characters, and an incorrect pointer calculation, aka "Excel Record
+Parsing WriteAV Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-0103
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0103
+Phase: Assigned (20101221)
+Category: 
+Reference: IDEFENSE:20110412 Microsoft Excel Memory Corruption Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=901
+Reference: MS:MS11-021
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-021.mspx
+Reference: CERT:TA11-102A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-102A.html
+Reference: BID:47244
+Reference: URL:http://www.securityfocus.com/bid/47244
+Reference: OSVDB:71760
+Reference: URL:http://osvdb.org/71760
+Reference: OVAL:oval:org.mitre.oval:def:12616
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12616
+Reference: SECTRACK:1025337
+Reference: URL:http://www.securitytracker.com/id?1025337
+Reference: SECUNIA:39122
+Reference: URL:http://secunia.com/advisories/39122
+Reference: VUPEN:ADV-2011-0940
+Reference: URL:http://www.vupen.com/english/advisories/2011/0940
+
+Microsoft Excel 2002 SP3 and 2003 SP3, Office 2004 and 2008 for Mac,
+and Open XML File Format Converter for Mac allow remote attackers to
+execute arbitrary code or cause a denial of service (memory
+corruption) via crafted record information in an Excel file, aka
+"Excel Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-0104
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0104
+Phase: Assigned (20101221)
+Category: 
+Reference: MISC:http://www.checkpoint.com/defense/advisories/public/2011/cpai-31-Mard.html
+Reference: MS:MS11-021
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-021.mspx
+Reference: CERT:TA11-102A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-102A.html
+Reference: BID:47245
+Reference: URL:http://www.securityfocus.com/bid/47245
+Reference: OSVDB:71761
+Reference: URL:http://osvdb.org/71761
+Reference: OVAL:oval:org.mitre.oval:def:11767
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:11767
+Reference: SECTRACK:1025337
+Reference: URL:http://www.securitytracker.com/id?1025337
+Reference: SECUNIA:39122
+Reference: URL:http://secunia.com/advisories/39122
+Reference: VUPEN:ADV-2011-0940
+Reference: URL:http://www.vupen.com/english/advisories/2011/0940
+
+Microsoft Excel 2002 SP3 and 2003 SP3, Office 2004 and 2008 for Mac,
+and Open XML File Format Converter for Mac allow remote attackers to
+execute arbitrary code or cause a denial of service (memory
+corruption) via a crafted HLink record in an Excel file, aka "Excel
+Buffer Overwrite Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-0105
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0105
+Phase: Assigned (20101221)
+Category: 
+Reference: MS:MS11-021
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-021.mspx
+Reference: CERT:TA11-102A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-102A.html
+Reference: OVAL:oval:org.mitre.oval:def:12618
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12618
+Reference: SECTRACK:1025337
+Reference: URL:http://www.securitytracker.com/id?1025337
+Reference: SECUNIA:39122
+Reference: URL:http://secunia.com/advisories/39122
+Reference: VUPEN:ADV-2011-0940
+Reference: URL:http://www.vupen.com/english/advisories/2011/0940
+
+Microsoft Excel 2002 SP3, Office 2004 and 2008 for Mac, and Open XML
+File Format Converter for Mac obtain a certain length value from an
+uninitialized memory location, which allows remote attackers to
+trigger a buffer overflow and execute arbitrary code via a crafted
+Excel file, aka "Excel Data Initialization Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-0978
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0978
+Phase: Assigned (20110210)
+Category: 
+Reference: MISC:http://dvlabs.tippingpoint.com/blog/2011/02/07/zdi-disclosure-microsoft
+Reference: MISC:http://zerodayinitiative.com/advisories/ZDI-11-042/
+Reference: MS:MS11-021
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-021.mspx
+Reference: CERT:TA11-102A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-102A.html
+Reference: OVAL:oval:org.mitre.oval:def:12439
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12439
+Reference: SECTRACK:1025337
+Reference: URL:http://www.securitytracker.com/id?1025337
+Reference: SECUNIA:43232
+Reference: URL:http://secunia.com/advisories/43232
+Reference: SECUNIA:39122
+Reference: URL:http://secunia.com/advisories/39122
+Reference: SREASON:8231
+Reference: URL:http://securityreason.com/securityalert/8231
+Reference: VUPEN:ADV-2011-0940
+Reference: URL:http://www.vupen.com/english/advisories/2011/0940
+
+Stack-based buffer overflow in Microsoft Excel 2002 SP3, 2003 SP3, and
+2007 SP2; Office 2004 for Mac; Excel Viewer SP2; and Office
+Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats
+SP2 allows remote attackers to execute arbitrary code via vectors
+related to an axis properties record, and improper incrementing of an
+array index, aka "Excel Array Indexing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-0979
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0979
+Phase: Assigned (20110210)
+Category: 
+Reference: MISC:http://dvlabs.tippingpoint.com/blog/2011/02/07/zdi-disclosure-microsoft
+Reference: MISC:http://zerodayinitiative.com/advisories/ZDI-11-041/
+Reference: MS:MS11-021
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-021.mspx
+Reference: CERT:TA11-102A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-102A.html
+Reference: OSVDB:70904
+Reference: URL:http://osvdb.org/70904
+Reference: OVAL:oval:org.mitre.oval:def:12595
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12595
+Reference: SECTRACK:1025337
+Reference: URL:http://www.securitytracker.com/id?1025337
+Reference: SECUNIA:43231
+Reference: URL:http://secunia.com/advisories/43231
+Reference: SECUNIA:39122
+Reference: URL:http://secunia.com/advisories/39122
+Reference: VUPEN:ADV-2011-0940
+Reference: URL:http://www.vupen.com/english/advisories/2011/0940
+
+Microsoft Excel 2002 SP3, 2003 SP3, 2007 SP2, and 2010; Office 2004,
+2008, and 2011 for Mac; Open XML File Format Converter for Mac; and
+Excel Viewer SP2 do not properly handle errors during the parsing of
+Office Art records in Excel spreadsheets, which allows remote
+attackers to execute arbitrary code via a malformed object record,
+related to a "stray reference," aka "Excel Linked List Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-0980
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0980
+Phase: Assigned (20110210)
+Category: 
+Reference: MISC:http://dvlabs.tippingpoint.com/blog/2011/02/07/zdi-disclosure-microsoft
+Reference: MISC:http://zerodayinitiative.com/advisories/ZDI-11-040/
+Reference: MS:MS11-021
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-021.mspx
+Reference: CERT:TA11-102A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-102A.html
+Reference: OVAL:oval:org.mitre.oval:def:12018
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12018
+Reference: SECTRACK:1025337
+Reference: URL:http://www.securitytracker.com/id?1025337
+Reference: SECUNIA:43210
+Reference: URL:http://secunia.com/advisories/43210
+Reference: SECUNIA:39122
+Reference: URL:http://secunia.com/advisories/39122
+Reference: VUPEN:ADV-2011-0940
+Reference: URL:http://www.vupen.com/english/advisories/2011/0940
+
+Microsoft Excel 2002 SP3 and 2003 SP3, Office 2004 and 2008 for Mac,
+and Open XML File Format Converter for Mac do not properly parse
+Office Art objects, which allows remote attackers to execute arbitrary
+code via vectors related to a function pointer, aka "Excel Dangling
+Pointer Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1272
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1272
+Phase: Assigned (20110304)
+Category: 
+Reference: MS:MS11-045
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-045.mspx
+Reference: BID:48157
+Reference: URL:http://www.securityfocus.com/bid/48157
+Reference: OVAL:oval:org.mitre.oval:def:12139
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12139
+
+Microsoft Excel 2002 SP3, 2003 SP3, and 2007 SP2; Office 2004 and 2008
+for Mac; Open XML File Format Converter for Mac; Excel Viewer SP2; and
+Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File
+Formats SP2 do not properly validate record structures during parsing
+of Excel spreadsheets, which allows remote attackers to execute
+arbitrary code via a crafted spreadsheet, aka "Excel Insufficient
+Record Validation Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1273
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1273
+Phase: Assigned (20110304)
+Category: 
+Reference: MS:MS11-045
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-045.mspx
+Reference: OSVDB:72921
+Reference: URL:http://osvdb.org/72921
+Reference: OVAL:oval:org.mitre.oval:def:12354
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12354
+Reference: SECUNIA:44931
+Reference: URL:http://secunia.com/advisories/44931/
+
+Microsoft Excel 2002 SP3, 2003 SP3, 2007 SP2, and 2010; Office 2004,
+2008, and 2011 for Mac; Open XML File Format Converter for Mac; Excel
+Viewer SP2; and Office Compatibility Pack for Word, Excel, and
+PowerPoint 2007 File Formats SP2 do not properly validate record
+information during parsing of Excel spreadsheets, which allows remote
+attackers to execute arbitrary code or cause a denial of service
+(memory corruption) via a crafted spreadsheet, aka "Excel Improper
+Record Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1274
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1274
+Phase: Assigned (20110304)
+Category: 
+Reference: MS:MS11-045
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-045.mspx
+Reference: OVAL:oval:org.mitre.oval:def:12538
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12538
+
+Microsoft Excel 2002 SP3, 2003 SP3, and 2007 SP2; Office 2004 and 2008
+for Mac; Open XML File Format Converter for Mac; Excel Viewer SP2; and
+Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File
+Formats SP2 do not properly validate record information during parsing
+of Excel spreadsheets, which allows remote attackers to execute
+arbitrary code or cause a denial of service (memory corruption) via a
+crafted spreadsheet, aka "Excel Out of Bounds Array Access
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1275
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1275
+Phase: Assigned (20110304)
+Category: 
+Reference: MS:MS11-045
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-045.mspx
+Reference: OVAL:oval:org.mitre.oval:def:12736
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12736
+
+Microsoft Excel 2002 SP3; Office 2004, 2008, and 2011 for Mac; and
+Open XML File Format Converter for Mac do not properly validate record
+information during parsing of Excel spreadsheets, which allows remote
+attackers to execute arbitrary code or cause a denial of service
+(memory corruption) via a crafted spreadsheet, aka "Excel Memory Heap
+Overwrite Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1276
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1276
+Phase: Assigned (20110304)
+Category: 
+Reference: MS:MS11-045
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-045.mspx
+Reference: OSVDB:72924
+Reference: URL:http://osvdb.org/72924
+Reference: OVAL:oval:org.mitre.oval:def:12451
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12451
+Reference: SREASON:8330
+Reference: URL:http://securityreason.com/securityalert/8330
+
+Buffer overflow in Microsoft Excel 2002 SP3, 2003 SP3, and 2007 SP2;
+Office 2004 and 2008 for Mac; Open XML File Format Converter for Mac;
+Excel Viewer SP2; and Office Compatibility Pack for Word, Excel, and
+PowerPoint 2007 File Formats SP2 allows remote attackers to execute
+arbitrary code or cause a denial of service (memory corruption) via a
+crafted Excel spreadsheet, related to improper validation of record
+information, aka "Excel Buffer Overrun Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1277
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1277
+Phase: Assigned (20110304)
+Category: 
+Reference: MS:MS11-045
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-045.mspx
+Reference: BID:48162
+Reference: URL:http://www.securityfocus.com/bid/48162
+Reference: OVAL:oval:org.mitre.oval:def:12291
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12291
+
+Microsoft Excel 2002 SP3, Office 2008 for Mac, and Open XML File
+Format Converter for Mac do not properly validate record information
+during parsing of Excel spreadsheets, which allows remote attackers to
+execute arbitrary code or cause a denial of service (memory
+corruption) via a crafted spreadsheet, aka "Excel Memory Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1278
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1278
+Phase: Assigned (20110304)
+Category: 
+Reference: MS:MS11-045
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-045.mspx
+Reference: BID:48163
+Reference: URL:http://www.securityfocus.com/bid/48163
+Reference: OVAL:oval:org.mitre.oval:def:12687
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12687
+Reference: XF:excel-writeav-ce(67716)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/67716
+
+Microsoft Excel 2002 SP3 and Office 2004 for Mac do not properly
+validate record information during parsing of Excel spreadsheets,
+which allows remote attackers to execute arbitrary code or cause a
+denial of service (memory corruption) via a crafted spreadsheet, aka
+"Excel WriteAV Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1279
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1279
+Phase: Assigned (20110304)
+Category: 
+Reference: MS:MS11-045
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS11-045.mspx
+Reference: BID:48164
+Reference: URL:http://www.securityfocus.com/bid/48164
+Reference: OVAL:oval:org.mitre.oval:def:12373
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12373
+Reference: XF:ms-excel-writeav-ce(67717)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/67717
+
+Microsoft Excel 2002 SP3 and 2003 SP3, Office 2004 and 2008 for Mac,
+and Open XML File Format Converter for Mac do not properly validate
+record information during parsing of Excel spreadsheets, which allows
+remote attackers to execute arbitrary code or cause a denial of
+service (memory corruption) via a crafted spreadsheet, aka "Excel Out
+of Bounds WriteAV Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1986
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1986
+Phase: Assigned (20110509)
+Category: 
+Reference: MS:MS11-072
+Reference: URL:http://technet.microsoft.com/en-us/security/bulletin/MS11-072
+Reference: CERT:TA11-256A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-256A.html
+Reference: OVAL:oval:org.mitre.oval:def:12345
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12345
+
+Use-after-free vulnerability in Microsoft Excel 2003 SP3 allows remote
+attackers to execute arbitrary code via a crafted spreadsheet, aka
+"Excel Use after Free WriteAV Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1987
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1987
+Phase: Assigned (20110509)
+Category: 
+Reference: MS:MS11-072
+Reference: URL:http://technet.microsoft.com/en-us/security/bulletin/MS11-072
+Reference: CERT:TA11-256A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-256A.html
+Reference: OVAL:oval:org.mitre.oval:def:12953
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12953
+
+Array index error in Microsoft Excel 2003 SP3 and 2007 SP2; Excel in
+Office 2007 SP2; Excel 2010 Gold and SP1; Excel in Office 2010 Gold
+and SP1; Office 2004, 2008, and 2011 for Mac; Open XML File Format
+Converter for Mac; Excel Viewer SP2; and Office Compatibility Pack for
+Word, Excel, and PowerPoint 2007 File Formats SP2 allows remote
+attackers to execute arbitrary code via a crafted spreadsheet, aka
+"Excel Out of Bounds Array Indexing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1988
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1988
+Phase: Assigned (20110509)
+Category: 
+Reference: MS:MS11-072
+Reference: URL:http://technet.microsoft.com/en-us/security/bulletin/MS11-072
+Reference: CERT:TA11-256A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-256A.html
+Reference: OVAL:oval:org.mitre.oval:def:12836
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12836
+
+Microsoft Excel 2003 SP3 and 2007 SP2; Excel in Office 2007 SP2;
+Office 2004 and 2008 for Mac; Open XML File Format Converter for Mac;
+Excel Viewer SP2; and Office Compatibility Pack for Word, Excel, and
+PowerPoint 2007 File Formats SP2 do not properly parse records in
+Excel spreadsheets, which allows remote attackers to execute arbitrary
+code via a crafted spreadsheet, aka "Excel Heap Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1989
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1989
+Phase: Assigned (20110509)
+Category: 
+Reference: MS:MS11-072
+Reference: URL:http://technet.microsoft.com/en-us/security/bulletin/MS11-072
+Reference: CERT:TA11-256A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-256A.html
+Reference: OVAL:oval:org.mitre.oval:def:12974
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:12974
+
+Microsoft Excel 2003 SP3 and 2007 SP2; Excel in Office 2007 SP2; Excel
+2010 Gold and SP1; Excel in Office 2010 Gold and SP1; Office 2004,
+2008, and 2011 for Mac; Open XML File Format Converter for Mac; Excel
+Viewer SP2; Office Compatibility Pack for Word, Excel, and PowerPoint
+2007 File Formats SP2; Excel Services on Office SharePoint Server 2007
+SP2; Excel Services on Office SharePoint Server 2010 Gold and SP1; and
+Excel Web App 2010 Gold and SP1 do not properly parse conditional
+expressions associated with formatting requirements, which allows
+remote attackers to execute arbitrary code via a crafted spreadsheet,
+aka "Excel Conditional Expression Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-1990
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1990
+Phase: Assigned (20110509)
+Category: 
+Reference: MS:MS11-072
+Reference: URL:http://technet.microsoft.com/en-us/security/bulletin/MS11-072
+Reference: CERT:TA11-256A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-256A.html
+Reference: OVAL:oval:org.mitre.oval:def:11982
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:11982
+
+Microsoft Excel 2007 SP2; Excel in Office 2007 SP2; Excel Viewer SP2;
+Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File
+Formats SP2; and Excel Services on Office SharePoint Server 2007 SP2
+do not properly validate the sign of an unspecified array index, which
+allows remote attackers to execute arbitrary code via a crafted
+spreadsheet, aka "Excel Out of Bounds Array Indexing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-3403
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3403
+Phase: Assigned (20110909)
+Category: 
+Reference: MS:MS11-096
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS11-096
+Reference: CERT:TA11-347A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA11-347A.html
+Reference: OVAL:oval:org.mitre.oval:def:14702
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:14702
+
+Microsoft Excel 2003 SP3 and Office 2004 for Mac do not properly
+handle objects in memory, which allows remote attackers to execute
+arbitrary code via a crafted Excel spreadsheet, aka "Record Memory
+Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-0141
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0141
+Phase: Assigned (20111213)
+Category: 
+Reference: MS:MS12-030
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS12-030
+Reference: CERT:TA12-129A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA12-129A.html
+Reference: BID:53342
+Reference: URL:http://www.securityfocus.com/bid/53342
+Reference: OVAL:oval:org.mitre.oval:def:15152
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:15152
+Reference: SECTRACK:1027041
+Reference: URL:http://www.securitytracker.com/id?1027041
+Reference: SECUNIA:49112
+Reference: URL:http://secunia.com/advisories/49112
+
+Microsoft Excel 2003 SP3, 2007 SP2 and SP3, and 2010 Gold and SP1;
+Office 2011 for Mac; Excel Viewer; and Office Compatibility Pack SP2
+and SP3 do not properly handle memory during the opening of files,
+which allows remote attackers to execute arbitrary code via a crafted
+spreadsheet, aka "Excel File Format Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-0142
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0142
+Phase: Assigned (20111213)
+Category: 
+Reference: MS:MS12-030
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS12-030
+Reference: CERT:TA12-129A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA12-129A.html
+Reference: BID:53373
+Reference: URL:http://www.securityfocus.com/bid/53373
+Reference: OVAL:oval:org.mitre.oval:def:15543
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:15543
+Reference: SECTRACK:1027041
+Reference: URL:http://www.securitytracker.com/id?1027041
+Reference: SECUNIA:49112
+Reference: URL:http://secunia.com/advisories/49112
+
+Microsoft Excel 2003 SP3, 2007 SP2 and SP3, and 2010 Gold and SP1;
+Office 2008 for Mac; Excel Viewer; and Office Compatibility Pack SP2
+and SP3 do not properly handle memory during the opening of files,
+which allows remote attackers to execute arbitrary code via a crafted
+spreadsheet, aka "Excel File Format Memory Corruption in OBJECTLINK
+Record Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-0143
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0143
+Phase: Assigned (20111213)
+Category: 
+Reference: MS:MS12-030
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS12-030
+Reference: CERT:TA12-129A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA12-129A.html
+Reference: BID:53374
+Reference: URL:http://www.securityfocus.com/bid/53374
+Reference: OVAL:oval:org.mitre.oval:def:15064
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:15064
+Reference: SECTRACK:1027041
+Reference: URL:http://www.securitytracker.com/id?1027041
+Reference: SECUNIA:49112
+Reference: URL:http://secunia.com/advisories/49112
+
+Microsoft Excel 2003 SP3 and Office 2008 for Mac do not properly
+handle memory during the opening of files, which allows remote
+attackers to execute arbitrary code via a crafted spreadsheet, aka
+"Excel Memory Corruption Using Various Modified Bytes Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-0184
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0184
+Phase: Assigned (20111213)
+Category: 
+Reference: MS:MS12-030
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS12-030
+Reference: CERT:TA12-129A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA12-129A.html
+Reference: BID:53375
+Reference: URL:http://www.securityfocus.com/bid/53375
+Reference: OVAL:oval:org.mitre.oval:def:14789
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:14789
+Reference: SECTRACK:1027041
+Reference: URL:http://www.securitytracker.com/id?1027041
+Reference: SECUNIA:49112
+Reference: URL:http://secunia.com/advisories/49112
+
+Microsoft Excel 2003 SP3, 2007 SP2 and SP3, and 2010 Gold and SP1;
+Office 2008 and 2011 for Mac; Excel Viewer; and Office Compatibility
+Pack SP2 and SP3 do not properly handle memory during the opening of
+files, which allows remote attackers to execute arbitrary code via a
+crafted spreadsheet, aka "Excel SXLI Record Memory Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-0185
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0185
+Phase: Assigned (20111213)
+Category: 
+Reference: MS:MS12-030
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS12-030
+Reference: CERT:TA12-129A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA12-129A.html
+Reference: OVAL:oval:org.mitre.oval:def:14738
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:14738
+Reference: SECTRACK:1027041
+Reference: URL:http://www.securitytracker.com/id?1027041
+Reference: SECUNIA:49112
+Reference: URL:http://secunia.com/advisories/49112
+
+Heap-based buffer overflow in Microsoft Excel 2007 SP2 and SP3 and
+2010 Gold and SP1, Excel Viewer, and Office Compatibility Pack SP2 and
+SP3 allows remote attackers to execute arbitrary code via a crafted
+spreadsheet that triggers incorrect handling of memory during opening,
+aka "Excel MergeCells Record Heap Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-1847
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1847
+Phase: Assigned (20120322)
+Category: 
+Reference: MS:MS12-030
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS12-030
+Reference: CERT:TA12-129A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA12-129A.html
+Reference: OVAL:oval:org.mitre.oval:def:15575
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:15575
+Reference: SECTRACK:1027041
+Reference: URL:http://www.securitytracker.com/id?1027041
+Reference: SECUNIA:49112
+Reference: URL:http://secunia.com/advisories/49112
+
+Microsoft Excel 2003 SP3, 2007 SP2 and SP3, and 2010 Gold and SP1;
+Office 2008 and 2011 for Mac; Excel Viewer; and Office Compatibility
+Pack SP2 and SP3 do not properly handle memory during the opening of
+files, which allows remote attackers to execute arbitrary code via a
+crafted spreadsheet, aka "Excel Series Record Parsing Type Mismatch
+Could Result in Remote Code Execution Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-1885
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1885
+Phase: Assigned (20120322)
+Category: 
+Reference: MS:MS12-076
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS12-076
+Reference: CERT:TA12-318A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA12-318A.html
+Reference: BID:56425
+Reference: URL:http://www.securityfocus.com/bid/56425
+Reference: OVAL:oval:org.mitre.oval:def:15752
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:15752
+Reference: OVAL:oval:org.mitre.oval:def:15916
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:15916
+Reference: SECTRACK:1027752
+Reference: URL:http://www.securitytracker.com/id?1027752
+Reference: XF:ms-excel-serauxerrbar-bo(78072)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/78072
+
+Heap-based buffer overflow in Microsoft Excel 2003 SP3, 2007 SP2 and
+SP3, and 2010 SP1; Office 2008 and 2011 for Mac; and Office
+Compatibility Pack SP2 and SP3 allows remote attackers to execute
+arbitrary code via a crafted spreadsheet, aka "Excel SerAuxErrBar Heap
+Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-1886
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1886
+Phase: Assigned (20120322)
+Category: 
+Reference: MS:MS12-076
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS12-076
+Reference: CERT:TA12-318A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA12-318A.html
+Reference: BID:56426
+Reference: URL:http://www.securityfocus.com/bid/56426
+Reference: OVAL:oval:org.mitre.oval:def:15927
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:15927
+Reference: SECTRACK:1027752
+Reference: URL:http://www.securitytracker.com/id?1027752
+Reference: XF:microsoft-excel-code-exec(78073)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/78073
+
+Microsoft Excel 2003 SP3, 2007 SP2 and SP3, and 2010 SP1; Excel
+Viewer; and Office Compatibility Pack SP2 and SP3 allow remote
+attackers to execute arbitrary code or cause a denial of service
+(memory corruption) via a crafted spreadsheet, aka "Excel Memory
+Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-1887
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1887
+Phase: Assigned (20120322)
+Category: 
+Reference: MS:MS12-076
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS12-076
+Reference: CERT:TA12-318A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA12-318A.html
+Reference: BID:56430
+Reference: URL:http://www.securityfocus.com/bid/56430
+Reference: OVAL:oval:org.mitre.oval:def:15717
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:15717
+Reference: OVAL:oval:org.mitre.oval:def:15970
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:15970
+Reference: SECTRACK:1027752
+Reference: URL:http://www.securitytracker.com/id?1027752
+Reference: XF:microsoft-excel-ssl-code-exec(78074)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/78074
+
+Use-after-free vulnerability in Microsoft Excel 2003 SP3, 2007 SP2 and
+SP3, and 2010 SP1, and Office 2008 and 2011 for Mac, allows remote
+attackers to execute arbitrary code via a crafted spreadsheet, aka
+"Excel SST Invalid Length Use After Free Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-2543
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2543
+Phase: Assigned (20120509)
+Category: 
+Reference: MS:MS12-076
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS12-076
+Reference: CERT:TA12-318A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA12-318A.html
+Reference: BID:56431
+Reference: URL:http://www.securityfocus.com/bid/56431
+Reference: OVAL:oval:org.mitre.oval:def:15737
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:15737
+Reference: OVAL:oval:org.mitre.oval:def:15908
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:15908
+Reference: SECTRACK:1027752
+Reference: URL:http://www.securitytracker.com/id?1027752
+
+Stack-based buffer overflow in Microsoft Excel 2007 SP2 and SP3 and
+2010 SP1; Office 2011 for Mac; Excel Viewer; and Office Compatibility
+Pack SP2 and SP3 allows remote attackers to execute arbitrary code via
+a crafted spreadsheet, aka "Excel Stack Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-5672
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5672
+Phase: Assigned (20121024)
+Category: 
+Reference: BUGTRAQ:20121010 Microsoft Office Excel ReadAV Arbitrary Code Execution
+Reference: URL:http://www.securityfocus.com/archive/1/524379
+
+Microsoft Excel Viewer (aka Xlview.exe) and Excel in Microsoft Office
+2007 (aka Office 12) allow remote attackers to cause a denial of
+service (read access violation and application crash) via a crafted
+spreadsheet file, as demonstrated by a .xls file with battery voltage
+data.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3158
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3158
+Phase: Assigned (20130417)
+Category: 
+Reference: MS:MS13-073
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-073
+Reference: CERT:TA13-253A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-253A
+Reference: OVAL:oval:org.mitre.oval:def:18984
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18984
+
+Microsoft Excel 2003 SP3 and 2007 SP3 allows remote attackers to
+execute arbitrary code or cause a denial of service (memory
+corruption) via a crafted Office document, aka "Microsoft Office
+Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3159
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3159
+Phase: Assigned (20130417)
+Category: 
+Reference: MS:MS13-073
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-073
+Reference: CERT:TA13-253A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-253A
+Reference: OVAL:oval:org.mitre.oval:def:18686
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18686
+
+Microsoft Excel 2003 SP3, 2007 SP3, and 2010 SP1 and SP2; Excel
+Viewer; and Microsoft Office Compatibility Pack SP3 allow remote
+attackers to read arbitrary files via an XML document containing an
+external entity declaration in conjunction with an entity reference,
+related to an XML External Entity (XXE) issue, aka "XML External
+Entities Resolution Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3889
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3889
+Phase: Assigned (20130603)
+Category: 
+Reference: MS:MS13-084
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-084
+Reference: MS:MS13-085
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-085
+Reference: CERT:TA13-288A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-288A
+Reference: OVAL:oval:org.mitre.oval:def:18901
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18901
+Reference: OVAL:oval:org.mitre.oval:def:19132
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:19132
+
+Microsoft Excel 2007 SP3, 2010 SP1 and SP2, 2013, and 2013 RT; Office
+2007 SP3, 2010 SP1 and SP2, 2013, and 2013 RT; Office for Mac 2011;
+Excel Viewer; Office Compatibility Pack SP3; and Excel Services and
+Word Automation Services in SharePoint Server 2013 allow remote
+attackers to execute arbitrary code via a crafted Office document, aka
+"Microsoft Excel Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3890
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3890
+Phase: Assigned (20130603)
+Category: 
+Reference: MS:MS13-085
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-085
+Reference: CERT:TA13-288A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-288A
+Reference: OVAL:oval:org.mitre.oval:def:18926
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18926
+
+Microsoft Excel 2007 SP3, Excel Viewer, and Office Compatibility Pack
+SP3 allow remote attackers to execute arbitrary code via a crafted
+Office document, aka "Microsoft Excel Memory Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-6360
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6360
+Phase: Assigned (20140911)
+Category: 
+Reference: MS:MS14-083
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS14-083
+
+Microsoft Excel 2007 SP3, Excel 2010 SP2, and Office Compatibility
+Pack allow remote attackers to execute arbitrary code via a crafted
+Office document, aka "Global Free Remote Code Execution in Excel
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-6361
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6361
+Phase: Assigned (20140911)
+Category: 
+Reference: MS:MS14-083
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS14-083
+
+Microsoft Excel 2007 SP3, Excel 2010 SP2, Excel 2013 Gold and SP1,
+Excel 2013 RT Gold and SP1, and Office Compatibility Pack allow remote
+attackers to execute arbitrary code via a crafted Office document, aka
+"Excel Invalid Pointer Remote Code Execution Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-0063
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0063
+Phase: Assigned (20141118)
+Category: 
+Reference: MS:MS15-012
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-012
+Reference: BID:72460
+Reference: URL:http://www.securityfocus.com/bid/72460
+Reference: SECTRACK:1031720
+Reference: URL:http://www.securitytracker.com/id/1031720
+Reference: SECUNIA:62808
+Reference: URL:http://secunia.com/advisories/62808
+Reference: XF:ms-excel-cve20150063-code-exec(100439)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/100439
+
+Microsoft Excel 2007 SP3; the proofing tools in Office 2010 SP2; Excel
+2010 SP2; Excel 2013 Gold, SP1, and RT; Excel Viewer; and Office
+Compatibility Pack SP3 allow remote attackers to execute arbitrary
+code or cause a denial of service (memory corruption) via a crafted
+Office document, aka "Excel Remote Code Execution Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-0097
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0097
+Phase: Assigned (20141118)
+Category: 
+Reference: MS:MS15-022
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-022
+Reference: SECTRACK:1031896
+Reference: URL:http://www.securitytracker.com/id/1031896
+
+Microsoft Excel 2007 SP3, PowerPoint 2007 SP3, Word 2007 SP3, Excel
+2010 SP2, PowerPoint 2010 SP2, and Word 2010 SP2 allow remote
+attackers to execute arbitrary code via a crafted Office document, aka
+"Microsoft Word Local Zone Remote Code Execution Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2375
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2375
+Phase: Assigned (20150319)
+Category: 
+Reference: MS:MS15-070
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-070
+
+Microsoft Excel 2010 SP2, Excel 2013 SP1, Excel 2013 RT SP1, Excel
+Viewer 2007 SP3, Excel Services on SharePoint Server 2010 SP2, and
+Excel Services on SharePoint Server 2013 SP1 allow remote attackers to
+bypass the ASLR protection mechanism via a crafted spreadsheet, aka
+"Microsoft Excel ASLR Bypass Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2376
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2376
+Phase: Assigned (20150319)
+Category: 
+Reference: MS:MS15-070
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-070
+
+Microsoft Excel 2007 SP3, Excel 2010 SP2, Excel 2013 SP1, Excel 2013
+RT SP1, Office for Mac 2011, Excel Viewer 2007 SP3, Office
+Compatibility Pack SP3, Excel Services on SharePoint Server 2007 SP3,
+Excel Services on SharePoint Server 2010 SP2, and Excel Services on
+SharePoint Server 2013 SP1 allow remote attackers to execute arbitrary
+code or cause a denial of service (memory corruption) via a crafted
+Office document, aka "Microsoft Office Memory Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2377
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2377
+Phase: Assigned (20150319)
+Category: 
+Reference: MS:MS15-070
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-070
+
+Microsoft Excel 2007 SP3, Excel 2010 SP2, Excel 2013 SP1, Excel 2013
+RT SP1, and Office Compatibility Pack SP3 allow remote attackers to
+execute arbitrary code or cause a denial of service (memory
+corruption) via a crafted Office document, aka "Microsoft Office
+Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2378
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2378
+Phase: Assigned (20150319)
+Category: 
+Reference: MS:MS15-070
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-070
+
+Untrusted search path vulnerability in Microsoft Excel 2007 SP3, Excel
+2010 SP2, Excel Viewer 2007 SP3, and Office Compatibility Pack SP3
+allows local users to gain privileges via a Trojan horse DLL in the
+current working directory, aka "Microsoft Excel DLL Remote Code
+Execution Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2415
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2415
+Phase: Assigned (20150319)
+Category: 
+Reference: MS:MS15-070
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-070
+
+Microsoft Excel 2007 SP3, Excel 2010 SP2, Excel 2013 SP1, Excel 2013
+RT SP1, and Office Compatibility Pack SP3 allow remote attackers to
+execute arbitrary code or cause a denial of service (memory
+corruption) via a crafted Office document, aka "Microsoft Office
+Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2520
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2520
+Phase: Assigned (20150319)
+Category: 
+Reference: MS:MS15-099
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-099
+
+Microsoft Excel 2007 SP3, Excel 2010 SP2, Excel for Mac 2011 and 2016,
+Office Compatibility Pack SP3, and Excel Viewer allow remote attackers
+to execute arbitrary code via a crafted Office document, aka
+"Microsoft Office Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2521
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2521
+Phase: Assigned (20150319)
+Category: 
+Reference: MS:MS15-099
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-099
+
+Microsoft Excel 2007 SP3, Excel 2010 SP2, Office Compatibility Pack
+SP3, and Excel Viewer allow remote attackers to execute arbitrary code
+via a crafted Office document, aka "Microsoft Office Memory Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2523
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2523
+Phase: Assigned (20150319)
+Category: 
+Reference: MS:MS15-099
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-099
+
+Microsoft Excel 2007 SP3, Excel 2010 SP2, Excel 2013 SP1, Excel 2013
+RT SP1, Excel for Mac 2011 and 2016, Office Compatibility Pack SP3,
+and Excel Viewer allow remote attackers to execute arbitrary code via
+a crafted Office document, aka "Microsoft Office Memory Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2555
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2555
+Phase: Assigned (20150319)
+Category: 
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-15-517
+Reference: MS:MS15-110
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-110
+
+Use-after-free vulnerability in Microsoft Excel 2010 SP2, Excel 2013
+SP1, Excel 2013 RT SP1, Excel 2016, Excel for Mac 2011, Excel 2016 for
+Mac, and Excel Services on SharePoint Server 2010 SP2 and 2013 SP1
+allows remote attackers to execute arbitrary code via a crafted
+calculatedColumnFormula object in an Office document, aka "Microsoft
+Office Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2558
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2558
+Phase: Assigned (20150319)
+Category: 
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-15-516
+Reference: MS:MS15-110
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-110
+
+Use-after-free vulnerability in Microsoft Excel 2007 SP3, Excel 2010
+SP2, Excel 2013 SP1, Excel 2013 RT SP1, Excel 2016, Excel for Mac
+2011, Excel 2016 for Mac, Excel Viewer, Office Compatibility Pack SP3,
+and Excel Services on SharePoint Server 2007 SP3, 2010 SP2, and 2013
+SP1 allows remote attackers to execute arbitrary code via a long
+fileVersion element in an Office document, aka "Microsoft Office
+Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-6037
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6037
+Phase: Assigned (20150814)
+Category: 
+Reference: MS:MS15-110
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-110
+
+Cross-site scripting (XSS) vulnerability in Microsoft Excel Services
+on SharePoint Server 2010 SP2 and 2013 SP1, Office Web Apps 2010 SP2,
+Excel Web App 2010 SP2, Office Web Apps Server 2013 SP1, and
+SharePoint Foundation 2013 SP1 allows remote authenticated users to
+inject arbitrary web script or HTML via a crafted URL, aka "Microsoft
+Office Web Apps XSS Spoofing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================

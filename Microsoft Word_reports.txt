@@ -1,0 +1,3325 @@
+
+Name: CVE-2000-0788
+Status: Entry
+Reference: BUGTRAQ:20000807 MS Word and MS Access vulnerability - executing arbitrary programs, may be exploited by IE/Outlook
+Reference: URL:http://www.securityfocus.com/templates/archive.pike?list=1&msg=398EB9CA.27E03A9C@nat.bg
+Reference: MS:MS00-071
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms00-071.asp
+Reference: BID:1566
+Reference: URL:http://www.securityfocus.com/bid/1566
+Reference: XF:word-mail-merge(5322)
+Reference: URL:http://xforce.iss.net/static/5322.php
+
+The Mail Merge tool in Microsoft Word does not prompt the user before
+executing Visual Basic (VBA) scripts in an Access database, which
+could allow an attacker to execute arbitrary commands.
+
+======================================================
+Name: CVE-2001-0240
+Status: Entry
+Reference: MS:MS01-028
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms01-028.asp
+Reference: XF:word-rtf-macro-execution(6571)
+Reference: URL:http://xforce.iss.net/static/6571.php
+Reference: BID:2753
+Reference: URL:http://www.securityfocus.com/bid/2753
+
+Microsoft Word before Word 2002 allows attackers to automatically
+execute macros without warning the user via a Rich Text Format (RTF)
+document that links to a template with the embedded macro.
+
+======================================================
+Name: CVE-2001-0501
+Status: Entry
+Reference: BUGTRAQ:20010622 Fwd: Microsoft Word macro vulnerability advisory MS01-034
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=99325144322224&w=2
+Reference: MS:MS01-034
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/MS01-034.asp
+Reference: BID:2876
+Reference: URL:http://www.securityfocus.com/bid/2876
+Reference: XF:msword-macro-bypass-security(6732)
+Reference: URL:http://xforce.iss.net/static/6732.php
+
+Microsoft Word 2002 and earlier allows attackers to automatically
+execute macros without warning the user by embedding the macros in a
+manner that escapes detection by the security scanner.
+
+======================================================
+Name: CVE-2001-0628
+Status: Entry
+Reference: MSKB:Q274228
+Reference: URL:http://support.microsoft.com/support/kb/articles/Q274/2/28.asp
+Reference: BID:2760
+Reference: URL:http://www.securityfocus.com/bid/2760
+Reference: XF:word-asd-macro-execution(6614)
+Reference: URL:http://xforce.iss.net/static/6614.php
+
+Microsoft Word 2000 does not check AutoRecovery (.asd) files for
+macros, which allows a local attacker to execute arbitrary macros with
+the user ID of the Word user.
+
+======================================================
+Name: CVE-2002-0619
+Status: Entry
+Reference: BUGTRAQ:20020514 dH team & SECURITY.NNOV: A variant of "Word Mail Merge" vulnerability
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=102139136019862&w=2
+Reference: MS:MS02-031
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms02-031.asp
+Reference: XF:word-mail-merge-variant(9077)
+Reference: URL:http://www.iss.net/security_center/static/9077.php
+Reference: BID:5066
+Reference: URL:http://www.securityfocus.com/bid/5066
+
+The Mail Merge Tool in Microsoft Word 2002 for Windows, when Microsoft
+Access is present on a system, allows remote attackers to execute
+Visual Basic (VBA) scripts within a mail merge document that is saved
+in HTML format, aka a "Variant of MS00-071, Word Mail Merge
+Vulnerability" (CVE-2000-0788).
+
+======================================================
+Name: CVE-2002-1056
+Status: Entry
+Reference: BUGTRAQ:20020331 More Office XP Problems
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=101760380418890&w=2
+Reference: BUGTRAQ:20020403 More Office XP problems (Version 2.0)
+Reference: URL:http://online.securityfocus.com/archive/1/265621
+Reference: MS:MS02-021
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms02-021.asp
+Reference: BID:4397
+Reference: URL:http://www.securityfocus.com/bid/4397
+Reference: OVAL:oval:org.mitre.oval:def:205
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:205
+Reference: OVAL:oval:org.mitre.oval:def:429
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:429
+Reference: XF:outlook-object-execute-script(8708)
+Reference: URL:http://www.iss.net/security_center/static/8708.php
+
+Microsoft Outlook 2000 and 2002, when configured to use Microsoft Word
+as the email editor, does not block scripts that are used while
+editing email messages in HTML or Rich Text Format (RTF), which could
+allow remote attackers to execute arbitrary scripts via an email that
+the user forwards or replies to.
+
+======================================================
+Name: CVE-2002-1143
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1143
+Phase: Assigned (20020923)
+Category: SF
+Reference: BUGTRAQ:20020826 Security side-effects of Word fields
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=103040003014999&w=2
+Reference: BUGTRAQ:20020919 More vulnerabilities (Re: Security side-effects of Word fields)
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=103252858816401&w=2
+Reference: MS:MS02-059
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms02-059.asp
+Reference: CONFIRM:http://www.microsoft.com/technet/treeview/default.asp?url=/Technet/security/topics/secword.asp
+Reference: CERT-VN:VU#899713
+Reference: URL:http://www.kb.cert.org/vuls/id/899713
+Reference: BID:5586
+Reference: URL:http://www.securityfocus.com/bid/5586
+Reference: BID:5764
+Reference: URL:http://www.securityfocus.com/bid/5764
+Reference: OVAL:oval:org.mitre.oval:def:202
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:202
+Reference: XF:word-includetext-read-files(10008)
+Reference: URL:http://www.iss.net/security_center/static/10008.php
+Reference: XF:word-includepicture-read-files(10155)
+Reference: URL:http://www.iss.net/security_center/static/10155.php
+
+Microsoft Word and Excel allow remote attackers to steal sensitive
+information via certain field codes that insert the information when
+the document is returned to the attacker, as demonstrated in Word
+using (1) INCLUDETEXT or (2) INCLUDEPICTURE, aka "Flaw in Word Fields
+and Excel External Updates Could Lead to Information Disclosure."
+
+
+Current Votes:
+   NOOP(1) Christey
+
+Voter Comments:
+ Christey> ADDREF CERT-VN:VU#899713
+   URL:http://www.kb.cert.org/vuls/id/899713
+
+
+======================================================
+Name: CVE-2003-0664
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0664
+Phase: Assigned (20030807)
+Category: SF
+Reference: MS:MS03-035
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms03-035.asp
+Reference: OVAL:oval:org.mitre.oval:def:188
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:188
+
+Microsoft Word 2002, 2000, 97, and 98(J) does not properly check
+certain properties of a document, which allows attackers to bypass the
+macro security model and automatically execute arbitrary macros via a
+malicious document.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2003-0666
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0666
+Phase: Assigned (20030807)
+Category: SF
+Reference: VULNWATCH:20030903 EEYE: Microsoft WordPerfect Document Converter Buffer Overflow
+Reference: URL:http://archives.neohapsis.com/archives/vulnwatch/2003-q3/0092.html
+Reference: BUGTRAQ:20030903 EEYE: Microsoft WordPerfect Document Converter Buffer Overflow
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=106261952827573&w=2
+Reference: BUGTRAQ:20030905 Microsoft WordPerfect Document Converter Exploit
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=106279971612961&w=2
+Reference: MS:MS03-036
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms03-036.asp
+
+Buffer overflow in Microsoft Wordperfect Converter allows remote
+attackers to execute arbitrary code via modified data offset and data
+size parameters in a Corel WordPerfect file.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2003-0820
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0820
+Phase: Assigned (20030918)
+Category: SF
+Reference: BUGTRAQ:20031015 Few issues previously unpublished in English
+Reference: URL:http://archives.neohapsis.com/archives/bugtraq/2003-10/0163.html
+Reference: MISC:http://www.security.nnov.ru/search/document.asp?docid=5243
+Reference: MS:MS03-050
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms03-050.asp
+Reference: XF:word-macro-execute-code(13682)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/13682
+Reference: BID:8835
+Reference: URL:http://www.securityfocus.com/bid/8835
+Reference: OVAL:oval:org.mitre.oval:def:336
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:336
+Reference: OVAL:oval:org.mitre.oval:def:585
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:585
+Reference: OVAL:oval:org.mitre.oval:def:586
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:586
+Reference: OVAL:oval:org.mitre.oval:def:668
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:668
+
+Microsoft Word 97, 98(J), 2000, and 2002, and Microsoft Works Suites
+2001 through 2004, do not properly check the length of the "Macro
+names" data value, which could allow remote attackers to execute
+arbitrary code via a buffer overflow attack.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2004-0571
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0571
+Phase: Assigned (20040615)
+Category: SF
+Reference: MS:MS04-041
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms04-041.asp
+Reference: OVAL:oval:org.mitre.oval:def:1168
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1168
+Reference: OVAL:oval:org.mitre.oval:def:1417
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1417
+Reference: OVAL:oval:org.mitre.oval:def:1959
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1959
+Reference: OVAL:oval:org.mitre.oval:def:1976
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1976
+Reference: OVAL:oval:org.mitre.oval:def:3416
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:3416
+Reference: OVAL:oval:org.mitre.oval:def:3743
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:3743
+Reference: OVAL:oval:org.mitre.oval:def:4328
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:4328
+Reference: OVAL:oval:org.mitre.oval:def:685
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:685
+Reference: XF:win-converter-table-code-execution(18337)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/18337
+
+Microsoft Word for Windows 6.0 Converter does not properly validate
+certain data lengths, which allows remote attackers to execute
+arbitrary code via a .wri, .rtf, and .doc file sent by email or
+malicious web site, aka "Table Conversion Vulnerability," a different
+vulnerability than CVE-2004-0901.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2004-0573
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0573
+Phase: Assigned (20040615)
+Category: SF
+Reference: BUGTRAQ:20040914 Microsoft Office WordPerfect Converter Buffer Overflow Vulnerability
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=109519646030906&w=2
+Reference: MS:MS04-027
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms04-027.asp
+Reference: CERT-VN:VU#449438
+Reference: URL:http://www.kb.cert.org/vuls/id/449438
+Reference: OVAL:oval:org.mitre.oval:def:2670
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:2670
+Reference: OVAL:oval:org.mitre.oval:def:3311
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:3311
+Reference: OVAL:oval:org.mitre.oval:def:3333
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:3333
+Reference: OVAL:oval:org.mitre.oval:def:4005
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:4005
+Reference: OVAL:oval:org.mitre.oval:def:5021
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5021
+Reference: SECTRACK:1011249
+Reference: URL:http://securitytracker.com/id?1011249
+Reference: SECTRACK:1011250
+Reference: URL:http://securitytracker.com/id?1011250
+Reference: SECTRACK:1011251
+Reference: URL:http://securitytracker.com/id?1011251
+Reference: SECTRACK:1011252
+Reference: URL:http://securitytracker.com/id?1011252
+Reference: SECUNIA:12529
+Reference: URL:http://secunia.com/advisories/12529
+Reference: XF:wordperfect-converter-message-bo(17306)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/17306
+
+Buffer overflow in the converter for Microsoft WordPerfect 5.x on
+Office 2000, Office XP, Office 2003, and Works Suites 2001 through
+2004 allows remote attackers to execute arbitrary code via a malicious
+document or website.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2004-0901
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0901
+Phase: Assigned (20040922)
+Category: SF/CF/MP/SA/AN/unknown
+Reference: IDEFENSE:20041214 Microsoft Word 6.0/95 Document Converter Buffer Overflow Vulnerability
+Reference: URL:http://www.idefense.com/application/poi/display?id=162&type=vulnerabilities&flashstatus=true
+Reference: MS:MS04-041
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms04-041.asp
+Reference: CIAC:P-055
+Reference: URL:http://www.ciac.org/ciac/bulletins/p-055.shtml
+Reference: OVAL:oval:org.mitre.oval:def:1241
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1241
+Reference: OVAL:oval:org.mitre.oval:def:1655
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1655
+Reference: OVAL:oval:org.mitre.oval:def:3310
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:3310
+Reference: OVAL:oval:org.mitre.oval:def:3882
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:3882
+Reference: OVAL:oval:org.mitre.oval:def:4076
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:4076
+Reference: OVAL:oval:org.mitre.oval:def:4576
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:4576
+Reference: OVAL:oval:org.mitre.oval:def:4749
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:4749
+Reference: OVAL:oval:org.mitre.oval:def:539
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:539
+Reference: XF:win-converter-font-code-execution(18338)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/18338
+
+Microsoft Word for Windows 6.0 Converter (MSWRD632.WPC), as used in
+WordPad, does not properly validate certain data lengths, which allows
+remote attackers to execute arbitrary code via a .wri, .rtf, and .doc
+file sent by email or malicious web site, aka "Font Conversion
+Vulnerability," a different vulnerability than CVE-2004-0571.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2004-0963
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0963
+Phase: Assigned (20041018)
+Category: SF
+Reference: BUGTRAQ:20041006 [HV-HIGH] MS Word multiple exceptions, at least one exploitable
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=109716247230733&w=2
+Reference: MS:MS05-023
+Reference: URL:http://www.microsoft.com/technet/Security/bulletin/ms05-023.mspx
+Reference: OVAL:oval:org.mitre.oval:def:1795
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1795
+Reference: OVAL:oval:org.mitre.oval:def:2105
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:2105
+Reference: OVAL:oval:org.mitre.oval:def:2216
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:2216
+Reference: OVAL:oval:org.mitre.oval:def:420
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:420
+Reference: XF:word-file-parsing-bo(17635)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/17635
+
+Buffer overflow in Microsoft Word 2002 (10.6612.6714) SP3, and
+possibly other versions, allows remote attackers to cause a denial of
+service (application exception) and possibly execute arbitrary code in
+winword.exe via certain unexpected values in a .doc file, including
+(1) an offset that triggers an out-of-bounds memory access, (2) a
+certain value that causes a large memory copy as triggered by an
+integer conversion error, and other values.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2004-2482
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2482
+Phase: Assigned (20050821)
+Category: SF
+Reference: BUGTRAQ:20040708 Microsoft Word Email Object Data Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/368492
+Reference: BID:10683
+Reference: URL:http://www.securityfocus.com/bid/10683
+Reference: OSVDB:7769
+Reference: URL:http://www.osvdb.org/7769
+Reference: SECUNIA:12041
+Reference: URL:http://secunia.com/advisories/12041
+Reference: XF:microsoft-object-gain-access(16663)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/16663
+
+Microsoft Outlook 2000 and 2003, when configured to use Microsoft Word
+2000 or 2003 as the e-mail editor and when forwarding e-mail, does not
+properly handle an opening OBJECT tag that does not have a closing
+OBJECT tag, which causes Outlook to automatically download the URI in
+the data property of the OBJECT tag and might allow remote attackers
+to execute arbitrary code.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2005-0063
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0063
+Phase: Assigned (20050111)
+Category: SF
+Reference: IDEFENSE:20050412 Microsoft MSHTA Script Execution Vulnerability
+Reference: URL:http://www.idefense.com/application/poi/display?id=231&type=vulnerabilities
+Reference: BUGTRAQ:20050529 Spam exploiting MS05-016
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=111755356016155&w=2
+Reference: MS:MS05-016
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms05-016.mspx
+Reference: MISC:http://www.securiteam.com/exploits/5YP0T0AFFW.html
+Reference: BID:13132
+Reference: URL:http://www.securityfocus.com/bid/13132
+Reference: VUPEN:ADV-2005-0335
+Reference: URL:http://www.vupen.com/english/advisories/2005/0335
+Reference: OVAL:oval:org.mitre.oval:def:2184
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:2184
+Reference: OVAL:oval:org.mitre.oval:def:3456
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:3456
+Reference: OVAL:oval:org.mitre.oval:def:407
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:407
+Reference: OVAL:oval:org.mitre.oval:def:4710
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:4710
+Reference: OVAL:oval:org.mitre.oval:def:573
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:573
+Reference: OVAL:oval:org.mitre.oval:def:587
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:587
+
+The document processing application used by the Windows Shell in
+Microsoft Windows 2000, Windows XP, and Windows Server 2003 allows
+remote attackers to execute arbitrary code by modifying the CLSID
+stored in a file so that it is processed by HTML Application Host
+(MSHTA), as demonstrated using a Microsoft Word document.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2005-0558
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0558
+Phase: Assigned (20050226)
+Category: SF
+Reference: MS:MS05-023
+Reference: URL:http://www.microsoft.com/technet/Security/bulletin/ms05-023.mspx
+Reference: OVAL:oval:org.mitre.oval:def:1236
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1236
+Reference: OVAL:oval:org.mitre.oval:def:2415
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:2415
+Reference: OVAL:oval:org.mitre.oval:def:2685
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:2685
+Reference: OVAL:oval:org.mitre.oval:def:4234
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:4234
+Reference: XF:word-document-bo(19828)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/19828
+
+Buffer overflow in Microsoft Word 2000, Word 2002, and Word 2003
+allows remote attackers to execute arbitrary code via a crafted
+document.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2005-0564
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0564
+Phase: Assigned (20050226)
+Category: SF
+Reference: IDEFENSE:20050712 Microsoft Word 2000 and Word 2002 Font Parsing Buffer Overflow Vulnerability
+Reference: URL:http://www.idefense.com/application/poi/display?id=281&type=vulnerabilities
+Reference: MS:MS05-035
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms05-035.mspx
+Reference: CERT:TA05-193A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA05-193A.html
+Reference: CERT-VN:VU#218621
+Reference: URL:http://www.kb.cert.org/vuls/id/218621
+Reference: OVAL:oval:org.mitre.oval:def:1190
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1190
+Reference: OVAL:oval:org.mitre.oval:def:1331
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1331
+
+Stack-based buffer overflow in Microsoft Word 2000 and Word 2002, and
+Microsoft Works Suites 2000 through 2004, might allow remote attackers
+to execute arbitrary code via a .doc file with long font information.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2005-2429
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2429
+Phase: Assigned (20050803)
+Category: SF
+Reference: BUGTRAQ:20050727 Shared section vulnerability when opening microsoft office
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=112248181422193&w=2
+Reference: OSVDB:18484
+Reference: URL:http://www.osvdb.org/18484
+Reference: SECUNIA:16256
+Reference: URL:http://secunia.com/advisories/16256
+Reference: XF:office-mso97shareddg-dos(24346)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/24346
+
+Firefox, when opening Microsoft Word documents, does not properly set
+the permissions on shared sections, which allows remote attackers to
+write arbitrary data to open applications in Microsoft Office.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2005-2502
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2502
+Phase: Assigned (20050810)
+Category: SF
+Reference: APPLE:APPLE-SA-2005-08-15
+Reference: URL:http://lists.apple.com/archives/security-announce/2005/Aug/msg00000.html
+Reference: APPLE:APPLE-SA-2005-08-17
+Reference: URL:http://lists.apple.com/archives/security-announce/2005//Aug/msg00001.html
+Reference: CERT:TA05-229A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA05-229A.html
+Reference: CERT-VN:VU#172948
+Reference: URL:http://www.kb.cert.org/vuls/id/172948
+Reference: SECTRACK:1014695
+Reference: URL:http://securitytracker.com/id?1014695
+
+Buffer overflow in AppKit for Mac OS X 10.3.9 and 10.4.2, as used in
+applications such as TextEdit, allows external user-assisted attackers
+to execute arbitrary code via a crafted Microsoft Word file.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-0761
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0761
+Phase: Assigned (20060218)
+Category: 
+Reference: BUGTRAQ:20060210 Corrupt Word file may cause buffer overflow in the Blackberry Attachment Service
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/424728/100/0/threaded
+Reference: CONFIRM:http://www.blackberry.com/knowledgecenterpublic/livelink.exe/fetch/2000/8021/8149/8052/Support_-_Corrupt_Word_file_may_cause_buffer_overflow_in_the_BlackBerry_Attachment_Service.html?nodeid=1181753&vernum=2
+Reference: BID:16590
+Reference: URL:http://www.securityfocus.com/bid/16590
+Reference: VUPEN:ADV-2006-0530
+Reference: URL:http://www.vupen.com/english/advisories/2006/0530
+Reference: XF:blackberry-attachment-word-bo(24629)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/24629
+
+Buffer overflow in BlackBerry Attachment Service in Research in Motion
+(RIM) BlackBerry Enterprise Server 2.2 and 4.0 before SP3 Hotfix 4 for
+IBM Lotus Domino, 3.6 before SP7 and 5.0 before SP3 Hotfix 3 for
+Microsoft Exchangem, and 4.0 for Novell GroupWise before SP3 Hotfix 1
+might allow user-assisted remote attackers to execute arbitrary code
+on the server via a crafted Microsoft Word document that is opened on
+a wireless device.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-0935
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0935
+Phase: Assigned (20060228)
+Category: 
+Reference: MLIST:[Dailydave] 20060221 word dos 4fun
+Reference: URL:http://archives.neohapsis.com/archives/dailydave/2006-q1/0179.html
+Reference: BID:16782
+Reference: URL:http://www.securityfocus.com/bid/16782
+
+Microsoft Word 2003 allows remote attackers to cause a denial of
+service (application crash) via a crafted file, as demonstrated by
+101_filefuzz.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-2197
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2197
+Phase: Assigned (20060504)
+Category: 
+Reference: CONFIRM:http://sourceforge.net/project/shownotes.php?group_id=10501&release_id=424094
+Reference: DEBIAN:DSA-1100
+Reference: URL:http://www.debian.org/security/2006/dsa-1100
+Reference: GENTOO:GLSA-200606-24
+Reference: URL:http://www.gentoo.org/security/en/glsa/glsa-200606-24.xml
+Reference: MANDRIVA:MDKSA-2006:109
+Reference: URL:http://www.mandriva.com/security/advisories?name=MDKSA-2006:109
+Reference: SUSE:SUSE-SR:2006:015
+Reference: URL:http://www.novell.com/linux/security/advisories/2006_38_security.html
+Reference: UBUNTU:USN-300-1
+Reference: URL:http://www.ubuntulinux.org/support/documentation/usn/usn-300-1
+Reference: BID:18437
+Reference: URL:http://www.securityfocus.com/bid/18437
+Reference: VUPEN:ADV-2006-2350
+Reference: URL:http://www.vupen.com/english/advisories/2006/2350
+Reference: SECTRACK:1016313
+Reference: URL:http://securitytracker.com/id?1016313
+Reference: SECUNIA:20665
+Reference: URL:http://secunia.com/advisories/20665
+Reference: SECUNIA:20688
+Reference: URL:http://secunia.com/advisories/20688
+Reference: SECUNIA:20689
+Reference: URL:http://secunia.com/advisories/20689
+Reference: SECUNIA:20826
+Reference: URL:http://secunia.com/advisories/20826
+Reference: SECUNIA:20844
+Reference: URL:http://secunia.com/advisories/20844
+Reference: SECUNIA:20899
+Reference: URL:http://secunia.com/advisories/20899
+Reference: XF:wvware-wv2-word-overflow(27184)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/27184
+
+Integer overflow in wv2 before 0.2.3 might allow context-dependent
+attackers to execute arbitrary code via a crafted Microsoft Word
+document.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-2492
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2492
+Phase: Assigned (20060519)
+Category: 
+Reference: MISC:http://isc.sans.org/diary.php?storyid=1345
+Reference: MISC:http://isc.sans.org/diary.php?storyid=1346
+Reference: MISC:http://blogs.technet.com/msrc/archive/2006/05/19/429353.aspx
+Reference: MS:MS06-027
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms06-027.mspx
+Reference: CONFIRM:http://www.microsoft.com/technet/security/advisory/919637.mspx
+Reference: CERT:TA06-139A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA06-139A.html
+Reference: CERT:TA06-164A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA06-164A.html
+Reference: CERT-VN:VU#446012
+Reference: URL:http://www.kb.cert.org/vuls/id/446012
+Reference: BID:18037
+Reference: URL:http://www.securityfocus.com/bid/18037
+Reference: VUPEN:ADV-2006-1872
+Reference: URL:http://www.vupen.com/english/advisories/2006/1872
+Reference: OSVDB:25635
+Reference: URL:http://www.osvdb.org/25635
+Reference: OVAL:oval:org.mitre.oval:def:1418
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1418
+Reference: OVAL:oval:org.mitre.oval:def:1738
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1738
+Reference: OVAL:oval:org.mitre.oval:def:2068
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:2068
+Reference: SECTRACK:1016130
+Reference: URL:http://securitytracker.com/id?1016130
+Reference: SECUNIA:20153
+Reference: URL:http://secunia.com/advisories/20153
+Reference: XF:word-code-execution(26556)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/26556
+
+Buffer overflow in Microsoft Word in Office 2000 SP3, Office XP SP3,
+Office 2003 Sp1 and SP2, and Microsoft Works Suites through 2006,
+allows user-assisted attackers to execute arbitrary code via a
+malformed object pointer, as originally reported by ISC on 20060519
+for a zero-day attack.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3493
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3493
+Phase: Assigned (20060710)
+Category: 
+Reference: BUGTRAQ:20060710 MS Word Unchecked Boundary Condition Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/439649/100/0/threaded
+Reference: BUGTRAQ:20060711 Fuzzing Microsoft Office
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/439878/100/0/threaded
+Reference: FULLDISC:20060707 MS Word Unchecked Boundary Condition
+Reference: URL:http://marc.theaimsgroup.com/?l=full-disclosure&m=115231380526820&w=2
+Reference: FULLDISC:20060707 MS Word Unchecked Boundary Condition Vulnerability - POC
+Reference: URL:http://lists.grok.org.uk/pipermail/full-disclosure/2006-July/047732.html
+Reference: MISC:http://blogs.technet.com/msrc/archive/2006/07/10/441006.aspx
+Reference: FULLDISC:20060711 Fuzzing Microsoft Office
+Reference: URL:http://marc.theaimsgroup.com/?l=full-disclosure&m=115261598510657&w=2
+Reference: BID:18905
+Reference: URL:http://www.securityfocus.com/bid/18905
+Reference: VUPEN:ADV-2006-2720
+Reference: URL:http://www.vupen.com/english/advisories/2006/2720
+Reference: SECTRACK:1016453
+Reference: URL:http://securitytracker.com/id?1016453
+Reference: XF:office-lscreateline-dos(27617)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/27617
+Reference: XF:office-lscreateline-code-execution(27617)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/27617
+
+Buffer overflow in LsCreateLine function (mso_203) in mso.dll and
+mso9.dll, as used by Microsoft Word and possibly other products in
+Microsoft Office 2003, 2002, and 2000, allows remote user-assisted
+attackers to cause a denial of service (crash) via a crafted Word DOC
+or other Office file type.  NOTE: this issue was originally reported
+to allow code execution, but on 20060710 Microsoft stated that code
+execution is not possible, and the original researcher agrees.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3647
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3647
+Phase: Assigned (20060717)
+Category: 
+Reference: BUGTRAQ:20061011 MS06-060 Microsoft Word Memmove Code Execution
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/448417/100/0/threaded
+Reference: FULLDISC:20061011 MS06-060 Microsoft Word Memmove Code Execution
+Reference: URL:http://archives.neohapsis.com/archives/fulldisclosure/2006-10/0211.html
+Reference: HP:HPSBST02161
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: HP:SSRT061264
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: MS:MS06-060
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS06-060.mspx
+Reference: BID:20341
+Reference: URL:http://www.securityfocus.com/bid/20341
+Reference: VUPEN:ADV-2006-3979
+Reference: URL:http://www.vupen.com/english/advisories/2006/3979
+Reference: OSVDB:29440
+Reference: URL:http://www.osvdb.org/29440
+Reference: OVAL:oval:org.mitre.oval:def:4
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:4
+Reference: SECTRACK:1017032
+Reference: URL:http://securitytracker.com/id?1017032
+
+Integer overflow in Microsoft Word 2000, 2002, 2003, 2004 for Mac, and
+v.X for Mac allows remote user-assisted attackers to execute arbitrary
+code via a crafted string in a Word document, which overflows a 16-bit
+integer length value, aka "Memmove Code Execution," a different
+vulnerability than CVE-2006-3651 and CVE-2006-4693.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-3651
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3651
+Phase: Assigned (20060717)
+Category: 
+Reference: HP:HPSBST02161
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: HP:SSRT061264
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: MS:MS06-060
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS06-060.mspx
+Reference: CERT-VN:VU#921300
+Reference: URL:http://www.kb.cert.org/vuls/id/921300
+Reference: BID:20358
+Reference: URL:http://www.securityfocus.com/bid/20358
+Reference: VUPEN:ADV-2006-3979
+Reference: URL:http://www.vupen.com/english/advisories/2006/3979
+Reference: OVAL:oval:org.mitre.oval:def:51
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:51
+Reference: SECTRACK:1017032
+Reference: URL:http://securitytracker.com/id?1017032
+
+Unspecified vulnerability in Microsoft Word 2000, 2002, and Office
+2003 allows remote user-assisted attackers to execute arbitrary code
+via a crafted mail merge file, a different vulnerability than
+CVE-2006-3647 and CVE-2006-4693.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-4513
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4513
+Phase: Assigned (20060831)
+Category: 
+Reference: IDEFENSE:20061026 Multiple Vendor wvWare LFO Count Integer Overflow Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=434
+Reference: IDEFENSE:20061026 Multiple Vendor wvWare LVL Count Integer Overflow Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=433
+Reference: GENTOO:GLSA-200612-01
+Reference: URL:http://security.gentoo.org/glsa/glsa-200612-01.xml
+Reference: MANDRIVA:MDKSA-2006:202
+Reference: URL:http://www.mandriva.com/security/advisories?name=MDKSA-2006:202
+Reference: SUSE:SUSE-SR:2006:028
+Reference: URL:http://www.novell.com/linux/security/advisories/2006_28_sr.html
+Reference: UBUNTU:USN-374-1
+Reference: URL:http://www.ubuntu.com/usn/usn-374-1
+Reference: BID:20761
+Reference: URL:http://www.securityfocus.com/bid/20761
+Reference: VUPEN:ADV-2006-4221
+Reference: URL:http://www.vupen.com/english/advisories/2006/4221
+Reference: SECTRACK:1017126
+Reference: URL:http://securitytracker.com/id?1017126
+Reference: SECUNIA:22595
+Reference: URL:http://secunia.com/advisories/22595
+Reference: SECUNIA:22680
+Reference: URL:http://secunia.com/advisories/22680
+Reference: SECUNIA:22705
+Reference: URL:http://secunia.com/advisories/22705
+Reference: SECUNIA:23273
+Reference: URL:http://secunia.com/advisories/23273
+Reference: SECUNIA:23335
+Reference: URL:http://secunia.com/advisories/23335
+Reference: XF:wvware-lfo-lvl-overflow(29833)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/29833
+
+Multiple integer overflows in the WV library in wvWare (formerly
+mswordview) before 1.2.3, as used by AbiWord, KWord, and possibly
+other products, allow user-assisted remote attackers to execute
+arbitrary code via a crafted Microsoft Word (DOC) file that produces
+(1) large LFO clfolvl values in the wvGetLFO_records function or (2) a
+large LFO nolfo value in the wvGetFLO_PLF function.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-4534
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4534
+Phase: Assigned (20060905)
+Category: 
+Reference: BUGTRAQ:20060906 Microsoft confirmed Word 0-day vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/445381/100/0/threaded
+Reference: BUGTRAQ:20060906 Re: Microsoft Word 0-day Vulnerability (September) FAQ document available
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/445285/100/0/threaded
+Reference: BUGTRAQ:20060905 Microsoft Word 0-day Vulnerability (September) FAQ document available
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/445162/100/100/threaded
+Reference: MISC:http://blogs.securiteam.com/?p=586
+Reference: MISC:http://isc.sans.org/diary.php?storyid=1669
+Reference: MISC:http://www.symantec.com/enterprise/security_response/writeup.jsp?docid=2006-090219-2855-99
+Reference: MISC:http://vil.mcafeesecurity.com/vil/content/v_119055.htm
+Reference: CONFIRM:http://www.microsoft.com/technet/security/advisory/925059.mspx
+Reference: HP:HPSBST02161
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: HP:SSRT061264
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: MS:MS06-060
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS06-060.mspx
+Reference: MSKB:Q925059
+Reference: URL:http://support.microsoft.com/kb/925059
+Reference: CERT-VN:VU#806548
+Reference: URL:http://www.kb.cert.org/vuls/id/806548
+Reference: BID:19835
+Reference: URL:http://www.securityfocus.com/bid/19835
+Reference: VUPEN:ADV-2006-3448
+Reference: URL:http://www.vupen.com/english/advisories/2006/3448
+Reference: OSVDB:28539
+Reference: URL:http://www.osvdb.org/28539
+Reference: OVAL:oval:org.mitre.oval:def:578
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:578
+Reference: SECTRACK:1016787
+Reference: URL:http://securitytracker.com/id?1016787
+Reference: SECUNIA:21735
+Reference: URL:http://secunia.com/advisories/21735
+Reference: XF:ms-word-code-execution(28775)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/28775
+Reference: XF:word-2000-code-execution(28775)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/28775
+
+Unspecified vulnerability in Microsoft Word 2000, 2002, and Office
+2003 allows remote user-assisted attackers to execute arbitrary code
+via unspecified vectors involving a crafted file resulting in a
+malformed stack, as exploited by malware with names including
+Trojan.Mdropper.Q, Mofei, and Femo.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-4693
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4693
+Phase: Assigned (20060911)
+Category: 
+Reference: HP:HPSBST02161
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: HP:SSRT061264
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/449179/100/0/threaded
+Reference: MS:MS06-060
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS06-060.mspx
+Reference: BID:20387
+Reference: URL:http://www.securityfocus.com/bid/20387
+Reference: VUPEN:ADV-2006-3979
+Reference: URL:http://www.vupen.com/english/advisories/2006/3979
+Reference: OSVDB:29442
+Reference: URL:http://www.osvdb.org/29442
+Reference: SECTRACK:1017032
+Reference: URL:http://securitytracker.com/id?1017032
+
+Unspecified vulnerability in Microsoft Word 2004 for Mac and v.X for
+Mac allows remote user-assisted attackers to execute arbitrary code
+via a crafted string in a Word file, a different issue than
+CVE-2006-3647 and CVE-2006-3651.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-5994
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5994
+Phase: Assigned (20061121)
+Category: 
+Reference: BUGTRAQ:20061206 Microsoft 0-day word vulnerability - Secunia - Extremely critical
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/453735/100/0/threaded
+Reference: BUGTRAQ:20061208 Microsoft Word 0-day Vulnerability FAQ (CVE-2006-5994) written
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/453906/100/0/threaded
+Reference: BUGTRAQ:20061210 Several updates in Microsoft Word 0-day (CVE-2006-5994) FAQ document
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/454061/100/0/threaded
+Reference: MISC:http://blogs.securiteam.com/?p=759
+Reference: CONFIRM:http://www.microsoft.com/technet/security/advisory/929433.mspx
+Reference: CONFIRM:http://blogs.technet.com/msrc/archive/2006/12/06/microsoft-security-advisory-929433-posted.aspx
+Reference: MISC:http://www.computerworld.com/action/article.do?command=viewArticleBasic&articleId=9005698&intsrc=hm_list
+Reference: MS:MS07-014
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS07-014.mspx
+Reference: CERT:TA07-044A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-044A.html
+Reference: CERT-VN:VU#167928
+Reference: URL:http://www.kb.cert.org/vuls/id/167928
+Reference: BID:21451
+Reference: URL:http://www.securityfocus.com/bid/21451
+Reference: VUPEN:ADV-2006-4866
+Reference: URL:http://www.vupen.com/english/advisories/2006/4866
+Reference: OSVDB:30824
+Reference: URL:http://www.osvdb.org/30824
+Reference: OVAL:oval:org.mitre.oval:def:238
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:238
+Reference: SECTRACK:1017339
+Reference: URL:http://securitytracker.com/id?1017339
+Reference: SECUNIA:23232
+Reference: URL:http://secunia.com/advisories/23232
+Reference: XF:word-unspecified-code-execution(30738)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/30738
+
+Unspecified vulnerability in Microsoft Word 2000 and 2002, Office Word
+and Word Viewer 2003, Word 2004 and 2004 v. X for Mac, and Works 2004,
+2005, and 2006 allows remote attackers to execute arbitrary code via a
+Word document with a malformed string that triggers memory corruption,
+a different vulnerability than CVE-2006-6456.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-6456
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6456
+Phase: Assigned (20061211)
+Category: 
+Reference: BUGTRAQ:20061210 Another, different MS Word 0-day vulnerability reported
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/454069/100/0/threaded
+Reference: BUGTRAQ:20061210 Re: Another, different MS Word 0-day vulnerability reported
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/454072/100/0/threaded
+Reference: BUGTRAQ:20061211 The newest Word flaw is due to malformed data structure handling
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/454093/100/0/threaded
+Reference: FULLDISC:20061210 Another, different MS Word 0-day vulnerability reported
+Reference: URL:http://archives.neohapsis.com/archives/fulldisclosure/2006-12/0199.html
+Reference: FULLDISC:20061211 The newest Word flaw is due to malformed data structure handling
+Reference: URL:http://archives.neohapsis.com/archives/fulldisclosure/2006-12/0215.html
+Reference: MISC:http://isc.sans.org/diary.php?storyid=1925
+Reference: MISC:http://vil.mcafeesecurity.com/vil/content/v_141056.htm
+Reference: MISC:http://vil.mcafeesecurity.com/vil/content/v_vul27249.htm
+Reference: CONFIRM:http://blogs.technet.com/msrc/archive/2006/12/10/new-report-of-a-word-zero-day.aspx
+Reference: MS:MS07-014
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS07-014.mspx
+Reference: CERT:TA07-044A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-044A.html
+Reference: CERT-VN:VU#166700
+Reference: URL:http://www.kb.cert.org/vuls/id/166700
+Reference: BID:21518
+Reference: URL:http://www.securityfocus.com/bid/21518
+Reference: VUPEN:ADV-2006-4920
+Reference: URL:http://www.vupen.com/english/advisories/2006/4920
+Reference: VUPEN:ADV-2007-0435
+Reference: URL:http://www.vupen.com/english/advisories/2007/0435
+Reference: OSVDB:30825
+Reference: URL:http://www.osvdb.org/30825
+Reference: OVAL:oval:org.mitre.oval:def:746
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:746
+Reference: SECTRACK:1017579
+Reference: URL:http://securitytracker.com/id?1017579
+Reference: SECUNIA:23205
+Reference: URL:http://secunia.com/advisories/23205
+Reference: SECTRACK:1017358
+Reference: URL:http://securitytracker.com/id?1017358
+Reference: XF:word-unspec-code-execution(30806)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/30806
+
+Unspecified vulnerability in Microsoft Word 2000, 2002, and 2003 and
+Word Viewer 2003 allows remote attackers to execute code via
+unspecified vectors related to malformed data structures that trigger
+memory corruption, a different vulnerability than CVE-2006-5994.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-6561
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6561
+Phase: Assigned (20061214)
+Category: 
+Reference: BUGTRAQ:20061212 Re: Re: The newest Word flaw is due to malformed data structure handling
+Reference: URL:http://www.securityfocus.com/archive/1/454219/30/0/threaded
+Reference: MISC:http://blogs.securiteam.com/?p=763
+Reference: MISC:http://research.eeye.com/html/alerts/zeroday/20061212.html
+Reference: MISC:http://www.infoworld.com/article/06/12/13/HNthirdword_1.html
+Reference: MILW0RM:2922
+Reference: URL:http://milw0rm.com/exploits/2922
+Reference: MISC:http://www.milw0rm.com/sploits/12122006-djtest.doc
+Reference: CONFIRM:http://blogs.technet.com/msrc/archive/2006/12/15/update-on-current-word-vulnerability-reports.aspx
+Reference: CERT-VN:VU#996892
+Reference: URL:http://www.kb.cert.org/vuls/id/996892
+Reference: BID:21589
+Reference: URL:http://www.securityfocus.com/bid/21589
+Reference: VUPEN:ADV-2006-4997
+Reference: URL:http://www.vupen.com/english/advisories/2006/4997
+Reference: OVAL:oval:org.mitre.oval:def:332
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:332
+Reference: SECTRACK:1017390
+Reference: URL:http://securitytracker.com/id?1017390
+Reference: XF:word-pointer-code-execution(30885)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/30885
+
+Unspecified vulnerability in Microsoft Word 2000, 2002, and Word
+Viewer 2003 allows user-assisted remote attackers to execute arbitrary
+code via a crafted DOC file that triggers memory corruption, as
+demonstrated via the 12122006-djtest.doc file, a different issue than
+CVE-2006-5994 and CVE-2006-6456.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-0208
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0208
+Phase: Assigned (20070112)
+Category: 
+Reference: MS:MS07-014
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS07-014.mspx
+Reference: CERT:TA07-044A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-044A.html
+Reference: BID:22477
+Reference: URL:http://www.securityfocus.com/bid/22477
+Reference: VUPEN:ADV-2007-0583
+Reference: URL:http://www.vupen.com/english/advisories/2007/0583
+Reference: OSVDB:34385
+Reference: URL:http://www.osvdb.org/34385
+Reference: OVAL:oval:org.mitre.oval:def:700
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:700
+Reference: SECTRACK:1017639
+Reference: URL:http://www.securitytracker.com/id?1017639
+
+Microsoft Word in Office 2000 SP3, XP SP3, Office 2003 SP2, Works
+Suite 2004 to 2006, and Office 2004 for Mac does not correctly check
+the properties of certain documents and warn the user of macro
+content, which allows user-assisted remote attackers to execute
+arbitrary code.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-0209
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0209
+Phase: Assigned (20070112)
+Category: 
+Reference: MS:MS07-014
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS07-014.mspx
+Reference: CERT:TA07-044A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-044A.html
+Reference: BID:22482
+Reference: URL:http://www.securityfocus.com/bid/22482
+Reference: VUPEN:ADV-2007-0583
+Reference: URL:http://www.vupen.com/english/advisories/2007/0583
+Reference: OSVDB:34386
+Reference: URL:http://osvdb.org/34386
+Reference: OVAL:oval:org.mitre.oval:def:187
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:187
+Reference: SECTRACK:1017639
+Reference: URL:http://www.securitytracker.com/id?1017639
+
+Microsoft Word in Office 2000 SP3, XP SP3, Office 2003 SP2, Works
+Suite 2004 to 2006, and Office 2004 for Mac allows user-assisted
+remote attackers to execute arbitrary code via a Word file with a
+malformed drawing object, which leads to memory corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-0515
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0515
+Phase: Assigned (20070125)
+Category: 
+Reference: MISC:http://isc.sans.org/diary.html?storyid=2133
+Reference: MISC:http://www.symantec.com/enterprise/security_response/weblog/2007/01/new_microsoft_word_2000_vulner.html
+Reference: MISC:http://www.symantec.com/enterprise/security_response/weblog/2007/01/multiple_organizations_targett.html
+Reference: MISC:http://www.symantec.com/enterprise/security_response/writeup.jsp?docid=2007-013010-5422-99&tabid=2
+Reference: CONFIRM:http://www.microsoft.com/technet/security/advisory/932114.mspx
+Reference: MS:MS07-014
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS07-014.mspx
+Reference: CERT:TA07-044A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-044A.html
+Reference: CERT-VN:VU#412225
+Reference: URL:http://www.kb.cert.org/vuls/id/412225
+Reference: BID:22225
+Reference: URL:http://www.securityfocus.com/bid/22225
+Reference: BID:22328
+Reference: URL:http://www.securityfocus.com/bid/22328
+Reference: VUPEN:ADV-2007-0350
+Reference: URL:http://www.vupen.com/english/advisories/2007/0350
+Reference: OSVDB:31900
+Reference: URL:http://osvdb.org/31900
+Reference: OVAL:oval:org.mitre.oval:def:528
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:528
+Reference: SECTRACK:1017564
+Reference: URL:http://securitytracker.com/id?1017564
+Reference: SECUNIA:23950
+Reference: URL:http://secunia.com/advisories/23950
+Reference: XF:word-document-code-execution(31834)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/31834
+
+Unspecified vulnerability in Microsoft Word allows user-assisted
+remote attackers to execute arbitrary code on Word 2000, and cause a
+denial of service on Word 2003, via unknown attack vectors that
+trigger memory corruption, as exploited by Trojan.Mdropper.W and later
+by Trojan.Mdropper.X, a different issue than CVE-2006-6456,
+CVE-2006-5994, and CVE-2006-6561.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-0870
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0870
+Phase: Assigned (20070211)
+Category: 
+Reference: FULLDISC:20070215 Word flaw CVE-2007-0870 confirmed as code execution type issue
+Reference: URL:http://archives.neohapsis.com/archives/fulldisclosure/2007-02/0370.html
+Reference: MISC:http://www.avertlabs.com/research/blog/?p=199
+Reference: MISC:http://www.avertlabs.com/research/blog/?p=206
+Reference: MISC:http://www.microsoft.com/technet/security/advisory/933052.mspx
+Reference: HP:HPSBST02214
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/468871/100/200/threaded
+Reference: HP:SSRT071422
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/468871/100/200/threaded
+Reference: MS:MS07-024
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms07-024.mspx
+Reference: CERT:TA07-128A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-128A.html
+Reference: CERT-VN:VU#332404
+Reference: URL:http://www.kb.cert.org/vuls/id/332404
+Reference: BID:22567
+Reference: URL:http://www.securityfocus.com/bid/22567
+Reference: VUPEN:ADV-2007-0607
+Reference: URL:http://www.vupen.com/english/advisories/2007/0607
+Reference: VUPEN:ADV-2007-1709
+Reference: URL:http://www.vupen.com/english/advisories/2007/1709
+Reference: OSVDB:33196
+Reference: URL:http://osvdb.org/33196
+Reference: OVAL:oval:org.mitre.oval:def:1860
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1860
+Reference: SECTRACK:1017653
+Reference: URL:http://www.securitytracker.com/id?1017653
+Reference: SECUNIA:24122
+Reference: URL:http://secunia.com/advisories/24122
+Reference: XF:word-unspecified-string-code-execution(32503)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/32503
+Reference: XF:word-document-string-code-execution(32503)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/32503
+
+Unspecified vulnerability in Microsoft Word 2000 allows remote
+attackers to cause a denial of service (crash) via unknown vectors, a
+different vulnerability than CVE-2006-5994, CVE-2006-6456,
+CVE-2006-6561, and CVE-2007-0515, a variant of Exploit-MS06-027.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-1202
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1202
+Phase: Assigned (20070302)
+Category: 
+Reference: IDEFENSE:20070508 Microsoft Word RTF File Parsing Heap Corruption Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=525
+Reference: HP:HPSBST02214
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/468871/100/200/threaded
+Reference: HP:SSRT071422
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/468871/100/200/threaded
+Reference: MS:MS07-024
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms07-024.mspx
+Reference: CERT:TA07-128A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-128A.html
+Reference: CERT-VN:VU#555489
+Reference: URL:http://www.kb.cert.org/vuls/id/555489
+Reference: BID:23836
+Reference: URL:http://www.securityfocus.com/bid/23836
+Reference: VUPEN:ADV-2007-1709
+Reference: URL:http://www.vupen.com/english/advisories/2007/1709
+Reference: OSVDB:34388
+Reference: URL:http://www.osvdb.org/34388
+Reference: OVAL:oval:org.mitre.oval:def:1900
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1900
+Reference: SECTRACK:1018013
+Reference: URL:http://www.securitytracker.com/id?1018013
+
+Word (or Word Viewer) in Microsoft Office 2000 SP3, XP SP3, 2003 SP2,
+2004 for Mac, and Works Suite 2004, 2005, and 2006 does not properly
+parse certain rich text "property strings of certain control words,"
+which allows user-assisted remote attackers to trigger heap corruption
+and execute arbitrary code, aka the "Word RTF Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-1910
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1910
+Phase: Assigned (20070410)
+Category: 
+Reference: MILW0RM:3690
+Reference: URL:http://www.milw0rm.com/exploits/3690
+Reference: BID:23380
+Reference: URL:http://www.securityfocus.com/bid/23380
+Reference: SECTRACK:1017902
+Reference: URL:http://www.securitytracker.com/id?1017902
+
+Buffer overflow in wwlib.dll in Microsoft Word 2007 allows remote
+attackers to cause a denial of service (application crash) and
+possibly execute arbitrary code via a crafted document, as
+demonstrated by file789-1.doc.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-1911
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1911
+Phase: Assigned (20070410)
+Category: 
+Reference: MILW0RM:3690
+Reference: URL:http://www.milw0rm.com/exploits/3690
+
+Multiple unspecified vulnerabilities in Microsoft Word 2007 allow
+remote attackers to cause a denial of service (CPU consumption) via
+crafted documents, as demonstrated by (1) file798-1.doc and (2)
+file613-1.doc, possibly related to a buffer overflow.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-3899
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3899
+Phase: Assigned (20070719)
+Category: 
+Reference: HP:HPSBST02280
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/482366/100/0/threaded
+Reference: HP:SSRT071480
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/482366/100/0/threaded
+Reference: MS:MS07-060
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms07-060.mspx
+Reference: CERT:TA07-282A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA07-282A.html
+Reference: BID:25906
+Reference: URL:http://www.securityfocus.com/bid/25906
+Reference: VUPEN:ADV-2007-3440
+Reference: URL:http://www.vupen.com/english/advisories/2007/3440
+Reference: OVAL:oval:org.mitre.oval:def:1879
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:1879
+Reference: SECTRACK:1018790
+Reference: URL:http://securitytracker.com/id?1018790
+Reference: SECUNIA:27151
+Reference: URL:http://secunia.com/advisories/27151
+
+Unspecified vulnerability in Microsoft Word 2000 SP3, Word 2002 SP3,
+and Office 2004 for Mac allows user-assisted remote attackers to
+execute arbitrary code via a malformed string in a Word file, aka
+"Word Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-0109
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0109
+Phase: Assigned (20080107)
+Category: 
+Reference: BUGTRAQ:20080213 [Reversemode Advisory] February Advisories : Microsoft Word 2003 + Fortinet Forticlient
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/488071/100/0/threaded
+Reference: HP:HPSBST02314
+Reference: URL:http://marc.info/?l=bugtraq&m=120361015026386&w=2
+Reference: HP:SSRT080016
+Reference: URL:http://marc.info/?l=bugtraq&m=120361015026386&w=2
+Reference: MS:MS08-009
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms08-009.mspx
+Reference: CERT:TA08-043C
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-043C.html
+Reference: CERT-VN:VU#692417
+Reference: URL:http://www.kb.cert.org/vuls/id/692417
+Reference: BID:27656
+Reference: URL:http://www.securityfocus.com/bid/27656
+Reference: VUPEN:ADV-2008-0511
+Reference: URL:http://www.vupen.com/english/advisories/2008/0511/references
+Reference: OVAL:oval:org.mitre.oval:def:5073
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5073
+Reference: SECTRACK:1019374
+Reference: URL:http://www.securitytracker.com/id?1019374
+Reference: SECUNIA:28901
+Reference: URL:http://secunia.com/advisories/28901
+
+Word in Microsoft Office 2000 SP3, XP SP3, Office 2003 SP2, and Office
+Word Viewer 2003 allows remote attackers to execute arbitrary code via
+crafted fields within the File Information Block (FIB) of a Word file,
+which triggers length calculation errors and memory corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-0779
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0779
+Phase: Assigned (20080213)
+Category: 
+Reference: BUGTRAQ:20080213 [Reversemode Advisory] February Advisories : Microsoft Word 2003 + Fortinet Forticlient
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/488071/100/0/threaded
+Reference: MISC:http://www.reversemode.com/index.php?option=com_mamblog&Itemid=15&task=show&action=view&id=47&Itemid=15
+Reference: CONFIRM:http://kc.forticare.com/default.asp?id=3618
+Reference: BID:27776
+Reference: URL:http://www.securityfocus.com/bid/27776
+Reference: VUPEN:ADV-2008-0541
+Reference: URL:http://www.vupen.com/english/advisories/2008/0541/references
+Reference: SECTRACK:1019415
+Reference: URL:http://www.securitytracker.com/id?1019415
+Reference: SECUNIA:28975
+Reference: URL:http://secunia.com/advisories/28975
+Reference: SREASON:3660
+Reference: URL:http://securityreason.com/securityalert/3660
+Reference: XF:forticlient-fortimon-privilege-escalation(40512)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/40512
+
+The fortimon.sys device driver in Fortinet FortiClient Host Security
+3.0 MR5 Patch 3 and earlier does not properly initialize its
+DeviceExtension, which allows local users to access kernel memory and
+execute arbitrary code via a crafted request.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-1091
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1091
+Phase: Assigned (20080228)
+Category: 
+Reference: BUGTRAQ:20080513 ZDI-08-023: Microsoft Office RTF Parsing Engine Memory Corruption Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/492020/100/0/threaded
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-08-023
+Reference: HP:HPSBST02336
+Reference: URL:http://marc.info/?l=bugtraq&m=121129490723574&w=2
+Reference: HP:SSRT080071
+Reference: URL:http://marc.info/?l=bugtraq&m=121129490723574&w=2
+Reference: MS:MS08-026
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms08-026.mspx
+Reference: CERT:TA08-134A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-134A.html
+Reference: CERT-VN:VU#543907
+Reference: URL:http://www.kb.cert.org/vuls/id/543907
+Reference: BID:29104
+Reference: URL:http://www.securityfocus.com/bid/29104
+Reference: OVAL:oval:org.mitre.oval:def:5494
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5494
+Reference: VUPEN:ADV-2008-1504
+Reference: URL:http://www.vupen.com/english/advisories/2008/1504/references
+Reference: SECTRACK:1020013
+Reference: URL:http://www.securitytracker.com/id?1020013
+Reference: SECUNIA:30143
+Reference: URL:http://secunia.com/advisories/30143
+
+Unspecified vulnerability in Microsoft Word in Office 2000 and XP SP3,
+2003 SP2 and SP3, and 2007 Office System SP1 and earlier allows remote
+attackers to execute arbitrary code via a Rich Text Format (.rtf) file
+with a malformed string that triggers a "memory calculation error" and
+a heap-based buffer overflow, aka "Object Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-1434
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1434
+Phase: Assigned (20080321)
+Category: 
+Reference: IDEFENSE:20080513 Microsoft Word CSS Processing Memory Corruption Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=700
+Reference: HP:HPSBST02336
+Reference: URL:http://marc.info/?l=bugtraq&m=121129490723574&w=2
+Reference: HP:SSRT080071
+Reference: URL:http://marc.info/?l=bugtraq&m=121129490723574&w=2
+Reference: MS:MS08-026
+Reference: URL:http://www.microsoft.com/technet/security/bulletin/ms08-026.mspx
+Reference: CERT:TA08-134A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-134A.html
+Reference: BID:29105
+Reference: URL:http://www.securityfocus.com/bid/29105
+Reference: OVAL:oval:org.mitre.oval:def:5012
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5012
+Reference: VUPEN:ADV-2008-1504
+Reference: URL:http://www.vupen.com/english/advisories/2008/1504/references
+Reference: SECTRACK:1020014
+Reference: URL:http://www.securitytracker.com/id?1020014
+Reference: SECUNIA:30143
+Reference: URL:http://secunia.com/advisories/30143
+
+Use-after-free vulnerability in Microsoft Word in Office 2000 and XP
+SP3, 2003 SP2 and SP3, and 2007 Office System SP1 and earlier allows
+remote attackers to execute arbitrary code via an HTML document with a
+large number of Cascading Style Sheets (CSS) selectors, related to a
+"memory handling error" that triggers memory corruption.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-2752
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2752
+Phase: Assigned (20080618)
+Category: 
+Reference: MISC:http://www.nullcode.com.ar/ncs/crash/video.htm
+Reference: MISC:http://www.nullcode.com.ar/ncs/crash/video2.htm
+Reference: MISC:http://www.securityfocus.com/data/vulnerabilities/exploits/crash-word-1.doc
+Reference: MISC:http://www.securityfocus.com/data/vulnerabilities/exploits/crash-word-2.doc
+Reference: MISC:http://www.securityfocus.com/data/vulnerabilities/exploits/crash-word-3.doc
+Reference: MISC:http://www.securityfocus.com/data/vulnerabilities/exploits/crash-word-4.doc
+Reference: BID:29769
+Reference: URL:http://www.securityfocus.com/bid/29769
+Reference: XF:microsoft-word-unorderedlist-code-execution(43155)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/43155
+
+Microsoft Word 2000 9.0.2812 and 2003 11.8106.8172 does not properly
+handle unordered lists, which allows user-assisted remote attackers to
+cause a denial of service (memory corruption and application crash) or
+possibly execute arbitrary code via a crafted .doc file.  NOTE: some of
+these details are obtained from third party information.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-4024
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4024
+Phase: Assigned (20080910)
+Category: 
+Reference: BUGTRAQ:20081210 CORE-2008-0228: Microsoft Word Malformed FIB Arbitrary Free Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/499086/100/0/threaded
+Reference: MISC:http://www.coresecurity.com/content/word-arbitrary-free
+Reference: MISC:http://www.coresecurity.com/files/attachments/CORE-2008-0228-Word.pdf
+Reference: MS:MS08-072
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS08-072.mspx
+Reference: CERT:TA08-344A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-344A.html
+Reference: OVAL:oval:org.mitre.oval:def:5934
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5934
+Reference: VUPEN:ADV-2008-3384
+Reference: URL:http://www.vupen.com/english/advisories/2008/3384
+Reference: SECTRACK:1021370
+Reference: URL:http://www.securitytracker.com/id?1021370
+
+Microsoft Office Word 2000 SP3 and 2002 SP3 and Office 2004 for Mac
+allow remote attackers to execute arbitrary code via a Word document
+with a crafted lcbPlcfBkfSdt field in the File Information Block
+(FIB), which bypasses an initialization step and triggers an
+"arbitrary free," aka "Word Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-4025
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4025
+Phase: Assigned (20080910)
+Category: 
+Reference: BUGTRAQ:20081209 Secunia Research: Microsoft Word RTF Polyline/Polygon Integer Overflow
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/499054/100/0/threaded
+Reference: MS:MS08-072
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS08-072.mspx
+Reference: MISC:http://secunia.com/secunia_research/2008-21/
+Reference: CERT:TA08-344A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA08-344A.html
+Reference: OVAL:oval:org.mitre.oval:def:5682
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5682
+Reference: VUPEN:ADV-2008-3384
+Reference: URL:http://www.vupen.com/english/advisories/2008/3384
+Reference: SECTRACK:1021370
+Reference: URL:http://www.securitytracker.com/id?1021370
+
+Integer overflow in Microsoft Office Word 2000 SP3, 2002 SP3, 2003
+SP3, and 2007 Gold and SP1; Outlook 2007 Gold and SP1; Word Viewer
+2003 Gold and SP3; Office Compatibility Pack for Word, Excel, and
+PowerPoint 2007 File Formats Gold and SP1; Office 2004 and 2008 for
+Mac; and Open XML File Format Converter for Mac allow remote attackers
+to execute arbitrary code via (1) an RTF file or (2) a rich text
+e-mail message containing an invalid number of points for a polyline
+or polygon, which triggers a heap-based buffer overflow, aka "Word RTF
+Object Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-6063
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-6063
+Phase: Assigned (20090204)
+Category: 
+Reference: BUGTRAQ:20080110 Word 2007 Email as PDF path disclosure flaw
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/486088/100/0/threaded
+
+Microsoft Word 2007, when the "Save as PDF" add-on is enabled, places
+an absolute pathname in the Subject field during an "Email as PDF"
+operation, which allows remote attackers to obtain sensitive
+information such as the sender's account name and a Temporary Internet
+Files subdirectory name.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-0088
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0088
+Phase: Assigned (20090108)
+Category: 
+Reference: IDEFENSE:20090414 Microsoft Word 2000 WordPerfect 6.x Converter Stack Corruption Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=782
+Reference: MS:MS09-010
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-010.mspx
+Reference: CERT:TA09-104A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-104A.html
+Reference: OSVDB:53663
+Reference: URL:http://osvdb.org/53663
+Reference: OVAL:oval:org.mitre.oval:def:5736
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5736
+Reference: SECTRACK:1022043
+Reference: URL:http://www.securitytracker.com/id?1022043
+Reference: VUPEN:ADV-2009-1024
+Reference: URL:http://www.vupen.com/english/advisories/2009/1024
+
+The WordPerfect 6.x Converter (WPFT632.CNV, 1998.1.27.0) in Microsoft
+Office Word 2000 SP3 and Microsoft Office Converter Pack does not
+properly validate the length of an unspecified string, which allows
+remote attackers to execute arbitrary code via a crafted WordPerfect
+6.x file, related to an unspecified counter and control structures on
+the stack, aka "Word 2000 WordPerfect 6.x Converter Stack Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-0235
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0235
+Phase: Assigned (20090120)
+Category: 
+Reference: IDEFENSE:20090414 Microsoft WordPad Word97 Converter Stack Buffer Overflow Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=783
+Reference: MS:MS09-010
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-010.mspx
+Reference: CERT:TA09-104A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-104A.html
+Reference: BID:34470
+Reference: URL:http://www.securityfocus.com/bid/34470
+Reference: OSVDB:53664
+Reference: URL:http://osvdb.org/53664
+Reference: OVAL:oval:org.mitre.oval:def:5893
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5893
+Reference: SECTRACK:1022043
+Reference: URL:http://www.securitytracker.com/id?1022043
+Reference: VUPEN:ADV-2009-1024
+Reference: URL:http://www.vupen.com/english/advisories/2009/1024
+
+Stack-based buffer overflow in the Word 97 text converter in WordPad
+in Microsoft Windows 2000 SP4, XP SP2 and SP3, and Server 2003 SP1 and
+SP2 allows remote attackers to execute arbitrary code via a crafted
+Word 97 file that triggers memory corruption, related to use of
+inconsistent integer data sizes for an unspecified length field, aka
+"WordPad Word 97 Text Converter Stack Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-0563
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0563
+Phase: Assigned (20090212)
+Category: 
+Reference: BUGTRAQ:20090610 ZDI-09-035: Microsoft Word Document Stack Based Buffer Overflow Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/504204/100/0/threaded
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-09-035
+Reference: MS:MS09-027
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-027.mspx
+Reference: CERT:TA09-160A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-160A.html
+Reference: BID:35188
+Reference: URL:http://www.securityfocus.com/bid/35188
+Reference: OSVDB:54959
+Reference: URL:http://osvdb.org/54959
+Reference: OVAL:oval:org.mitre.oval:def:6133
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6133
+Reference: SECTRACK:1022356
+Reference: URL:http://www.securitytracker.com/id?1022356
+Reference: VUPEN:ADV-2009-1546
+Reference: URL:http://www.vupen.com/english/advisories/2009/1546
+
+Stack-based buffer overflow in Microsoft Office Word 2002 SP3, 2003
+SP3, and 2007 SP1 and SP2; Microsoft Office for Mac 2004 and 2008;
+Open XML File Format Converter for Mac; Microsoft Office Word Viewer
+2003 SP3; Microsoft Office Word Viewer; and Microsoft Office
+Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats
+SP1 and SP2 allows remote attackers to execute arbitrary code via a
+Word document with a crafted tag containing an invalid length field,
+aka "Word Buffer Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-2506
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2506
+Phase: Assigned (20090717)
+Category: 
+Reference: IDEFENSE:20091208 Microsoft WordPad Word97 Converter Integer Overflow Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=834
+Reference: CONFIRM:http://support.avaya.com/css/P8/documents/100070184
+Reference: MS:MS09-073
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-073.mspx
+Reference: CERT:TA09-342A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-342A.html
+Reference: BID:37216
+Reference: URL:http://www.securityfocus.com/bid/37216
+Reference: OVAL:oval:org.mitre.oval:def:5846
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:5846
+
+Integer overflow in the text converters in Microsoft Office Word 2002
+SP3 and 2003 SP3; Works 8.5; Office Converter Pack; and WordPad in
+Windows 2000 SP4, XP SP2 and SP3, and Server 2003 SP2 allows remote
+attackers to execute arbitrary code via a DOC file with an invalid
+number of property names in the DocumentSummaryInformation stream,
+which triggers a heap-based buffer overflow.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-3135
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3135
+Phase: Assigned (20090910)
+Category: 
+Reference: IDEFENSE:20091110 Microsoft Word FIB Processing Stack Buffer Overflow Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=831
+Reference: MS:MS09-068
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS09-068.mspx
+Reference: CERT:TA09-314A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA09-314A.html
+Reference: BID:36950
+Reference: URL:http://www.securityfocus.com/bid/36950
+Reference: OSVDB:59857
+Reference: URL:http://osvdb.org/59857
+Reference: OVAL:oval:org.mitre.oval:def:6555
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6555
+Reference: SECTRACK:1023158
+Reference: URL:http://www.securitytracker.com/id?1023158
+Reference: SECUNIA:37277
+Reference: URL:http://secunia.com/advisories/37277
+Reference: VUPEN:ADV-2009-3194
+Reference: URL:http://www.vupen.com/english/advisories/2009/3194
+
+Stack-based buffer overflow in Microsoft Office Word 2002 SP3 and 2003
+SP3, Office 2004 and 2008 for Mac, Open XML File Format Converter for
+Mac, Office Word Viewer 2003 SP3, and Office Word Viewer allow remote
+attackers to execute arbitrary code via a Word document with a
+malformed File Information Block (FIB) structure, aka "Microsoft
+Office Word File Information Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-2563
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2563
+Phase: Assigned (20100630)
+Category: 
+Reference: IDEFENSE:20100914 Microsoft WordPad Word97 Converter Memory Corruption Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=879
+Reference: MS:MS10-067
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-067.mspx
+Reference: OVAL:oval:org.mitre.oval:def:6632
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6632
+
+The Word 97 text converter in the WordPad Text Converters in Microsoft
+Windows XP SP2 and SP3 and Server 2003 SP2 does not properly parse
+malformed structures in Word 97 documents, which allows remote
+attackers to execute arbitrary code via a crafted document containing
+an unspecified value that is used in a loop counter, aka "WordPad Word
+97 Text Converter Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-2747
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2747
+Phase: Assigned (20100714)
+Category: 
+Reference: BUGTRAQ:20101014 VUPEN Security Research - Microsoft Office Word Uninitialized Pointer Vulnerability (CVE-2010-2747)
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/514310/100/0/threaded
+Reference: MS:MS10-079
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-079.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7121
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7121
+
+Microsoft Word 2002 SP3 and Office 2004 for Mac do not properly handle
+an uninitialized pointer during parsing of a Word document, which
+allows remote attackers to execute arbitrary code via a crafted
+document that triggers memory corruption, aka "Word Uninitialized
+Pointer Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-2748
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2748
+Phase: Assigned (20100714)
+Category: 
+Reference: MS:MS10-079
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-079.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7375
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7375
+
+Microsoft Word 2002 SP3 and Office 2004 for Mac do not properly check
+an unspecified boundary during parsing of a Word document, which
+allows remote attackers to execute arbitrary code via a crafted
+document that triggers memory corruption, aka "Word Boundary Check
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-2750
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2750
+Phase: Assigned (20100714)
+Category: 
+Reference: BUGTRAQ:20101014 VUPEN Security Research - Microsoft Office Word Document Array Indexing Vulnerability (CVE-2010-2750)
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/514292/100/0/threaded
+Reference: MS:MS10-079
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-079.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7582
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7582
+
+Array index error in Microsoft Word 2002 SP3 and Office 2004 for Mac
+allows remote attackers to execute arbitrary code via a crafted Word
+document that triggers memory corruption, aka "Word Index
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3200
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3200
+Phase: Assigned (20100831)
+Category: 
+Reference: BUGTRAQ:20100914 CVE-2010-3200 : Microsoft Word 2003 MSO Null Pointer Dereference Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/513679/100/0/threaded
+
+MSO.dll in Microsoft Word 2003 SP3 11.8326.11.8324 allows remote
+attackers to cause a denial of service (NULL pointer dereference and
+multiple-instance application crash) via a crafted buffer in a Word
+document, as demonstrated by word_crash_11.8326.8324_poc.doc.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3214
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3214
+Phase: Assigned (20100903)
+Category: 
+Reference: BUGTRAQ:20101014 VUPEN Security Research - Microsoft Office Word Document Stack Overflow Vulnerability (CVE-2010-3214)
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/514302/100/0/threaded
+Reference: MS:MS10-079
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-079.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7322
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7322
+
+Stack-based buffer overflow in Microsoft Word 2002 SP3, 2003 SP3, 2007
+SP2, and 2010; Office 2004 and 2008 for Mac; Open XML File Format
+Converter for Mac; Office Compatibility Pack for Word, Excel, and
+PowerPoint 2007 File Formats SP2; Word Viewer; Office Web Apps; and
+Word Web App allows remote attackers to execute arbitrary code via a
+crafted Word document, aka "Word Stack Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3215
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3215
+Phase: Assigned (20100903)
+Category: 
+Reference: BUGTRAQ:20101014 VUPEN Security Research - Microsoft Office Word Return Value Handling Vulnerability (CVE-2010-3215)
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/514295/100/0/threaded
+Reference: MS:MS10-079
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-079.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:6974
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6974
+
+Microsoft Word 2002 SP3 and Office 2004 for Mac do not properly handle
+unspecified return values during parsing of a Word document, which
+allows remote attackers to execute arbitrary code via a crafted
+document that triggers memory corruption, aka "Word Return Value
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3216
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3216
+Phase: Assigned (20100903)
+Category: 
+Reference: BUGTRAQ:20101014 VUPEN Security Research - Microsoft Office Word Bookmarks Invalid Pointer Vulnerability (CVE-2010-3216)
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/514291/100/0/threaded
+Reference: MS:MS10-079
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-079.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7529
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7529
+
+Microsoft Word 2002 SP3 and Office 2004 for Mac allow remote attackers
+to execute arbitrary code via a crafted Word document containing
+bookmarks that trigger use of an invalid pointer and memory
+corruption, aka "Word Bookmarks Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3217
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3217
+Phase: Assigned (20100903)
+Category: 
+Reference: BUGTRAQ:20101014 VUPEN Security Research - Microsoft Office Word Document Invalid Pointer Vulnerability (CVE-2010-3217)
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/514298/100/0/threaded
+Reference: BUGTRAQ:20101223 Secunia Research: Microsoft Word LFO Parsing Double-Free Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/515440/100/0/threaded
+Reference: MISC:http://secunia.com/secunia_research/2010-76/
+Reference: MS:MS10-079
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-079.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:6695
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6695
+
+Double free vulnerability in Microsoft Word 2002 SP3 allows remote
+attackers to execute arbitrary code via a Word document with crafted
+List Format Override (LFO) records, aka "Word Pointer Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3218
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3218
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-079
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-079.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7010
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7010
+
+Heap-based buffer overflow in Microsoft Word 2002 SP3 allows remote
+attackers to execute arbitrary code via malformed records in a Word
+document, aka "Word Heap Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3219
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3219
+Phase: Assigned (20100903)
+Category: 
+Reference: BUGTRAQ:20101014 VUPEN Security Research - Microsoft Office Word BKF Objects Array Indexing Vulnerability (CVE-2010-3219)
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/514305/100/0/threaded
+Reference: MS:MS10-079
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-079.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7019
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7019
+
+Array index vulnerability in Microsoft Word 2002 SP3 allows remote
+attackers to execute arbitrary code via a crafted Word document that
+triggers memory corruption, aka "Word Index Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3220
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3220
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-079
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-079.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:6792
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:6792
+
+Unspecified vulnerability in Microsoft Word 2002 SP3 and Office 2004
+for Mac allows remote attackers to execute arbitrary code via a
+crafted Word document that triggers memory corruption, aka "Word
+Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3221
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3221
+Phase: Assigned (20100903)
+Category: 
+Reference: MS:MS10-079
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-079.mspx
+Reference: CERT:TA10-285A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-285A.html
+Reference: OVAL:oval:org.mitre.oval:def:7032
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:7032
+
+Microsoft Word 2002 SP3 and 2003 SP3, Office 2004 for Mac, and Word
+Viewer do not properly handle a malformed record during parsing of a
+Word document, which allows remote attackers to execute arbitrary code
+via a crafted document that triggers memory corruption, aka "Word
+Parsing Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3333
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3333
+Phase: Assigned (20100914)
+Category: 
+Reference: IDEFENSE:20101109 Microsoft Word RTF File Parsing Stack Buffer Overflow Vulnerability
+Reference: URL:http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=880
+Reference: MS:MS10-087
+Reference: URL:http://www.microsoft.com/technet/security/Bulletin/MS10-087.mspx
+Reference: CERT:TA10-313A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA10-313A.html
+Reference: BID:44652
+Reference: URL:http://www.securityfocus.com/bid/44652
+Reference: OVAL:oval:org.mitre.oval:def:11931
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:11931
+Reference: SECTRACK:1024705
+Reference: URL:http://www.securitytracker.com/id?1024705
+Reference: SECUNIA:38521
+Reference: URL:http://secunia.com/advisories/38521
+Reference: SECUNIA:42144
+Reference: URL:http://secunia.com/advisories/42144
+Reference: SREASON:8293
+Reference: URL:http://securityreason.com/securityalert/8293
+Reference: VUPEN:ADV-2010-2923
+Reference: URL:http://www.vupen.com/english/advisories/2010/2923
+
+Stack-based buffer overflow in Microsoft Office XP SP3, Office 2003
+SP3, Office 2007 SP2, Office 2010, Office 2004 and 2008 for Mac,
+Office for Mac 2011, and Open XML File Format Converter for Mac allows
+remote attackers to execute arbitrary code via crafted RTF data, aka
+"RTF Stack Buffer Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3453
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3453
+Phase: Assigned (20100917)
+Category: 
+Reference: MISC:http://www.cs.brown.edu/people/drosenbe/research.html
+Reference: MISC:http://www.vsecurity.com/resources/advisory/20110126-1
+Reference: CONFIRM:http://www.openoffice.org/security/cves/CVE-2010-3453_CVE-2010-3454.html
+Reference: CONFIRM:https://bugzilla.redhat.com/show_bug.cgi?id=640950
+Reference: CONFIRM:http://www.oracle.com/technetwork/topics/security/cpuapr2011-301950.html
+Reference: DEBIAN:DSA-2151
+Reference: URL:http://www.debian.org/security/2011/dsa-2151
+Reference: GENTOO:GLSA-201408-19
+Reference: URL:http://www.gentoo.org/security/en/glsa/glsa-201408-19.xml
+Reference: MANDRIVA:MDVSA-2011:027
+Reference: URL:http://www.mandriva.com/security/advisories?name=MDVSA-2011:027
+Reference: REDHAT:RHSA-2011:0181
+Reference: URL:http://www.redhat.com/support/errata/RHSA-2011-0181.html
+Reference: REDHAT:RHSA-2011:0182
+Reference: URL:http://www.redhat.com/support/errata/RHSA-2011-0182.html
+Reference: UBUNTU:USN-1056-1
+Reference: URL:http://ubuntu.com/usn/usn-1056-1
+Reference: BID:46031
+Reference: URL:http://www.securityfocus.com/bid/46031
+Reference: OSVDB:70714
+Reference: URL:http://osvdb.org/70714
+Reference: SECTRACK:1025002
+Reference: URL:http://www.securitytracker.com/id?1025002
+Reference: SECUNIA:43065
+Reference: URL:http://secunia.com/advisories/43065
+Reference: SECUNIA:42999
+Reference: URL:http://secunia.com/advisories/42999
+Reference: SECUNIA:43105
+Reference: URL:http://secunia.com/advisories/43105
+Reference: SECUNIA:43118
+Reference: URL:http://secunia.com/advisories/43118
+Reference: SECUNIA:60799
+Reference: URL:http://secunia.com/advisories/60799
+Reference: SECUNIA:40775
+Reference: URL:http://secunia.com/advisories/40775
+Reference: VUPEN:ADV-2011-0230
+Reference: URL:http://www.vupen.com/english/advisories/2011/0230
+Reference: VUPEN:ADV-2011-0232
+Reference: URL:http://www.vupen.com/english/advisories/2011/0232
+Reference: VUPEN:ADV-2011-0279
+Reference: URL:http://www.vupen.com/english/advisories/2011/0279
+
+The WW8ListManager::WW8ListManager function in oowriter in
+OpenOffice.org (OOo) 2.x and 3.x before 3.3 does not properly handle
+an unspecified number of list levels in user-defined list styles in
+WW8 data in a Microsoft Word document, which allows remote attackers
+to cause a denial of service (application crash) or possibly execute
+arbitrary code via a crafted .DOC file that triggers an out-of-bounds
+write.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2010-3454
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3454
+Phase: Assigned (20100917)
+Category: 
+Reference: MISC:http://www.cs.brown.edu/people/drosenbe/research.html
+Reference: MISC:http://www.vsecurity.com/resources/advisory/20110126-1
+Reference: CONFIRM:http://www.openoffice.org/security/cves/CVE-2010-3453_CVE-2010-3454.html
+Reference: CONFIRM:https://bugzilla.redhat.com/show_bug.cgi?id=640954
+Reference: CONFIRM:http://www.oracle.com/technetwork/topics/security/cpuapr2011-301950.html
+Reference: DEBIAN:DSA-2151
+Reference: URL:http://www.debian.org/security/2011/dsa-2151
+Reference: GENTOO:GLSA-201408-19
+Reference: URL:http://www.gentoo.org/security/en/glsa/glsa-201408-19.xml
+Reference: MANDRIVA:MDVSA-2011:027
+Reference: URL:http://www.mandriva.com/security/advisories?name=MDVSA-2011:027
+Reference: REDHAT:RHSA-2011:0181
+Reference: URL:http://www.redhat.com/support/errata/RHSA-2011-0181.html
+Reference: REDHAT:RHSA-2011:0182
+Reference: URL:http://www.redhat.com/support/errata/RHSA-2011-0182.html
+Reference: UBUNTU:USN-1056-1
+Reference: URL:http://ubuntu.com/usn/usn-1056-1
+Reference: BID:46031
+Reference: URL:http://www.securityfocus.com/bid/46031
+Reference: OSVDB:70715
+Reference: URL:http://osvdb.org/70715
+Reference: SECTRACK:1025002
+Reference: URL:http://www.securitytracker.com/id?1025002
+Reference: SECUNIA:43065
+Reference: URL:http://secunia.com/advisories/43065
+Reference: SECUNIA:42999
+Reference: URL:http://secunia.com/advisories/42999
+Reference: SECUNIA:43105
+Reference: URL:http://secunia.com/advisories/43105
+Reference: SECUNIA:43118
+Reference: URL:http://secunia.com/advisories/43118
+Reference: SECUNIA:60799
+Reference: URL:http://secunia.com/advisories/60799
+Reference: SECUNIA:40775
+Reference: URL:http://secunia.com/advisories/40775
+Reference: VUPEN:ADV-2011-0230
+Reference: URL:http://www.vupen.com/english/advisories/2011/0230
+Reference: VUPEN:ADV-2011-0232
+Reference: URL:http://www.vupen.com/english/advisories/2011/0232
+Reference: VUPEN:ADV-2011-0279
+Reference: URL:http://www.vupen.com/english/advisories/2011/0279
+
+Multiple off-by-one errors in the WW8DopTypography::ReadFromMem
+function in oowriter in OpenOffice.org (OOo) 2.x and 3.x before 3.3
+allow remote attackers to cause a denial of service (application
+crash) or possibly execute arbitrary code via crafted typography
+information in a Microsoft Word .DOC file that triggers an
+out-of-bounds write.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2011-3260
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3260
+Phase: Assigned (20110819)
+Category: 
+Reference: CONFIRM:http://support.apple.com/kb/HT4999
+Reference: APPLE:APPLE-SA-2011-10-12-1
+Reference: URL:http://lists.apple.com/archives/Security-announce/2011//Oct/msg00001.html
+Reference: XF:appleios-officeimport-bo(70556)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/70556
+
+Buffer overflow in OfficeImport in Apple iOS before 5 allows remote
+attackers to execute arbitrary code or cause a denial of service
+(application crash) via a crafted Microsoft Word document.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-0182
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0182
+Phase: Assigned (20111213)
+Category: 
+Reference: MS:MS12-064
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS12-064
+Reference: CERT:TA12-283A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA12-283A.html
+Reference: BID:55780
+Reference: URL:http://www.securityfocus.com/bid/55780
+Reference: OVAL:oval:org.mitre.oval:def:15426
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:15426
+
+Microsoft Word 2007 SP2 and SP3 does not properly handle memory during
+the parsing of Word documents, which allows remote attackers to
+execute arbitrary code via a crafted document, aka "Word PAPX Section
+Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-0183
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0183
+Phase: Assigned (20111213)
+Category: 
+Reference: MS:MS12-029
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS12-029
+Reference: CERT:TA12-129A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA12-129A.html
+Reference: BID:53344
+Reference: URL:http://www.securityfocus.com/bid/53344
+Reference: OVAL:oval:org.mitre.oval:def:15327
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:15327
+Reference: SECTRACK:1027035
+Reference: URL:http://www.securitytracker.com/id?1027035
+Reference: SECUNIA:49111
+Reference: URL:http://secunia.com/advisories/49111
+
+Microsoft Word 2003 SP3 and 2007 SP2 and SP3, Office 2008 and 2011 for
+Mac, and Office Compatibility Pack SP2 and SP3 allow remote attackers
+to execute arbitrary code or cause a denial of service (memory
+corruption) via crafted RTF data, aka "RTF Mismatch Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-2528
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2528
+Phase: Assigned (20120509)
+Category: 
+Reference: MS:MS12-064
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS12-064
+Reference: CERT:TA12-283A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA12-283A.html
+Reference: BID:55781
+Reference: URL:http://www.securityfocus.com/bid/55781
+Reference: OVAL:oval:org.mitre.oval:def:15680
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:15680
+
+Use-after-free vulnerability in Microsoft Word 2003 SP3, 2007 SP2 and
+SP3, and 2010 SP1; Word Viewer; Office Compatibility Pack SP2 and SP3;
+Word Automation Services on Microsoft SharePoint Server 2010; and
+Office Web Apps 2010 SP1 allows remote attackers to execute arbitrary
+code via a crafted RTF document, aka "RTF File listid Use-After-Free
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-2539
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2539
+Phase: Assigned (20120509)
+Category: 
+Reference: MS:MS12-079
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS12-079
+Reference: CERT:TA12-346A
+Reference: URL:http://www.us-cert.gov/cas/techalerts/TA12-346A.html
+Reference: OVAL:oval:org.mitre.oval:def:16073
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:16073
+
+Microsoft Word 2003 SP3, 2007 SP2 and SP3, and 2010 SP1; Word Viewer;
+Office Compatibility Pack SP2 and SP3; and Office Web Apps 2010 SP1
+allow remote attackers to execute arbitrary code or cause a denial of
+service (memory corruption) via crafted RTF data, aka "Word RTF
+'listoverridecount' Remote Code Execution Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-1335
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1335
+Phase: Assigned (20130112)
+Category: 
+Reference: MS:MS13-043
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-043
+Reference: CERT:TA13-134A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-134A
+Reference: OVAL:oval:org.mitre.oval:def:16229
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:16229
+
+Microsoft Word 2003 SP3 and Word Viewer allow remote attackers to
+execute arbitrary code via crafted shape data in a Word document, aka
+"Word Shape Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3847
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3847
+Phase: Assigned (20130603)
+Category: 
+Reference: MS:MS13-067
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-067
+Reference: MS:MS13-072
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-072
+Reference: CERT:TA13-253A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-253A
+Reference: OVAL:oval:org.mitre.oval:def:18749
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18749
+Reference: OVAL:oval:org.mitre.oval:def:18988
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18988
+
+Microsoft Word Automation Services in SharePoint Server 2010 SP1, Word
+Web App 2010 SP1 in Office Web Apps 2010, Word 2003 SP3, Word 2007
+SP3, Word 2010 SP1, Office Compatibility Pack SP3, and Word Viewer
+allow remote attackers to execute arbitrary code or cause a denial of
+service (memory corruption) via a crafted Office document, aka "Word
+Memory Corruption Vulnerability," a different vulnerability than
+CVE-2013-3848, CVE-2013-3849, and CVE-2013-3858.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3848
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3848
+Phase: Assigned (20130603)
+Category: 
+Reference: MS:MS13-067
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-067
+Reference: MS:MS13-072
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-072
+Reference: CERT:TA13-253A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-253A
+Reference: OVAL:oval:org.mitre.oval:def:18281
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18281
+Reference: OVAL:oval:org.mitre.oval:def:18800
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18800
+
+Microsoft Word Automation Services in SharePoint Server 2010 SP1, Word
+Web App 2010 SP1 in Office Web Apps 2010, Word 2003 SP3, Word 2007
+SP3, Word 2010 SP1, Office Compatibility Pack SP3, and Word Viewer
+allow remote attackers to execute arbitrary code or cause a denial of
+service (memory corruption) via a crafted Office document, aka "Word
+Memory Corruption Vulnerability," a different vulnerability than
+CVE-2013-3847, CVE-2013-3849, and CVE-2013-3858.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3849
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3849
+Phase: Assigned (20130603)
+Category: 
+Reference: MS:MS13-067
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-067
+Reference: MS:MS13-072
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-072
+Reference: CERT:TA13-253A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-253A
+Reference: OVAL:oval:org.mitre.oval:def:18774
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18774
+Reference: OVAL:oval:org.mitre.oval:def:19100
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:19100
+
+Microsoft Word Automation Services in SharePoint Server 2010 SP1, Word
+Web App 2010 SP1 in Office Web Apps 2010, Word 2003 SP3, Word 2007
+SP3, Word 2010 SP1, Office Compatibility Pack SP3, and Word Viewer
+allow remote attackers to execute arbitrary code or cause a denial of
+service (memory corruption) via a crafted Office document, aka "Word
+Memory Corruption Vulnerability," a different vulnerability than
+CVE-2013-3847, CVE-2013-3848, and CVE-2013-3858.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3850
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3850
+Phase: Assigned (20130603)
+Category: 
+Reference: MS:MS13-072
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-072
+Reference: CERT:TA13-253A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-253A
+Reference: OVAL:oval:org.mitre.oval:def:18753
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18753
+
+Microsoft Word 2003 SP3, 2007 SP3, and 2010 SP1 and SP2; Office
+Compatibility Pack SP3; and Word Viewer allow remote attackers to
+execute arbitrary code or cause a denial of service (memory
+corruption) via a crafted Office document, aka "Word Memory Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3852
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3852
+Phase: Assigned (20130603)
+Category: 
+Reference: MS:MS13-072
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-072
+Reference: CERT:TA13-253A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-253A
+Reference: OVAL:oval:org.mitre.oval:def:18635
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18635
+
+Microsoft Word 2003 SP3, 2007 SP3, and 2010 SP1; Office Compatibility
+Pack SP3; and Word Viewer allow remote attackers to execute arbitrary
+code or cause a denial of service (memory corruption) via a crafted
+Office document, aka "Word Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3855
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3855
+Phase: Assigned (20130603)
+Category: 
+Reference: MS:MS13-072
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-072
+Reference: CERT:TA13-253A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-253A
+Reference: OVAL:oval:org.mitre.oval:def:18065
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18065
+
+Microsoft Word 2003 SP3 and 2007 SP3, Office Compatibility Pack SP3,
+and Word Viewer allow remote attackers to execute arbitrary code or
+cause a denial of service (memory corruption) via a crafted Office
+document, aka "Word Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3856
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3856
+Phase: Assigned (20130603)
+Category: 
+Reference: MS:MS13-072
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-072
+Reference: CERT:TA13-253A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-253A
+Reference: OVAL:oval:org.mitre.oval:def:18797
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18797
+
+Microsoft Word 2003 SP3 and Word Viewer allow remote attackers to
+execute arbitrary code or cause a denial of service (memory
+corruption) via a crafted Office document, aka "Word Memory Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3857
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3857
+Phase: Assigned (20130603)
+Category: 
+Reference: MS:MS13-067
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-067
+Reference: MS:MS13-072
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-072
+Reference: CERT:TA13-253A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-253A
+Reference: OVAL:oval:org.mitre.oval:def:18741
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18741
+Reference: OVAL:oval:org.mitre.oval:def:18942
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18942
+
+Microsoft Word Automation Services in SharePoint Server 2010 SP1 and
+SP2, Word Web App 2010 SP1 and SP2 in Office Web Apps 2010, Word 2003
+SP3, Word 2007 SP3, Word 2010 SP1 and SP2, Office Compatibility Pack
+SP3, and Word Viewer allow remote attackers to execute arbitrary code
+or cause a denial of service (memory corruption) via a crafted Office
+document, aka "Word Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3858
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3858
+Phase: Assigned (20130603)
+Category: 
+Reference: MS:MS13-067
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-067
+Reference: MS:MS13-072
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-072
+Reference: CERT:TA13-253A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-253A
+Reference: OVAL:oval:org.mitre.oval:def:18709
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18709
+Reference: OVAL:oval:org.mitre.oval:def:18801
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18801
+
+Microsoft Word Automation Services in SharePoint Server 2010 SP1, Word
+Web App 2010 SP1 in Office Web Apps 2010, Word 2003 SP3, Word 2007
+SP3, Word 2010 SP1, Office Compatibility Pack SP3, and Word Viewer
+allow remote attackers to execute arbitrary code or cause a denial of
+service (memory corruption) via a crafted Office document, aka "Word
+Memory Corruption Vulnerability," a different vulnerability than
+CVE-2013-3847, CVE-2013-3848, and CVE-2013-3849.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3891
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3891
+Phase: Assigned (20130603)
+Category: 
+Reference: MS:MS13-086
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-086
+Reference: CERT:TA13-288A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-288A
+Reference: OVAL:oval:org.mitre.oval:def:18643
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18643
+
+Microsoft Word 2003 SP3 allows remote attackers to execute arbitrary
+code via a crafted Office document, aka "Memory Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3892
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3892
+Phase: Assigned (20130603)
+Category: 
+Reference: MS:MS13-086
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS13-086
+Reference: CERT:TA13-288A
+Reference: URL:http://www.us-cert.gov/ncas/alerts/TA13-288A
+Reference: OVAL:oval:org.mitre.oval:def:18953
+Reference: URL:http://oval.mitre.org/repository/data/getDef?id=oval:org.mitre.oval:def:18953
+
+Microsoft Word 2007 SP3 and Office Compatibility Pack SP3 allow remote
+attackers to execute arbitrary code via a crafted Office document, aka
+"Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-6801
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6801
+Phase: Assigned (20131116)
+Category: 
+Reference: BUGTRAQ:20131107 Word 2003 SP2 .doc fork bomb on WinXP SP3
+Reference: URL:http://archives.neohapsis.com/archives/bugtraq/2013-11/0035.html
+Reference: BUGTRAQ:20131108 Re: Word 2003 SP2 .doc fork bomb on WinXP SP3
+Reference: URL:http://archives.neohapsis.com/archives/bugtraq/2013-11/0038.html
+Reference: BUGTRAQ:20131108 Re: Word 2003 SP2 .doc fork bomb on WinXP SP3
+Reference: URL:http://archives.neohapsis.com/archives/bugtraq/2013-11/0045.html
+
+Microsoft Word 2003 SP2 and SP3 on Windows XP SP3 allows remote
+attackers to cause a denial of service (CPU consumption) via a
+malformed .doc file containing an embedded image, as demonstrated by
+word2003forkbomb.doc, related to a "fork bomb" issue.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-0258
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0258
+Phase: Assigned (20131203)
+Category: 
+Reference: MS:MS14-001
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS14-001
+Reference: SECTRACK:1029598
+Reference: URL:http://www.securitytracker.com/id/1029598
+Reference: SECTRACK:1029599
+Reference: URL:http://www.securitytracker.com/id/1029599
+
+Microsoft Word 2003 SP3 and 2007 SP3, Office Compatibility Pack SP3,
+and Word Viewer allow remote attackers to execute arbitrary code or
+cause a denial of service (memory corruption) via a crafted Office
+document, aka "Word Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-0259
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0259
+Phase: Assigned (20131203)
+Category: 
+Reference: MS:MS14-001
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS14-001
+Reference: SECTRACK:1029598
+Reference: URL:http://www.securitytracker.com/id/1029598
+Reference: SECTRACK:1029599
+Reference: URL:http://www.securitytracker.com/id/1029599
+
+Microsoft Word 2007 SP3 and Office Compatibility Pack SP3 allow remote
+attackers to execute arbitrary code or cause a denial of service
+(memory corruption) via a crafted Office document, aka "Word Memory
+Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-0260
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0260
+Phase: Assigned (20131203)
+Category: 
+Reference: MS:MS14-001
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS14-001
+Reference: SECTRACK:1029598
+Reference: URL:http://www.securitytracker.com/id/1029598
+Reference: SECTRACK:1029599
+Reference: URL:http://www.securitytracker.com/id/1029599
+
+Microsoft Word 2003 SP3, 2007 SP3, 2010 SP1 and SP2, 2013, and 2013
+RT; Office Compatibility Pack SP3; Word Viewer; SharePoint Server 2010
+SP1 and SP2 and 2013; Office Web Apps 2010 SP1 and SP2; and Office Web
+Apps Server 2013 allow remote attackers to execute arbitrary code or
+cause a denial of service (memory corruption) via a crafted Office
+document, aka "Word Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-1252
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1252
+Phase: Assigned (20140108)
+Category: 
+Reference: CONFIRM:http://support.apple.com/kb/HT6117
+Reference: CONFIRM:http://support.apple.com/kb/HT6150
+Reference: CONFIRM:http://support.apple.com/kb/HT6162
+Reference: BID:65113
+Reference: URL:http://www.securityfocus.com/bid/65113
+Reference: OSVDB:102460
+Reference: URL:http://osvdb.org/102460
+Reference: SECTRACK:1029683
+Reference: URL:http://www.securitytracker.com/id/1029683
+Reference: SECUNIA:56615
+Reference: URL:http://secunia.com/advisories/56615
+Reference: SECUNIA:56630
+Reference: URL:http://secunia.com/advisories/56630
+Reference: XF:apple-pages-cve20141252-code-exec(90672)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/90672
+
+Double free vulnerability in Apple Pages 2.x before 2.1 and 5.x before
+5.1 allows remote attackers to execute arbitrary code or cause a
+denial of service (application crash) via a crafted Microsoft Word
+file.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-1757
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1757
+Phase: Assigned (20140129)
+Category: 
+Reference: MS:MS14-017
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS14-017
+
+Microsoft Word 2007 SP3 and 2010 SP1 and SP2, and Office Compatibility
+Pack SP3, allocates memory incorrectly for file conversions from a
+binary (aka .doc) format to a newer format, which allows remote
+attackers to execute arbitrary code via a crafted document, aka
+"Microsoft Office File Format Converter Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-1758
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1758
+Phase: Assigned (20140129)
+Category: 
+Reference: MS:MS14-017
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS14-017
+
+Stack-based buffer overflow in Microsoft Word 2003 SP3 allows remote
+attackers to execute arbitrary code via a crafted document, aka
+"Microsoft Word Stack Overflow Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-1761
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1761
+Phase: Assigned (20140129)
+Category: 
+Reference: CONFIRM:http://technet.microsoft.com/security/advisory/2953095
+Reference: MS:MS14-017
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS14-017
+
+Microsoft Word 2003 SP3, 2007 SP3, 2010 SP1 and SP2, 2013, and 2013
+RT; Word Viewer; Office Compatibility Pack SP3; Office for Mac 2011;
+Word Automation Services on SharePoint Server 2010 SP1 and SP2 and
+2013; Office Web Apps 2010 SP1 and SP2; and Office Web Apps Server
+2013 allow remote attackers to execute arbitrary code or cause a
+denial of service (memory corruption) via crafted RTF data, as
+exploited in the wild in March 2014.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-2778
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2778
+Phase: Assigned (20140410)
+Category: 
+Reference: CONFIRM:http://blogs.technet.com/b/srd/archive/2014/06/10/assessing-risk-for-the-june-2014-security-updates.aspx
+Reference: MS:MS14-034
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS14-034
+Reference: BID:67896
+Reference: URL:http://www.securityfocus.com/bid/67896
+Reference: SECTRACK:1030383
+Reference: URL:http://www.securitytracker.com/id/1030383
+Reference: SECUNIA:58551
+Reference: URL:http://secunia.com/advisories/58551
+
+Microsoft Word 2007 SP3 and Office Compatibility Pack SP3 allow remote
+attackers to execute arbitrary code or cause a denial of service
+(memory corruption) via a crafted embedded font in a (1) .doc or (2)
+.docx document, aka "Embedded Font Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-4117
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4117
+Phase: Assigned (20140612)
+Category: 
+Reference: MS:MS14-061
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS14-061
+Reference: BID:70360
+Reference: URL:http://www.securityfocus.com/bid/70360
+Reference: SECUNIA:60973
+Reference: URL:http://secunia.com/advisories/60973
+
+Microsoft Office 2007 SP3, Word 2007 SP3, Office 2010 SP1 and SP2,
+Word 2010 SP1 and SP2, Office for Mac 2011, Office Compatibility Pack
+SP3, Word Automation Services on SharePoint Server 2010 SP1 and SP2,
+and Word Web Apps 2010 Gold, SP1, and SP2 allow remote attackers to
+execute arbitrary code via crafted properties in a Word document, aka
+"Microsoft Word File Format Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-6333
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6333
+Phase: Assigned (20140911)
+Category: 
+Reference: MS:MS14-069
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS14-069
+Reference: SECTRACK:1031189
+Reference: URL:http://www.securitytracker.com/id/1031189
+
+Microsoft Word 2007 SP3, Word Viewer, and Office Compatibility Pack
+SP3 allow remote attackers to execute arbitrary code via a crafted
+Office document, aka "Microsoft Office Double Delete Remote Code
+Execution Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-6334
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6334
+Phase: Assigned (20140911)
+Category: 
+Reference: MS:MS14-069
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS14-069
+Reference: SECTRACK:1031189
+Reference: URL:http://www.securitytracker.com/id/1031189
+
+Microsoft Word 2007 SP3, Word Viewer, and Office Compatibility Pack
+SP3 allow remote attackers to execute arbitrary code or cause a denial
+of service (memory corruption) via a crafted Office document, aka
+"Microsoft Office Bad Index Remote Code Execution Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-6335
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6335
+Phase: Assigned (20140911)
+Category: 
+Reference: MS:MS14-069
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS14-069
+Reference: SECTRACK:1031189
+Reference: URL:http://www.securitytracker.com/id/1031189
+
+Microsoft Word 2007 SP3, Word Viewer, and Office Compatibility Pack
+SP3 allow remote attackers to execute arbitrary code or cause a denial
+of service (memory corruption) via a crafted Office document, aka
+"Microsoft Office Invalid Pointer Remote Code Execution
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2014-6356
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6356
+Phase: Assigned (20140911)
+Category: 
+Reference: MS:MS14-081
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS14-081
+
+Array index error in Microsoft Word 2007 SP3, Word 2010 SP2, and
+Office Compatibility Pack SP3 allows remote attackers to execute
+arbitrary code via a crafted Office document, aka "Invalid Index
+Remote Code Execution Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-0064
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0064
+Phase: Assigned (20141118)
+Category: 
+Reference: MS:MS15-012
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-012
+Reference: BID:72463
+Reference: URL:http://www.securityfocus.com/bid/72463
+Reference: SECTRACK:1031720
+Reference: URL:http://www.securitytracker.com/id/1031720
+Reference: SECUNIA:62808
+Reference: URL:http://secunia.com/advisories/62808
+
+Microsoft Word 2007 SP3, Office 2010 SP2, Word 2010 SP2, Word
+Automation Services in SharePoint Server 2010, Web Applications 2010
+SP2, Word Viewer, and Office Compatibility Pack SP3 allow remote
+attackers to execute arbitrary code or cause a denial of service
+(memory corruption) via a crafted Office document, aka "Office Remote
+Code Execution Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-0065
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0065
+Phase: Assigned (20141118)
+Category: 
+Reference: MS:MS15-012
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-012
+Reference: BID:72465
+Reference: URL:http://www.securityfocus.com/bid/72465
+Reference: SECTRACK:1031720
+Reference: URL:http://www.securitytracker.com/id/1031720
+Reference: SECUNIA:62808
+Reference: URL:http://secunia.com/advisories/62808
+
+Microsoft Word 2007 SP3 allows remote attackers to execute arbitrary
+code or cause a denial of service (memory corruption) via a crafted
+Office document, aka "OneTableDocumentStream Remote Code Execution
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-0086
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0086
+Phase: Assigned (20141118)
+Category: 
+Reference: MS:MS15-022
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-022
+Reference: SECTRACK:1031896
+Reference: URL:http://www.securitytracker.com/id/1031896
+
+Microsoft Word 2007 SP3, Office 2010 SP2, Word 2010 SP2, Word 2013
+Gold and SP1, Word 2013 RT Gold and SP1, Word Viewer, Office
+Compatibility Pack SP3, Word Automation Services on SharePoint Server
+2010 SP2, Word Automation Services on SharePoint Server 2013 Gold and
+SP1, Web Applications 2010 SP2, and Web Apps Server 2013 Gold and SP1
+allow remote attackers to execute arbitrary code or cause a denial of
+service (memory corruption) via a crafted RTF document, aka "Microsoft
+Office Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-0097
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0097
+Phase: Assigned (20141118)
+Category: 
+Reference: MS:MS15-022
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-022
+Reference: SECTRACK:1031896
+Reference: URL:http://www.securitytracker.com/id/1031896
+
+Microsoft Excel 2007 SP3, PowerPoint 2007 SP3, Word 2007 SP3, Excel
+2010 SP2, PowerPoint 2010 SP2, and Word 2010 SP2 allow remote
+attackers to execute arbitrary code via a crafted Office document, aka
+"Microsoft Word Local Zone Remote Code Execution Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-1641
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1641
+Phase: Assigned (20150217)
+Category: 
+Reference: MS:MS15-033
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-033
+Reference: SECTRACK:1032104
+Reference: URL:http://www.securitytracker.com/id/1032104
+
+Microsoft Word 2007 SP3, Office 2010 SP2, Word 2010 SP2, Word 2013
+SP1, Word 2013 RT SP1, Word for Mac 2011, Office Compatibility Pack
+SP3, Word Automation Services on SharePoint Server 2010 SP2 and 2013
+SP1, and Office Web Apps Server 2010 SP2 and 2013 SP1 allow remote
+attackers to execute arbitrary code via a crafted RTF document, aka
+"Microsoft Office Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-1649
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1649
+Phase: Assigned (20150217)
+Category: 
+Reference: MS:MS15-033
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-033
+Reference: SECTRACK:1032104
+Reference: URL:http://www.securitytracker.com/id/1032104
+
+Use-after-free vulnerability in Microsoft Word 2007 SP3, Office 2010
+SP2, Word 2010 SP2, Word Viewer, Office Compatibility Pack SP3, Word
+Automation Services on SharePoint Server 2010 SP2, and Office Web Apps
+Server 2010 SP2 allows remote attackers to execute arbitrary code via
+a crafted Office document, aka "Microsoft Office Component Use After
+Free Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-1650
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1650
+Phase: Assigned (20150217)
+Category: 
+Reference: MS:MS15-033
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-033
+Reference: SECTRACK:1032104
+Reference: URL:http://www.securitytracker.com/id/1032104
+
+Use-after-free vulnerability in Microsoft Word 2007 SP3, Office 2010
+SP2, Word 2010 SP2, Word 2013 SP1, Word 2013 RT SP1, Word Viewer,
+Office Compatibility Pack SP3, Word Automation Services on SharePoint
+Server 2010 SP2 and 2013 SP1, and Office Web Apps Server 2010 SP2 and
+2013 SP1 allows remote attackers to execute arbitrary code via a
+crafted Office document, aka "Microsoft Office Component Use After
+Free Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-1651
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1651
+Phase: Assigned (20150217)
+Category: 
+Reference: MS:MS15-033
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-033
+Reference: SECTRACK:1032104
+Reference: URL:http://www.securitytracker.com/id/1032104
+
+Use-after-free vulnerability in Microsoft Word 2007 SP3, Word Viewer,
+and Office Compatibility Pack SP3 allows remote attackers to execute
+arbitrary code via a crafted Office document, aka "Microsoft Office
+Component Use After Free Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2379
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2379
+Phase: Assigned (20150319)
+Category: 
+Reference: MS:MS15-070
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-070
+
+Microsoft Word 2007 SP3, Office 2010 SP2, Word 2010 SP2, Word 2013
+SP1, Word 2013 RT SP1, Office for Mac 2011, and Word Viewer allow
+remote attackers to execute arbitrary code or cause a denial of
+service (memory corruption) via a crafted Office document, aka
+"Microsoft Office Memory Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2380
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2380
+Phase: Assigned (20150319)
+Category: 
+Reference: MS:MS15-070
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-070
+
+Microsoft Word 2007 SP3, Office 2010 SP2, Word 2010 SP2, Word 2013
+SP1, and Word 2013 RT SP1 allow remote attackers to execute arbitrary
+code or cause a denial of service (memory corruption) via a crafted
+Office document, aka "Microsoft Office Memory Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2468
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2468
+Phase: Assigned (20150319)
+Category: 
+Reference: MS:MS15-081
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-081
+
+Microsoft Word 2007 SP3, Office 2010 SP2, Word 2010 SP2, Word 2013
+SP1, Word 2013 RT SP1, Office for Mac 2011, Office for Mac 2016,
+Office Compatibility Pack SP3, Word Viewer, Word Automation Services
+on SharePoint Server 2010 SP2 and 2013 SP1, Word Web Apps 2010 SP2,
+and Office Web Apps Server 2013 SP1 allow remote attackers to execute
+arbitrary code via a crafted document, aka "Microsoft Office Memory
+Corruption Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-2469
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2469
+Phase: Assigned (20150319)
+Category: 
+Reference: MS:MS15-081
+Reference: URL:http://technet.microsoft.com/security/bulletin/MS15-081
+
+Microsoft Word 2007 SP3, Office 2010 SP2, Word 2010 SP2, and Office
+for Mac 2011 allow remote attackers to execute arbitrary code via a
+crafted document, aka "Microsoft Office Memory Corruption
+Vulnerability."
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2015-6948
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6948
+Phase: Assigned (20150915)
+Category: 
+Reference: MISC:http://www.zerodayinitiative.com/advisories/ZDI-15-410
+
+Heap-based buffer overflow in the Microsoft Word document conversion
+feature in Corel WordPerfect allows remote attackers to execute
+arbitrary code via a crafted document.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================

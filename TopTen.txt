@@ -1,3 +1,12 @@
+These are the vulnerabilities that have the largest number of 
+references in their reports, possibly indicating the vulnerabilities 
+with the most exposure and publicity, and thus the biggest impacts.
+
+Observations: SSL is a major issue. Bash also seems to be a big problem, 
+but this seems limited to the effects of Shellshock in 2014
+
+=========================================================================
+
 1 : ('CVE-2009-3555', 539) 
 
 The TLS protocol, and the SSL protocol 3.0 and possibly earlier, as
@@ -113,3 +122,6 @@ Buffer overflow in the SSL_get_shared_ciphers function in OpenSSL
 0.9.7 before 0.9.7l, 0.9.8 before 0.9.8d, and earlier versions has
 unspecified impact and remote attack vectors involving a long list of
 ciphers.
+
+
+

@@ -1,4 +1,12 @@
 Rejected Reports buzz words
+These are the most referenced CVE IDs for the list of reports that
+were ultimately rejected due to their repetition of a previously 
+reported vulnerability.
+
+Observations: most are recent, not concentrated to specific
+
+
+======================================================
 
 1 : ('CVE-2014-7186', 4)
 

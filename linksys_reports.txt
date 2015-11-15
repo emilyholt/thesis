@@ -1,0 +1,1560 @@
+
+Name: CVE-1999-0571
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-0571
+Phase: Modified (20020312-01)
+Category: CF
+Reference: BUGTRAQ:Feb5,1999
+
+A router's configuration service or management interface (such as a
+web server or telnet) is configured to allow connections from
+arbitrary hosts.
+
+
+Current Votes:
+   ACCEPT(1) Baker
+   MODIFY(1) Frech
+   NOOP(2) Christey, Northcutt
+
+Voter Comments:
+ CHANGE> [Frech changed vote from REVIEWING to MODIFY]
+ Frech> XF:ascend-config-kill(889)
+   XF:cisco-ios-crash(1238)
+   XF:webramp-remote-access(1670)
+   XF:ascom-timeplex-debug(1824)
+   XF:netopia-unpassworded(1850)
+   XF:cisco-web-crash(1886)
+   XF:cisco-router-commands(1951)
+   XF:motorola-cable-default-pass(2002)
+   XF:default-flowpoint(2091)
+   XF:netgear-router-idle-dos(4003)
+   XF:cisco-cbos-telnet(4251)
+   XF:routermate-snmp-community(4290)
+   XF:cayman-router-dos(4479)
+   XF:wavelink-authentication(5185)
+   XF:ciscosecure-ldap-bypass-authentication(5274)
+   XF:foundry-firmware-telnet-dos(5514)
+   XF:netopia-view-system-log(5536)
+   XF:cisco-webadmin-remote-dos(5595)
+   XF:cisco-cbos-web-access(5626)
+   XF:netopia-telnet-dos(6001)
+   XF:cisco-sn-gain-access(6827)
+   XF:cayman-dsl-insecure-permissions(6841)
+   XF:linksys-etherfast-reveal-passwords(6949)
+   XF:zyxel-router-default-password(6968)
+   XF:cisco-cbos-web-config(7027)
+   XF:prestige-wan-bypass-filter(7146)
+ Christey> I changed the description to make it more explicit that this
+   candidate is about router configuration, as opposed to
+   vulnerabilities that accidentally make a configuration
+   service accessible to anyone.
+
+
+======================================================
+Name: CVE-2001-1117
+Status: Entry
+Reference: BUGTRAQ:20010810 Linksys router security fix
+Reference: URL:http://www.securityfocus.com/archive/1/203302
+Reference: BUGTRAQ:20010802 Advisory Update: Design Flaw in Linksys EtherFast 4-Port
+Reference: URL:http://www.securityfocus.com/archive/1/201390
+Reference: CONFIRM:ftp://ftp.linksys.com/pub/befsr41/befsr-fw1402.zip
+Reference: XF:linksys-etherfast-reveal-passwords(6949)
+Reference: URL:http://xforce.iss.net/static/6949.php
+Reference: BID:3141
+Reference: URL:http://www.securityfocus.com/bid/3141
+Reference: OSVDB:1920
+Reference: URL:http://www.osvdb.org/1920
+Reference: OSVDB:5467
+Reference: URL:http://www.osvdb.org/5467
+
+LinkSys EtherFast BEFSR41 Cable/DSL routers running firmware before
+1.39.3 Beta allows a remote attacker to view administration and user
+passwords by connecting to the router and viewing the HTML source for
+(1) index.htm and (2) Password.htm.
+
+======================================================
+Name: CVE-2002-0109
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0109
+Phase: Proposed (20020315)
+Category: SF
+Reference: BUGTRAQ:20020106 Linksys 'routers', SNMP issues
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=101039288111680&w=2
+Reference: BID:3795
+Reference: URL:http://www.securityfocus.com/bid/3795
+Reference: BID:3797
+Reference: URL:http://www.securityfocus.com/bid/3797
+Reference: XF:linksys-etherfast-default-snmp(7827)
+Reference: URL:http://www.iss.net/security_center/static/7827.php
+
+Linksys EtherFast BEFN2PS4, BEFSR41, and BEFSR81 Routers, and possibly
+other products, allow remote attackers to gain sensitive information
+and cause a denial of service via an SNMP query for the default
+community string "public," which causes the router to change its
+configuration and send SNMP trap information back to the system that
+initiated the query.
+
+
+Current Votes:
+   ACCEPT(2) Frech, Green
+   MODIFY(1) Foat
+   NOOP(2) Cole, Wall
+
+Voter Comments:
+ Foat> Our testing showed that this vulnerabiltiy did not apply to BEFSR41 
+   routers.
+
+
+======================================================
+Name: CVE-2002-0426
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0426
+Phase: Proposed (20020611)
+Category: SF
+Reference: BUGTRAQ:20020308 Linksys BEFVP41 VPN Server does not follow proper VPN standards
+Reference: URL:http://online.securityfocus.com/archive/1/260613
+Reference: MISC:ftp://ftp.linksys.com/pub/befsr41/befvp41-1402.zip
+Reference: XF:linksys-etherfast-weak-encryption(8397)
+Reference: URL:http://www.iss.net/security_center/static/8397.php
+Reference: BID:4250
+Reference: URL:http://www.securityfocus.com/bid/4250
+
+VPN Server module in Linksys EtherFast BEFVP41 Cable/DSL VPN Router
+before 1.40.1 reduces the key lengths for keys that are supplied via
+manual key entry, which makes it easier for attackers to crack the
+keys.
+
+
+Current Votes:
+   ACCEPT(2) Cole, Frech
+   NOOP(3) Cox, Foat, Wall
+   REVIEWING(1) Alderson
+
+
+
+======================================================
+Name: CVE-2002-1236
+Status: Entry
+Reference: MISC:http://www.idefense.com/advisory/10.31.02a.txt
+Reference: BUGTRAQ:20021101 iDEFENSE Security Advisory 10.31.02a: Denial of Service Vulnerability in Linksys BEFSR41 EtherFast Cable/DSL Router
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=103616324103171&w=2
+Reference: VULNWATCH:20021101 iDEFENSE Security Advisory 10.31.02a: Denial of Service Vulnerability in Linksys BEFSR41 EtherFast Cable/DSL Router
+Reference: URL:http://archives.neohapsis.com/archives/vulnwatch/2002-q4/0049.html
+Reference: XF:linksys-etherfast-gozila-dos(10514)
+Reference: URL:http://www.iss.net/security_center/static/10514.php
+Reference: BID:6086
+Reference: URL:http://www.securityfocus.com/bid/6086
+
+The remote management web server for Linksys BEFSR41 EtherFast
+Cable/DSL Router before firmware 1.42.7 allows remote attackers to
+cause a denial of service (crash) via an HTTP request to Gozila.cgi
+without any arguments.
+
+======================================================
+Name: CVE-2002-1312
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-1312
+Phase: Assigned (20021118)
+Category: SF
+Reference: BUGTRAQ:20021202 CORE-20021005: Vulnerability Report For Linksys Devices
+Reference: URL:http://archives.neohapsis.com/archives/bugtraq/2002-12/0022.html
+Reference: MISC:http://www1.corest.com/common/showdoc.php?idx=276&idxseccion=10
+Reference: IDEFENSE:20021119 Denial of Service Vulnerability in Linksys Cable/DSL Routers
+Reference: URL:http://www.idefense.com/application/poi/display?id=36&type=vulnerabilities&flashstatus=true
+Reference: BID:6208
+Reference: URL:http://www.securityfocus.com/bid/6208
+Reference: BID:6301
+Reference: URL:http://www.securityfocus.com/bid/6301
+Reference: XF:linksys-etherfast-password-dos(10654)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/10654
+
+Buffer overflow in the Web management interface in Linksys BEFW11S4
+wireless access point router 2 and BEFSR11, BEFSR41, and BEFSRU31
+EtherFast Cable/DSL routers with firmware before 1.43.3 with remote
+management enabled allows remote attackers to cause a denial of
+service (router crash) via a long password.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2002-2159
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-2159
+Phase: Assigned (20051116)
+Category: SF
+Reference: MISC:http://www.securiteam.com/securitynews/5OP022K7GE.html
+Reference: XF:linksys-etherfast-admin-enabled(9330)
+Reference: URL:http://www.iss.net/security_center/static/9330.php
+Reference: BID:4987
+Reference: URL:http://www.securityfocus.com/bid/4987
+
+Linksys EtherFast Cable/DSL BEFSR11, BEFSR41 and BEFSRU31 with the
+firmware 1.42.7 upgrade installed opens TCP port 5678 for remote
+administration even when the "Block WAN" and "Remote Admin" options
+are disabled, which allows remote attackers go gain access.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2002-2371
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-2371
+Phase: Assigned (20071031)
+Category: SF
+Reference: BUGTRAQ:20021025 Linksys WET11 crashes when sent an ethernet frame from its own MAC address
+Reference: URL:http://cert.uni-stuttgart.de/archive/bugtraq/2002/10/msg00375.html
+Reference: VULNWATCH:20021025 Linksys WET11 crashes when sent an ethernet frame from its own MAC address
+Reference: URL:http://archives.neohapsis.com/archives/vulnwatch/2002-q4/0045.html
+Reference: CONFIRM:http://www.linksys.com/download/vertxt/WET11_fw_ver.TXT
+Reference: BID:6046
+Reference: URL:http://www.securityfocus.com/bid/6046
+Reference: XF:linksys-wet11-ethernet-dos(10472)
+Reference: URL:http://www.iss.net/security_center/static/10472.php
+
+Linksys WET11 firmware 1.31 and 1.32 allows remote attackers to cause
+a denial of service (crash) via a packet containing the device's
+hardware address as the source MAC address in the DLC header.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2003-1497
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-1497
+Phase: Assigned (20071025)
+Category: SF
+Reference: BUGTRAQ:20031015 LinkSys EtherFast Router Denial of Service Attack
+Reference: URL:http://www.securityfocus.com/archive/1/341309
+Reference: CONFIRM:http://www.linksys.com/download/vertxt/befsx41_1453.txt
+Reference: BID:8834
+Reference: URL:http://www.securityfocus.com/bid/8834
+Reference: SREASON:3298
+Reference: URL:http://securityreason.com/securityalert/3298
+Reference: XF:linksys-etherfast-logpagenum-dos(13436)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/13436
+
+Buffer overflow in the system log viewer of Linksys BEFSX41 1.44.3
+allows remote attackers to cause a denial of service via an HTTP
+request with a long Log_Page_Num variable.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2004-0312
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0312
+Phase: Proposed (20040318)
+Category: SF
+Reference: BUGTRAQ:20040217 SNMP community string disclosure in Linksys WAP55AG
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=107712101324233&w=2
+Reference: BUGTRAQ:20040219 Re: SNMP community string disclosure in Linksys WAP55AG
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=107730681012131&w=2
+Reference: XF:linksys-snmp-strings-disclosure(15257)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/15257
+Reference: BID:9688
+Reference: URL:http://www.securityfocus.com/bid/9688
+
+Linksys WAP55AG 1.07 allows remote attackers with access to an SNMP
+read only community string to gain access to read/write communtiy
+strings via a query for OID 1.3.6.1.4.1.3955.2.1.13.1.2.
+
+
+Current Votes:
+   NOOP(4) Armstrong, Cole, Cox, Wall
+
+
+
+======================================================
+Name: CVE-2004-0580
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0580
+Phase: Assigned (20040618)
+Category: SF
+Reference: BUGTRAQ:20040607 Linksys BEFSR41 DHCP vulnerability server leaks network data
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=108662876129301&w=2
+Reference: CONFIRM:http://linksys.custhelp.com/cgi-bin/linksys.cfg/php/enduser/std_adp.php?p_faqid=832&p_%20\created=1086294093&p_sid=pU1X1idh&p_lva=&p_sp=cF9zcmNoPSZwX3NvcnRfYnk9JnBfZ3JpZHNvcnQ9%20\JnBfcm93X2NudD02NTQmcF9wYWdlPTE*&p_li=
+Reference: BID:10329
+Reference: URL:http://www.securityfocus.com/bid/10329
+Reference: OSVDB:6325
+Reference: URL:http://www.osvdb.org/6325
+Reference: SECTRACK:1010288
+Reference: URL:http://securitytracker.com/alerts/2004/May/1010288.html
+Reference: SECUNIA:11606
+Reference: URL:http://secunia.com/advisories/11606
+Reference: XF:linksys-etherfast-bootp-dos(16142)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/16142
+
+DHCP on Linksys BEFSR11, BEFSR41, BEFSR81, and BEFSRU31 Cable/DSL
+Routers, firmware version 1.45.7, does not properly clear previously
+used buffer contents in a BOOTP reply packet, which allows remote
+attackers to obtain sensitive information.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2004-2507
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2507
+Phase: Assigned (20051025)
+Category: SF
+Reference: BUGTRAQ:20040606 Linksys Web Camera File Inclusion Vuln
+Reference: URL:http://archives.neohapsis.com/archives/bugtraq/2004-06/0103.html
+Reference: BID:10476
+Reference: URL:http://www.securityfocus.com/bid/10476
+Reference: OSVDB:7112
+Reference: URL:http://www.osvdb.org/7112
+Reference: SECTRACK:1010489
+Reference: URL:http://securitytracker.com/id?1010489
+Reference: SECUNIA:11811
+Reference: URL:http://secunia.com/advisories/11811/
+Reference: XF:linksys-webcamera-file-include(16339)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/16339
+
+Absolute path traversal vulnerability in main.cgi in Linksys WVC11B
+Wireless-B Internet Video Camera allows remote attackers to read
+arbitrary files via an absolute pathname in the next_file parameter.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2004-2508
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2508
+Phase: Assigned (20051025)
+Category: SF
+Reference: BUGTRAQ:20040613 Linksys Web Camera Cross-site Scripting Vuln
+Reference: URL:http://archives.neohapsis.com/archives/bugtraq/2004-06/0215.html
+Reference: BID:10533
+Reference: URL:http://www.securityfocus.com/bid/10533
+Reference: SECTRACK:1010424
+Reference: URL:http://securitytracker.com/id?1010424
+Reference: SECUNIA:11881
+Reference: URL:http://secunia.com/advisories/11881
+Reference: XF:linksys-webcamera-main-xss(16415)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/16415
+
+Cross-site scripting (XSS) vulnerability in main.cgi in Linksys WVC11B
+Wireless-B Internet Video Camera allows remote attackers to inject
+arbitrary web script or HTML via the next_file parameter.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2004-2606
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2606
+Phase: Assigned (20051129)
+Category: SF
+Reference: BUGTRAQ:20040531 LinkSys WRT54G administration page availble to WAN
+Reference: URL:http://archives.neohapsis.com/archives/bugtraq/2004-05/0316.html
+Reference: BUGTRAQ:20040601 Re: LinkSys WRT54G administration page availble to WAN
+Reference: URL:http://archives.neohapsis.com/archives/bugtraq/2004-06/0002.html
+Reference: BUGTRAQ:20040602 Additional information on WRT54G administration page
+Reference: URL:http://archives.neohapsis.com/archives/bugtraq/2004-06/0020.html
+Reference: BUGTRAQ:20040604 The Linksys WRT54G "security problem" doesn't exist
+Reference: URL:http://www.securityfocus.com/archive/1/365175
+Reference: BUGTRAQ:20040602 Re: The Linksys WRT54G "security problem" doesn't exist
+Reference: URL:http://archives.neohapsis.com/archives/bugtraq/2004-06/0190.html
+Reference: BUGTRAQ:20040604 RE: The Linksys WRT54G "security problem" doesn't exist
+Reference: URL:http://www.securityfocus.com/archive/1/365227/30/0/threaded
+Reference: MISC:http://web.archive.org/web/20040823075750/http://www.linksys.com/download/firmware.asp?fwid=201
+Reference: MISC:http://www.nwfusion.com/news/2004/0607confuse.html
+Reference: CONFIRM:ftp://ftp.linksys.com/pub/network/wrt54g_2.02.8_US_code_beta.zip
+Reference: BID:10441
+Reference: URL:http://www.securityfocus.com/bid/10441
+Reference: OSVDB:6577
+Reference: URL:http://www.osvdb.org/6577
+Reference: SECUNIA:11754
+Reference: URL:http://secunia.com/advisories/11754
+Reference: XF:linksys-remote-bypass-security(16274)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/16274
+
+The Web interface in Linksys WRT54G 2.02.7 and BEFSR41 version 3, with
+the firewall disabled, allows remote attackers to attempt to login to
+an administration web page, even when the configuration specifies that
+remote administration is disabled.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2005-0334
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0334
+Phase: Assigned (20050210)
+Category: SF
+Reference: BUGTRAQ:20050203 [ RSTACK Public Security Advisory ] Remote DOS against Linksys PSUS4
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=110747234701646&w=2
+Reference: BID:12443
+Reference: URL:http://www.securityfocus.com/bid/12443
+Reference: SECUNIA:14136
+Reference: URL:http://secunia.com/advisories/14136
+Reference: XF:linksys-psus4-dos(19222)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/19222
+
+Linksys PSUS4 running firmware 6032 allows remote attackers to cause a
+denial of service (device crash) via an HTTP POST request containing
+an unknown parameter without a value.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2005-1059
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1059
+Phase: Assigned (20050412)
+Category: SF
+Reference: FULLDISC:20050407 Cisco Linksys WET11 Password Resetting Vulnerability
+Reference: URL:http://www.derkeiler.com/Mailing-Lists/Full-Disclosure/2005-04/0148.html
+Reference: BID:13051
+Reference: URL:http://www.securityfocus.com/bid/13051
+Reference: SECUNIA:14871
+Reference: URL:http://secunia.com/advisories/14871
+Reference: XF:linksys-wet11-security-bypass(20008)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/20008
+
+Linksys WET11 1.5.4 allows remote attackers to change the password
+without providing the original password via the data parameter to
+changepw.html.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2005-2434
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2434
+Phase: Assigned (20050803)
+Category: SF
+Reference: BUGTRAQ:20050728 Vulnerability in Linksys Router access
+Reference: URL:http://marc.theaimsgroup.com/?l=bugtraq&m=112258422806340&w=2
+Reference: BID:14407
+Reference: URL:http://www.securityfocus.com/bid/14407
+Reference: SECTRACK:1014596
+Reference: URL:http://securitytracker.com/id?1014596
+Reference: SECUNIA:16271
+Reference: URL:http://secunia.com/advisories/16271
+Reference: XF:linksys-wrt54g-session-decrypt(21635)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/21635
+
+Linksys WRT54G router uses the same private key and certificate for
+every router, which allows remote attackers to sniff the SSL
+connection and obtain sensitive information.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-0309
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-0309
+Phase: Assigned (20060119)
+Category: SF
+Reference: BUGTRAQ:20060113 Linksys VPN Router (BEFVP41) DoS Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/421929/100/0/threaded
+Reference: BUGTRAQ:20060116 Re: Linksys VPN Router (BEFVP41) DoS Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/422064/100/0/threaded
+Reference: BUGTRAQ:20060117 Re: Linksys VPN Router (BEFVP41) DoS Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/422266/100/0/threaded
+Reference: BID:16307
+Reference: URL:http://www.securityfocus.com/bid/16307
+Reference: VUPEN:ADV-2006-0238
+Reference: URL:http://www.vupen.com/english/advisories/2006/0238
+Reference: SECTRACK:1015490
+Reference: URL:http://securitytracker.com/id?1015490
+Reference: SECUNIA:18461
+Reference: URL:http://secunia.com/advisories/18461
+Reference: XF:linksys-null-length-dos(24125)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/24125
+
+Linksys BEFVP41 VPN Router 2.0 with firmware 1.01.04 allows remote
+attackers on the local network, to cause a denial of service via IP
+packets with a null IP option length.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-1067
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1067
+Phase: Assigned (20060307)
+Category: 
+Reference: BUGTRAQ:20060303 linksys router + irc DoS
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/426761/100/0/threaded
+Reference: BUGTRAQ:20060306 Re: linksys router + irc DoS
+Reference: URL:http://www.securityfocus.com/archive/1/426863/100/0/threaded
+Reference: BUGTRAQ:20060306 RE: linksys router + irc DoS
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/426934/100/0/threaded
+Reference: BUGTRAQ:20060304 Various router DoS
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/426756/100/0/threaded
+Reference: MISC:http://www.hm2k.org/news/1141413208.html
+Reference: BID:16954
+Reference: URL:http://www.securityfocus.com/bid/16954
+Reference: XF:multiple-vendor-dccsend-dos(25230)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/25230
+
+Linksys WRT54G routers version 5 (running VXWorks) allow remote
+attackers to cause a denial of service by sending a malformed DCC SEND
+string to an IRC channel, which causes an IRC connection reset,
+possibly related to the masquerading code for NAT environments, and as
+demonstrated via (1) a DCC SEND with a single long argument, or (2) a
+DCC SEND with IP, port, and filesize arguments with a 0 value.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-1068
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1068
+Phase: Assigned (20060307)
+Category: 
+Reference: BUGTRAQ:20060303 linksys router + irc DoS
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/426761/100/0/threaded
+Reference: BUGTRAQ:20060306 Re: linksys router + irc DoS
+Reference: URL:http://www.securityfocus.com/archive/1/426863/100/0/threaded
+Reference: BUGTRAQ:20060306 RE: linksys router + irc DoS
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/426934/100/0/threaded
+Reference: BUGTRAQ:20060304 Various router DoS
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/426756/100/0/threaded
+Reference: MISC:http://www.hm2k.org/news/1141413208.html
+Reference: BID:16954
+Reference: URL:http://www.securityfocus.com/bid/16954
+Reference: XF:multiple-vendor-dccsend-dos(25230)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/25230
+
+Netgear 614 and 624 routers, possibly running VXWorks, allow remote
+attackers to cause a denial of service by sending a malformed DCC SEND
+string to an IRC channel, which causes an IRC connection reset,
+possibly related to the masquerading code for NAT environments, and as
+demonstrated via (1) a DCC SEND with a single long argument, or (2) a
+DCC SEND with IP, port, and filesize arguments with a 0 value.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-1973
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-1973
+Phase: Assigned (20060421)
+Category: 
+Reference: CERT-VN:VU#621566
+Reference: URL:http://www.kb.cert.org/vuls/id/621566
+Reference: MISC:http://www.kb.cert.org/vuls/id/MIMG-6GMMW4
+Reference: BID:17631
+Reference: URL:http://www.securityfocus.com/bid/17631
+Reference: VUPEN:ADV-2006-1443
+Reference: URL:http://www.vupen.com/english/advisories/2006/1443
+Reference: OSVDB:24810
+Reference: URL:http://www.osvdb.org/24810
+Reference: SECUNIA:19722
+Reference: URL:http://secunia.com/advisories/19722
+Reference: XF:linksys-rt31p2-sip-dos(25915)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/25915
+
+Multiple unspecified vulnerabilities in Linksys RT31P2 VoIP router
+allow remote attackers to cause a denial of service via malformed
+Session Initiation Protocol (SIP) messages.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-2559
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2559
+Phase: Assigned (20060523)
+Category: 
+Reference: MISC:http://www.securityview.org/dutch-student-finds-a-bug-in-upnp.html
+Reference: MISC:http://www.securityview.org/how-does-the-upnp-flaw-works.html
+Reference: VUPEN:ADV-2006-1909
+Reference: URL:http://www.vupen.com/english/advisories/2006/1909
+Reference: SECTRACK:1016134
+Reference: URL:http://securitytracker.com/id?1016134
+Reference: SECUNIA:20161
+Reference: URL:http://secunia.com/advisories/20161
+Reference: XF:linksys-upnp-security-bypass(26707)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/26707
+
+Linksys WRT54G Wireless-G Broadband Router allows remote attackers to
+bypass access restrictions and conduct unauthorized operations via a
+UPnP request with a modified InternalClient parameter, which is not
+validated, as demonstrated by using AddPortMapping to forward
+arbitrary traffic.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-5202
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5202
+Phase: Assigned (20061009)
+Category: 
+Reference: FULLDISC:20060804 linksys WRT54g authentication bypass
+Reference: URL:http://lists.grok.org.uk/pipermail/full-disclosure/2006-August/048495.html
+Reference: MILW0RM:5926
+Reference: URL:http://www.milw0rm.com/exploits/5926
+Reference: MISC:https://kinqpinz.info/lib/wrt54g/
+Reference: MISC:https://kinqpinz.info/lib/wrt54g/own2.txt
+Reference: CERT-VN:VU#930364
+Reference: URL:http://www.kb.cert.org/vuls/id/930364
+Reference: BID:19347
+Reference: URL:http://www.securityfocus.com/bid/19347
+Reference: SECTRACK:1016638
+Reference: URL:http://securitytracker.com/id?1016638
+Reference: SECUNIA:21372
+Reference: URL:http://secunia.com/advisories/21372
+
+Linksys WRT54g firmware 1.00.9 does not require credentials when
+making configuration changes, which allows remote attackers to modify
+arbitrary configurations via a direct request to Security.tri, as
+demonstrated using the SecurityMode and layout parameters, a different
+issue than CVE-2006-2559.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-5882
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5882
+Phase: Assigned (20061114)
+Category: 
+Reference: MISC:http://projects.info-pull.com/mokb/MOKB-11-11-2006.html
+Reference: CONFIRM:http://www.linksys.com/servlet/Satellite?c=L_Download_C2&childpagename=US%2FLayout&cid=1115417109934&packedargs=sku%3D1144763513196&pagename=Linksys%2FCommon%2FVisitorWrapper
+Reference: CONFIRM:http://www.kb.cert.org/vuls/id/MAPG-6VGNHW
+Reference: CERT-VN:VU#209376
+Reference: URL:http://www.kb.cert.org/vuls/id/209376
+Reference: VUPEN:ADV-2006-4460
+Reference: URL:http://www.vupen.com/english/advisories/2006/4460
+Reference: VUPEN:ADV-2006-4459
+Reference: URL:http://www.vupen.com/english/advisories/2006/4459
+Reference: SECTRACK:1017212
+Reference: URL:http://securitytracker.com/id?1017212
+Reference: SECUNIA:22831
+Reference: URL:http://secunia.com/advisories/22831
+Reference: XF:broadcom-bcmwl5-bo(30202)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/30202
+
+Stack-based buffer overflow in the Broadcom BCMWL5.SYS wireless device
+driver 3.50.21.10, as used in Cisco Linksys WPC300N Wireless-N
+Notebook Adapter before 4.100.15.5 and other products, allows remote
+attackers to execute arbitrary code via an 802.11 response frame
+containing a long SSID field.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-6411
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6411
+Phase: Assigned (20061209)
+Category: 
+Reference: BUGTRAQ:20061207 Linksys WIP 330 VoIP wireless phone crash from Nmap scan
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/453754/100/0/threaded
+Reference: FULLDISC:20061206 Linksys WIP 330 VoIP wireless phone crash from Nmap scan
+Reference: URL:http://lists.grok.org.uk/pipermail/full-disclosure/2006-December/051140.html
+Reference: BID:21475
+Reference: URL:http://www.securityfocus.com/bid/21475
+Reference: VUPEN:ADV-2006-4894
+Reference: URL:http://www.vupen.com/english/advisories/2006/4894
+Reference: SECUNIA:23256
+Reference: URL:http://secunia.com/advisories/23256
+Reference: SREASON:2009
+Reference: URL:http://securityreason.com/securityalert/2009
+Reference: XF:linksys-wip330-phonectrl-dos(30771)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/30771
+
+PhoneCtrl.exe in Linksys WIP 330 Wireless-G IP Phone 1.00.06A allows
+remote attackers to cause a denial of service (crash) via a TCP SYN
+scan, as demonstrated using TCP ports 1-65535 with nmap.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2006-7121
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-7121
+Phase: Assigned (20070305)
+Category: 
+Reference: FULLDISC:20061004 (0-day) Linksys SPA-921 VoIP Desktop Phone HTTP Server DoS
+Reference: URL:http://archives.neohapsis.com/archives/fulldisclosure/2006-10/0089.html
+Reference: BID:20346
+Reference: URL:http://www.securityfocus.com/bid/20346
+Reference: OSVDB:29671
+Reference: URL:http://www.osvdb.org/29671
+Reference: SECUNIA:22267
+Reference: URL:http://secunia.com/advisories/22267
+Reference: XF:linksys-spa921-long-username-dos(29349)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/29349
+
+The HTTP server in Linksys SPA-921 VoIP Desktop Phone allows remote
+attackers to cause a denial of service (reboot) via (1) a long URL, or
+a long (2) username or (3) password during Basic Authentication.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-1585
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1585
+Phase: Assigned (20070321)
+Category: 
+Reference: BUGTRAQ:20070320 Linksys WAG200G - Information disclosure
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/463342/100/0/threaded
+Reference: BUGTRAQ:20070325 Re: Linksys WAG200G - Information disclosure
+Reference: URL:http://marc.info/?l=bugtraq&m=117492736903388&w=2
+Reference: BID:23063
+Reference: URL:http://www.securityfocus.com/bid/23063
+Reference: SECUNIA:24658
+Reference: URL:http://secunia.com/advisories/24658
+Reference: XF:linksys-udp-information-disclosure(33251)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/33251
+
+The Linksys WAG200G with firmware 1.01.01, WRT54GC 2 with firmware
+1.00.7, and WRT54GC 1 with firmware 1.03.0 and earlier allow remote
+attackers to obtain sensitive information (passwords and configuration
+data) via a packet to UDP port 916. NOTE: some of these details are
+obtained from third party information.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-2270
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2270
+Phase: Assigned (20070425)
+Category: 
+Reference: FULLDISC:20070424 Linksys SPA941 remote DOS with \377 character
+Reference: URL:http://lists.grok.org.uk/pipermail/full-disclosure/2007-April/053959.html
+Reference: MILW0RM:3791
+Reference: URL:http://www.milw0rm.com/exploits/3791
+Reference: MILW0RM:3792
+Reference: URL:http://www.milw0rm.com/exploits/3792
+Reference: BID:23619
+Reference: URL:http://www.securityfocus.com/bid/23619
+Reference: VUPEN:ADV-2007-1532
+Reference: URL:http://www.vupen.com/english/advisories/2007/1532
+Reference: SECTRACK:1017957
+Reference: URL:http://www.securitytracker.com/id?1017957
+Reference: SECUNIA:25031
+Reference: URL:http://secunia.com/advisories/25031
+Reference: XF:linksys-spa941-sip-dos(33856)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/33856
+
+The Linksys SPA941 VoIP Phone allows remote attackers to cause a
+denial of service (device reboot) via a 0377 (0xff) character in the
+From header, and possibly certain other locations, in a SIP INVITE
+request.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-5411
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5411
+Phase: Assigned (20071012)
+Category: 
+Reference: FULLDISC:20071009 Owning the internal network with SIP (part 1) and a Linksys Phone
+Reference: URL:http://lists.grok.org.uk/pipermail/full-disclosure/2007-October/066430.html
+Reference: BID:25987
+Reference: URL:http://www.securityfocus.com/bid/25987
+Reference: SECUNIA:27116
+Reference: URL:http://secunia.com/advisories/27116
+Reference: XF:linksys-spa-sip-xss(37022)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/37022
+
+Cross-site scripting (XSS) vulnerability in the Linksys SPA941 VoIP
+Phone with firmware 5.1.8 allows remote attackers to inject arbitrary
+web script or HTML via the From header in a SIP message.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-6707
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6707
+Phase: Assigned (20080313)
+Category: 
+Reference: BUGTRAQ:20080301 The Router Hacking Challenge is Over!
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/489009/100/0/threaded
+Reference: MISC:http://www.gnucitizen.org/blog/persistent-xss-and-csrf-on-wireless-g-adsl-gateway-with-speedbooster-wag54gs/
+Reference: MISC:http://www.gnucitizen.org/projects/router-hacking-challenge/
+Reference: OSVDB:43539
+Reference: URL:http://osvdb.org/43539
+Reference: XF:linksys-wag54gs-setup-xss(41270)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/41270
+
+Multiple cross-site scripting (XSS) vulnerabilities on the Cisco
+Linksys WAG54GS Wireless-G ADSL Gateway with 1.01.03 and earlier
+firmware allow remote attackers to inject arbitrary web script or HTML
+via unspecified vectors, a different issue than CVE-2007-3574.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-6708
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6708
+Phase: Assigned (20080313)
+Category: 
+Reference: BUGTRAQ:20080301 The Router Hacking Challenge is Over!
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/489009/100/0/threaded
+Reference: MISC:http://www.gnucitizen.org/blog/persistent-xss-and-csrf-on-wireless-g-adsl-gateway-with-speedbooster-wag54gs/
+Reference: MISC:http://www.gnucitizen.org/projects/router-hacking-challenge/
+Reference: OSVDB:43537
+Reference: URL:http://osvdb.org/43537
+Reference: OSVDB:43538
+Reference: URL:http://osvdb.org/43538
+Reference: XF:linksys-wag54gs-setup-csfr(41269)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/41269
+
+Multiple cross-site request forgery (CSRF) vulnerabilities on the
+Cisco Linksys WAG54GS Wireless-G ADSL Gateway with 1.01.03 and earlier
+firmware allow remote attackers to perform actions as administrators
+via an arbitrary valid request to an administrative URI, as
+demonstrated by (1) a Restore Factory Defaults action using the
+mtenRestore parameter to setup.cgi and (2) creation of a user account
+using the sysname parameter to setup.cgi.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2007-6709
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6709
+Phase: Assigned (20080313)
+Category: 
+Reference: BUGTRAQ:20080301 The Router Hacking Challenge is Over!
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/489009/100/0/threaded
+Reference: MISC:http://www.gnucitizen.org/blog/persistent-xss-and-csrf-on-wireless-g-adsl-gateway-with-speedbooster-wag54gs/
+Reference: MISC:http://www.gnucitizen.org/projects/router-hacking-challenge/
+Reference: OSVDB:43536
+Reference: URL:http://osvdb.org/43536
+Reference: XF:linksys-wag54gs-default-account(41268)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/41268
+
+The Cisco Linksys WAG54GS Wireless-G ADSL Gateway with 1.01.03 and
+earlier firmware has "admin" as its default password for the "admin"
+account, which makes it easier for remote attackers to obtain access.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-0228
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0228
+Phase: Assigned (20080110)
+Category: 
+Reference: BUGTRAQ:20080107 Linksys WRT54 GL - Session riding (CSRF)
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/485853/100/0/threaded
+Reference: BUGTRAQ:20080115 Re: Linksys WRT54 GL - Session riding (CSRF)
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/486362/100/0/threaded
+Reference: SECUNIA:28364
+Reference: URL:http://secunia.com/advisories/28364
+Reference: SREASON:3534
+Reference: URL:http://securityreason.com/securityalert/3534
+Reference: XF:linksys-apply-csrf(39502)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/39502
+
+Cross-site request forgery (CSRF) vulnerability in apply.cgi in the
+Linksys WRT54GL Wireless-G Broadband Router with firmware 4.30.9
+allows remote attackers to perform actions as administrators.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-1243
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1243
+Phase: Assigned (20080310)
+Category: 
+Reference: BUGTRAQ:20080301 The Router Hacking Challenge is Over!
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/489009/100/0/threaded
+Reference: MISC:http://code.bulix.org/cx46qa-65489
+Reference: MISC:http://code.bulix.org/koom78-65490
+Reference: MISC:http://www.gnucitizen.org/projects/router-hacking-challenge/
+Reference: XF:linksys-wrt300n-dyndnsdomain-xss(41121)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/41121
+
+Cross-site scripting (XSS) vulnerability on the Linksys WRT300N router
+with firmware 2.00.20, when Mozilla Firefox or Apple Safari is used,
+allows remote attackers to inject arbitrary web script or HTML via the
+dyndns_domain parameter to the default URI.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-1247
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1247
+Phase: Assigned (20080310)
+Category: 
+Reference: BUGTRAQ:20080301 The Router Hacking Challenge is Over!
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/489009/100/0/threaded
+Reference: MILW0RM:5313
+Reference: URL:http://www.milw0rm.com/exploits/5313
+Reference: MILW0RM:5926
+Reference: URL:http://www.milw0rm.com/exploits/5926
+Reference: MISC:http://kinqpinz.info/lib/wrt54g/own.txt
+Reference: MISC:http://www.gnucitizen.org/projects/router-hacking-challenge/
+Reference: MISC:https://kinqpinz.info/lib/wrt54g/
+Reference: MISC:https://kinqpinz.info/lib/wrt54g/own2.txt
+Reference: BID:28381
+Reference: URL:http://www.securityfocus.com/bid/28381
+Reference: SECUNIA:29344
+Reference: URL:http://secunia.com/advisories/29344
+Reference: XF:linksys-wrt54g-security-bypass(41118)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/41118
+
+The web interface on the Linksys WRT54g router with firmware 1.00.9
+does not require credentials when invoking scripts, which allows
+remote attackers to perform arbitrary administrative actions via a
+direct request to (1) Advanced.tri, (2) AdvRoute.tri, (3) Basic.tri,
+(4) ctlog.tri, (5) ddns.tri, (6) dmz.tri, (7) factdefa.tri, (8)
+filter.tri, (9) fw.tri, (10) manage.tri, (11) ping.tri, (12)
+PortRange.tri, (13) ptrigger.tri, (14) qos.tri, (15) rstatus.tri, (16)
+tracert.tri, (17) vpn.tri, (18) WanMac.tri, (19) WBasic.tri, or (20)
+WFilter.tri.  NOTE: the Security.tri vector is already covered by
+CVE-2006-5202.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-1263
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1263
+Phase: Assigned (20080310)
+Category: 
+Reference: BUGTRAQ:20080301 The Router Hacking Challenge is Over!
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/489009/100/0/threaded
+Reference: MISC:http://www.gnucitizen.org/projects/router-hacking-challenge/
+Reference: XF:linksys-config-information-disclosure(41115)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/41115
+
+The Linksys WRT54G router stores passwords and keys in cleartext in
+the Config.bin file, which might allow remote authenticated users to
+obtain sensitive information via an HTTP request for the top-level
+Config.bin URI.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-1264
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1264
+Phase: Assigned (20080310)
+Category: 
+Reference: BUGTRAQ:20080301 The Router Hacking Challenge is Over!
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/489009/100/0/threaded
+Reference: MISC:http://www.gnucitizen.org/projects/router-hacking-challenge/
+Reference: XF:linksys-wrt54g-ftp-weak-security(41126)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/41126
+Reference: XF:linksys-wrt54g-ftp-default-password(41126)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/41126
+
+The Linksys WRT54G router has "admin" as its default FTP password,
+which allows remote attackers to access sensitive files including
+nvram.cfg, a file that lists all HTML documents, and an ELF executable
+file.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-1265
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1265
+Phase: Assigned (20080310)
+Category: 
+Reference: BUGTRAQ:20080301 The Router Hacking Challenge is Over!
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/489009/100/0/threaded
+Reference: MISC:http://www.gnucitizen.org/projects/router-hacking-challenge/
+Reference: XF:linksys-wrt54g-ftp-dos(41127)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/41127
+
+The Linksys WRT54G router allows remote attackers to cause a denial of
+service (device restart) via a long username and password to the FTP
+interface.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-1268
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1268
+Phase: Assigned (20080310)
+Category: 
+Reference: BUGTRAQ:20080301 The Router Hacking Challenge is Over!
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/489009/100/0/threaded
+Reference: MISC:http://swbae.egloos.com/1701135
+Reference: MISC:http://www.gnucitizen.org/projects/router-hacking-challenge/
+Reference: XF:linksys-wrt54g-ftp-security-bypass(41119)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/41119
+
+The FTP server on the Linksys WRT54G 7 router with 7.00.1 firmware
+does not verify authentication credentials, which allows remote
+attackers to establish an FTP session by sending an arbitrary username
+and password.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-2092
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2092
+Phase: Assigned (20080506)
+Category: 
+Reference: BUGTRAQ:20080324 Linksys phone adapter denial of service
+Reference: URL:http://marc.info/?l=bugtraq&m=120637257800425&w=2
+Reference: BUGTRAQ:20080324 Re: Linksys phone adapter denial of service
+Reference: URL:http://marc.info/?l=bugtraq&m=120637551306325&w=2
+Reference: BUGTRAQ:20080324 Re: Linksys phone adapter denial of service
+Reference: URL:http://marc.info/?l=bugtraq&m=120638296821936&w=2
+Reference: BUGTRAQ:20080324 Re: Re: Linksys phone adapter denial of service
+Reference: URL:http://marc.info/?l=bugtraq&m=120638162819268&w=2
+Reference: BUGTRAQ:20080325 Re: Linksys phone adapter denial of service
+Reference: URL:http://marc.info/?l=bugtraq&m=120645736414059&w=2
+Reference: BID:28414
+Reference: URL:http://www.securityfocus.com/bid/28414
+Reference: SECUNIA:29523
+Reference: URL:http://secunia.com/advisories/29523
+Reference: XF:linksys-spa2102-phoneadapter-ping-dos(41436)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/41436
+
+Linksys SPA-2102 Phone Adapter 3.3.6 allows remote attackers to cause
+a denial of service (crash) via a long ping packet ("ping of death").
+NOTE: the severity of this issue has been disputed since there are
+limited attack scenarios.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-2636
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2636
+Phase: Assigned (20080609)
+Category: 
+Reference: BUGTRAQ:20080605 Remote DoS vulnerability in Linksys WRH54G
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/493129/100/0/threaded
+Reference: VUPEN:ADV-2008-1772
+Reference: URL:http://www.vupen.com/english/advisories/2008/1772/references
+Reference: SECTRACK:1020237
+Reference: URL:http://www.securitytracker.com/id?1020237
+Reference: SECUNIA:30562
+Reference: URL:http://secunia.com/advisories/30562
+Reference: SREASON:3929
+Reference: URL:http://securityreason.com/securityalert/3929
+Reference: XF:linksys-wrh54g-http-dos(42890)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/42890
+
+The HTTP service on the Cisco Linksys WRH54G with firmware 1.01.03
+allows remote attackers to cause a denial of service (management
+interface outage) or possibly execute arbitrary code via a URI that
+begins with a "/./" sequence, contains many instances of a
+"front_page" sequence, and ends with a ".asp" sequence.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-4296
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4296
+Phase: Assigned (20080926)
+Category: 
+Reference: BUGTRAQ:20080926 Linksys/Cisco WRT350N 1.0.3.7 Insecure Samba Static Configuration
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/496756/100/0/threaded
+Reference: SREASON:4319
+Reference: URL:http://securityreason.com/securityalert/4319
+Reference: XF:linksys-admin-default-password(45588)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/45588
+
+The Cisco Linksys WRT350N with firmware 1.0.3.7 has "admin" as its
+default password for the "admin" account, which makes it easier for
+remote attackers to obtain access.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-4390
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4390
+Phase: Assigned (20081002)
+Category: 
+Reference: CONFIRM:http://www.kb.cert.org/vuls/id/MAPG-7HJKSA
+Reference: CONFIRM:http://www.linksys.com/servlet/Satellite?blobcol=urldata&blobheadername1=Content-Type&blobheadername2=Content-Disposition&blobheadervalue1=text%2Fplain&blobheadervalue2=inline%3B+filename%3DWVC54GC-V1.0_non-RoHS-v1.25_fw_ver.txt&blobkey=id&blobtable=MungoBlobs&blobwhere=1193776031728&ssbinary=true&lid=8104724130B17
+Reference: CERT-VN:VU#528993
+Reference: URL:http://www.kb.cert.org/vuls/id/528993
+Reference: BID:32666
+Reference: URL:http://www.securityfocus.com/bid/32666
+Reference: SECUNIA:33032
+Reference: URL:http://secunia.com/advisories/33032
+
+The Cisco Linksys WVC54GC wireless video camera before firmware 1.25
+sends cleartext configuration data in response to a Setup Wizard
+remote-management command, which allows remote attackers to obtain
+sensitive information such as passwords by sniffing the network.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-4441
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4441
+Phase: Assigned (20081003)
+Category: 
+Reference: BUGTRAQ:20081013 Marvell Driver Malformed Association Request Vulnerability
+Reference: URL:http://www.securityfocus.com/archive/1/archive/1/497285/100/0/threaded
+Reference: BID:31742
+Reference: URL:http://www.securityfocus.com/bid/31742
+Reference: VUPEN:ADV-2008-2805
+Reference: URL:http://www.vupen.com/english/advisories/2008/2805
+Reference: SECUNIA:32259
+Reference: URL:http://secunia.com/advisories/32259
+Reference: SREASON:4400
+Reference: URL:http://securityreason.com/securityalert/4400
+Reference: XF:linksys-wap4400n-request-dos(45841)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/45841
+
+The Marvell driver for the Linksys WAP4400N Wi-Fi access point with
+firmware 1.2.14 on the Marvell 88W8361P-BEM1 chipset, when WEP mode is
+enabled, does not properly parse malformed 802.11 frames, which allows
+remote attackers to cause a denial of service (reboot or hang-up) via
+a malformed association request containing the WEP flag, as
+demonstrated by a request that is too short, a different vulnerability
+than CVE-2008-1144 and CVE-2008-1197.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-4594
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4594
+Phase: Assigned (20081017)
+Category: 
+Reference: CONFIRM:http://www.linksys.com/servlet/Satellite?blobcol=urldata&blobheadername1=Content-Type&blobheadername2=Content-Disposition&blobheadervalue1=application%2Fmsword&blobheadervalue2=inline%3B+filename
+Reference: VUPEN:ADV-2008-2805
+Reference: URL:http://www.vupen.com/english/advisories/2008/2805
+Reference: SECUNIA:32259
+Reference: URL:http://secunia.com/advisories/32259
+Reference: XF:linksys-wap4400n-unspecified(45842)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/45842
+
+Unspecified vulnerability in the SNMPv3 component in Linksys WAP4400N
+firmware 1.2.14 on the Marvell Semiconductor 88W8361P-BEM1 chipset has
+unknown impact and attack vectors, probably remote.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2008-6280
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-6280
+Phase: Assigned (20090225)
+Category: 
+Reference: MISC:http://packetstormsecurity.org/0811-exploits/linksys-xss.txt
+Reference: BID:32496
+Reference: URL:http://www.securityfocus.com/bid/32496
+Reference: SECUNIA:32877
+Reference: URL:http://secunia.com/advisories/32877
+Reference: XF:linksys-wrt160n-apply-xss(46980)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/46980
+
+Cross-site scripting (XSS) vulnerability in apply.cgi on the Linksys
+WRT160N allows remote attackers to inject arbitrary web script or HTML
+via the action parameter in a DHCP_Static operation.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-1555
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1555
+Phase: Assigned (20090506)
+Category: 
+Reference: MISC:http://www.gnucitizen.org/blog/hacking-linksys-ip-cameras-pt-1/
+Reference: BID:34596
+Reference: URL:http://www.securityfocus.com/bid/34596
+Reference: SECUNIA:34767
+Reference: URL:http://secunia.com/advisories/34767
+Reference: VUPEN:ADV-2009-1173
+Reference: URL:http://www.vupen.com/english/advisories/2009/1173
+
+The Cisco Linksys WVC54GCA wireless video camera with firmware 1.00R22
+and 1.00R24 sends configuration data in response to a Setup Wizard
+remote-management command, which allows remote attackers to obtain
+sensitive information such as passwords by reading the SetupWizard.exe
+process memory, a related issue to CVE-2008-4390.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-1556
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1556
+Phase: Assigned (20090506)
+Category: 
+Reference: MISC:http://www.gnucitizen.org/blog/hacking-linksys-ip-cameras-pt-2/
+Reference: BID:34629
+Reference: URL:http://www.securityfocus.com/bid/34629
+Reference: SECUNIA:34767
+Reference: URL:http://secunia.com/advisories/34767
+Reference: VUPEN:ADV-2009-1173
+Reference: URL:http://www.vupen.com/english/advisories/2009/1173
+
+img/main.cgi on the Cisco Linksys WVC54GCA wireless video camera with
+firmware 1.00R22 and 1.00R24 allows remote authenticated users to read
+arbitrary files in img/ via a filename in the next_file parameter, as
+demonstrated by reading .htpasswd to obtain the admin password, a
+different vulnerability than CVE-2004-2507.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-1557
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1557
+Phase: Assigned (20090506)
+Category: 
+Reference: MISC:http://www.gnucitizen.org/blog/hacking-linksys-ip-cameras-pt-4/
+Reference: BID:34714
+Reference: URL:http://www.securityfocus.com/bid/34714
+Reference: SECUNIA:34767
+Reference: URL:http://secunia.com/advisories/34767
+Reference: VUPEN:ADV-2009-1173
+Reference: URL:http://www.vupen.com/english/advisories/2009/1173
+Reference: XF:wvc54gca-nextfile-xss(50224)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/50224
+
+Multiple cross-site scripting (XSS) vulnerabilities on the Cisco
+Linksys WVC54GCA wireless video camera with firmware 1.00R22 and
+1.00R24 allow remote attackers to inject arbitrary web script or HTML
+via the next_file parameter to (1) main.cgi, (2) img/main.cgi, or (3)
+adm/file.cgi; or (4) the this_file parameter to adm/file.cgi.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-1558
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1558
+Phase: Assigned (20090506)
+Category: 
+Reference: MISC:http://www.gnucitizen.org/blog/hacking-linksys-ip-cameras-pt-3/
+Reference: BID:34713
+Reference: URL:http://www.securityfocus.com/bid/34713
+Reference: VUPEN:ADV-2009-1173
+Reference: URL:http://www.vupen.com/english/advisories/2009/1173
+Reference: XF:wvc54gca-admfile-dir-traversal(50231)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/50231
+
+Directory traversal vulnerability in adm/file.cgi on the Cisco Linksys
+WVC54GCA wireless video camera with firmware 1.00R22 and 1.00R24
+allows remote attackers to read arbitrary files via a %2e. (encoded
+dot dot) or an absolute pathname in the next_file parameter.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-1559
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1559
+Phase: Assigned (20090506)
+Category: 
+Reference: MISC:http://www.gnucitizen.org/blog/hacking-linksys-ip-cameras-pt-3/
+Reference: BID:34713
+Reference: URL:http://www.securityfocus.com/bid/34713
+Reference: VUPEN:ADV-2009-1173
+Reference: URL:http://www.vupen.com/english/advisories/2009/1173
+Reference: XF:wvc54gca-admfile-dir-traversal(50231)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/50231
+
+Absolute path traversal vulnerability in adm/file.cgi on the Cisco
+Linksys WVC54GCA wireless video camera with firmware 1.00R24 and
+possibly 1.00R22 allows remote attackers to read arbitrary files via
+an absolute pathname in the this_file parameter.  NOTE: traversal via a
+.. (dot dot) is probably also possible.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-1560
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1560
+Phase: Assigned (20090506)
+Category: 
+Reference: MISC:http://www.gnucitizen.org/blog/hacking-linksys-ip-cameras-pt-4/
+Reference: VUPEN:ADV-2009-1173
+Reference: URL:http://www.vupen.com/english/advisories/2009/1173
+Reference: XF:wvc54gca-pass-wsecurity-info-disclosure(50410)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/50410
+
+The Cisco Linksys WVC54GCA wireless video camera with firmware 1.00R22
+and 1.00R24 stores passwords and wireless-network keys in cleartext in
+(1) pass_wd.htm and (2) Wsecurity.htm, which allows remote attackers
+to obtain sensitive information by reading the HTML source code.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2009-1561
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1561
+Phase: Assigned (20090506)
+Category: 
+Reference: BUGTRAQ:20090418 Linksys WRT54GC - Admin Password Change (POC)
+Reference: URL:http://archives.neohapsis.com/archives/bugtraq/2009-04/0198.html
+Reference: MISC:http://packetstormsecurity.org/0904-exploits/linksysadmin-passwd.txt
+Reference: MISC:http://www.falandodeseguranca.com/?p=17
+Reference: BID:34616
+Reference: URL:http://www.securityfocus.com/bid/34616
+Reference: SECUNIA:34805
+Reference: URL:http://secunia.com/advisories/34805
+Reference: VUPEN:ADV-2009-1172
+Reference: URL:http://www.vupen.com/english/advisories/2009/1172
+
+Cross-site request forgery (CSRF) vulnerability in administration.cgi
+on the Cisco Linksys WRT54GC router with firmware 1.05.7 allows remote
+attackers to hijack the intranet connectivity of arbitrary users for
+requests that change the administrator password via the sysPasswd and
+sysConfirmPasswd parameters.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2012-0284
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0284
+Phase: Assigned (20111230)
+Category: 
+Reference: BUGTRAQ:20120717 Secunia Research: Cisco Linksys PlayerPT ActiveX Control "SetSource()" Buffer Overflow
+Reference: URL:http://archives.neohapsis.com/archives/bugtraq/2012-07/0113.html
+Reference: MISC:http://secunia.com/secunia_research/2012-25/
+Reference: BID:54588
+Reference: URL:http://www.securityfocus.com/bid/54588
+Reference: SECTRACK:1027259
+Reference: URL:http://www.securitytracker.com/id?1027259
+Reference: XF:cisco-linksys-activex-bo(77085)
+Reference: URL:http://xforce.iss.net/xforce/xfdb/77085
+
+Stack-based buffer overflow in the SetSource method in the Cisco
+Linksys PlayerPT ActiveX control 1.0.0.15 in PlayerPT.ocx on the Cisco
+WVC200 Wireless-G PTZ Internet video camera allows remote attackers to
+execute arbitrary code via a long URL in the first argument (aka the
+sURL argument).
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3064
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3064
+Phase: Assigned (20130415)
+Category: 
+Reference: MISC:http://securityevaluators.com/knowledge/case_studies/routers/Vulnerability_Catalog.pdf
+Reference: MISC:http://securityevaluators.com/knowledge/case_studies/routers/linksys_ea6500.php
+
+Open redirect vulnerability in ui/dynamic/unsecured.html in Linksys
+EA6500 with firmware 1.1.28.147876 allows remote attackers to redirect
+users to arbitrary web sites and conduct phishing attacks via a URL in
+the target parameter.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3065
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3065
+Phase: Assigned (20130415)
+Category: 
+Reference: MISC:http://securityevaluators.com/knowledge/case_studies/routers/Vulnerability_Catalog.pdf
+Reference: MISC:http://securityevaluators.com/knowledge/case_studies/routers/linksys_ea6500.php
+
+Cross-site scripting (XSS) vulnerability in the Parental Controls
+section in Linksys EA6500 with firmware 1.1.28.147876 allows remote
+authenticated users to inject arbitrary web script or HTML via vectors
+related to the Blocked Specific Sites section.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3066
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3066
+Phase: Assigned (20130415)
+Category: 
+Reference: MISC:http://securityevaluators.com/knowledge/case_studies/routers/Vulnerability_Catalog.pdf
+Reference: MISC:http://securityevaluators.com/knowledge/case_studies/routers/linksys_ea6500.php
+
+Linksys EA6500 with firmware 1.1.28.147876 does not properly restrict
+access, which allows remote attackers to obtain sensitive information
+(clients and router configuration) via a request to /JNAP/.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
+Name: CVE-2013-3068
+Status: Candidate
+URL: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-3068
+Phase: Assigned (20130415)
+Category: 
+Reference: MISC:http://securityevaluators.com/knowledge/case_studies/routers/linksys_wrt310v2.php
+Reference: MISC:http://securityevaluators.com/knowledge/case_studies/routers/soho_router_hacks.php
+
+Cross-site request forgery (CSRF) vulnerability in apply.cgi in
+Linksys WRT310Nv2 2.0.0.1 allows remote attackers to hijack the
+authentication of administrators for requests that change passwords
+and modify remote management ports.
+
+
+Current Votes:
+None (candidate not yet proposed)
+
+
+======================================================
