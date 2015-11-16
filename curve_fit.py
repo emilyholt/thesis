@@ -8,7 +8,15 @@ from scipy.optimize import curve_fit
 import numpy as np
 import matplotlib.pyplot as plt
 
+# **************************************************************************
+
+# Input: keyword to analyze in vulnerability reports, degree of polynomial 
+# for curve fit to extrapolate future values
+
+# **************************************************************************
+
 keyword = sys.argv[1]
+degree = raw_input("Degree for curve fit: ")
 
 inputfile = keyword + "_reports.txt"
 f = open(inputfile, "r")
@@ -56,13 +64,22 @@ for key in sorted(dictionary.iterkeys()):
 # y = points[:,1]
 
 # calculate polynomial
-z = np.polyfit(years, vulns, 3)
+z = np.polyfit(years, vulns, degree)
 f = np.poly1d(z)
 
 # calculate new x's and y's
 x_new = np.linspace(years[0], years[-1], 50)
 y_new = f(x_new)
 
+years.append(2020)
+vulns.append(f(2020))
+print "2020: " + str(f(2020))
+
+years.append(2025)
+vulns.append(f(2025))
+print "2025: " + str(f(2025))
+
 plt.plot(years, vulns, 'o', x_new, y_new)
 plt.xlim([years[0]-1, years[-1] + 1 ])
+plt.savefig(keyword + "_" + degree + "_curvefit.png")
 plt.show()
